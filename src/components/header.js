@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import headerStyles from './header.module.scss'
+import headerStyles from '../styles/header.module.scss'
 /* import '../styles/header.css' */
 
 const Header = () => {
@@ -19,7 +19,7 @@ const Header = () => {
     return (
         <header>
             <Navbar expand="lg" className={headerStyles.border}>
-                <Navbar.Brand to="/home"><img src="../media/img/logo.png" alt="ABsoluciones"/></Navbar.Brand>
+                <Navbar.Brand to="/home"><img src="../media/img/logo.png" alt="ABsoluciones" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="flex justify-content-end">
                     <Nav className={headerStyles.font}>
@@ -31,15 +31,15 @@ const Header = () => {
                             <NavDropdown.Item to="#action/3.4" className={headerStyles.item}>Servicios 4</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Capacitación" id="basic-nav-dropdown">
-                            <NavDropdown.Item to="/calendario_cursos">Catalogo de cursos</NavDropdown.Item>
-                            <NavDropdown.Item to="/cursos">Calendario de cursos</NavDropdown.Item>
+                            <NavDropdown.Item to="/calendario_cursos" className={headerStyles.item}>Catalogo de cursos</NavDropdown.Item>
+                            <NavDropdown.Item to="/cursos" className={headerStyles.item}>Calendario de cursos</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="https://escuelaalreves.com/views/mainpage.php" target="_blank">Cursos Online</NavDropdown.Item>
+                            <NavDropdown.Item href="https://escuelaalreves.com/views/mainpage.php" target="_blank" className={headerStyles.item}>Cursos Online</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Multimedia" id="basic-nav-dropdown">
-                            <NavDropdown.Item to="#action/3.1">Blog</NavDropdown.Item>
+                            <NavDropdown.Item to="#action/3.1" className={headerStyles.item}>Blog</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item to="#action/3.2">Canal en YouTube</NavDropdown.Item>
+                            <NavDropdown.Item to="#action/3.2" className={headerStyles.item}>Canal en YouTube</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link to="#link">Contacto</Nav.Link>
                     </Nav>
