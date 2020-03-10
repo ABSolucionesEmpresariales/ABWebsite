@@ -8,5 +8,24 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
     'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-source-mysql`,
+      options: {
+        connectionDetails: {
+          host: 'srv286.main-hosting.eu',
+          user: 'u981877364_cool',
+          password: 'Eh]XWg0F',
+          database: 'u981877364_uniline'
+        },
+        queries: [
+          {
+            statement: 'SELECT * FROM curso',
+            idFieldName: 'idcurso',
+            name: 'cursos'
+          }
+        ]
+      }
+    }
+    // ... other plugins
   ]
 }
