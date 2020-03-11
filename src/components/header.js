@@ -37,8 +37,8 @@ const Header = () => {
                             <NavDropdown.Item to="#action/3.4" className={headerStyles.item}>Servicios 4</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Capacitación" id="basic-nav-dropdown">
-                            <NavDropdown.Item to="/calendario_cursos" className={headerStyles.item}>Catalogo de cursos</NavDropdown.Item>
-                            <NavDropdown.Item to="/cursos" className={headerStyles.item}>Calendario de cursos</NavDropdown.Item>
+                            <NavDropdown.Item className={headerStyles.item}><Link to="/cursos">Catalogo de Cursos</Link></NavDropdown.Item>
+                            <NavDropdown.Item className={headerStyles.item}><Link to="/calendario_cursos">Calendario de Cursos</Link></NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="https://escuelaalreves.com/views/mainpage.php" target="_blank" className={headerStyles.item}>Cursos Online</NavDropdown.Item>
                         </NavDropdown>
