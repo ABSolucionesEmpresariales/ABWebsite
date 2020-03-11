@@ -19,7 +19,7 @@ module.exports = {
         },
         queries: [
           {
-            statement: 'SELECT * FROM curso',
+            statement: 'SELECT idcurso,nombre,imagen,costo FROM curso',
             idFieldName: 'idcurso',
             name: 'cursos'
           }
