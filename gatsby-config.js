@@ -30,6 +30,25 @@ module.exports = {
         defaultQuality: 75,
       },
     },
-    `gatsby-transformer-sharp`
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-mysql`,
+      options: {
+        connectionDetails: {
+          host: 'srv286.main-hosting.eu',
+          user: 'u981877364_cool',
+          password: 'Eh]XWg0F',
+          database: 'u981877364_uniline'
+        },
+        queries: [
+          {
+            statement: 'SELECT idcurso,nombre,imagen,costo FROM curso',
+            idFieldName: 'idcurso',
+            name: 'cursos'
+          }
+        ]
+      }
+    }
+    // ... other plugins
   ]
 }
