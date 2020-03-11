@@ -3,7 +3,9 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import headerStyles from '../styles/header.module.scss'
-/* import '../styles/header.css' */
+import Image from 'react-bootstrap/Image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
     const data = useStaticQuery(graphql`
@@ -13,47 +15,65 @@ const Header = () => {
                     title
                 }
             }
+            fileName: file(relativePath: { eq: "img/logo.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 60, maxHeight: 60) {
+                        src
+                    }
+                }
+            }
         }
     `)
 
     return (
         <header>
-            <link
-                rel="stylesheet"
-                href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-                crossorigin="anonymous"
-            />
             <Navbar expand="lg" className={headerStyles.border}>
-                <Navbar.Brand to="/home"><img src="../media/img/logo.png" alt="ABsoluciones" /></Navbar.Brand>
+                <Navbar.Brand to="/home">
+                    <Image src={data.fileName.childImageSharp.fluid.src} alt="ABsoluciones" fluid />
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="flex justify-content-end">
-                    <Nav className={headerStyles.font}>
-                        <Nav.Link to="#">Quienes somos</Nav.Link>
-                        <NavDropdown title="Servicios" id="basic-nav-dropdown" className={headerStyles.drop}>
-                            <NavDropdown.Item to="#action/3.1" className={headerStyles.item}>Servicios 1</NavDropdown.Item>
-                            <NavDropdown.Item to="#action/3.2" className={headerStyles.item}>Servicios 2</NavDropdown.Item>
-                            <NavDropdown.Item to="#action/3.3" className={headerStyles.item}>Servicios 3</NavDropdown.Item>
-                            <NavDropdown.Item to="#action/3.4" className={headerStyles.item}>Servicios 4</NavDropdown.Item>
-                        </NavDropdown>
-                        <NavDropdown title="Capacitación" id="basic-nav-dropdown">
-                            <NavDropdown.Item className={headerStyles.item}><Link to="/cursos">Catalogo de Cursos</Link></NavDropdown.Item>
-                            <NavDropdown.Item className={headerStyles.item}><Link to="/calendario_cursos">Calendario de Cursos</Link></NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="https://escuelaalreves.com/views/mainpage.php" target="_blank" className={headerStyles.item}>Cursos Online</NavDropdown.Item>
-                        </NavDropdown>
-                        <NavDropdown title="Multimedia" id="basic-nav-dropdown">
-                            <NavDropdown.Item to="#action/3.1" className={headerStyles.item}>Blog</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item to="#action/3.2" className={headerStyles.item}>Canal en YouTube</NavDropdown.Item>
-                        </NavDropdown>
-                        <Nav.Link to="#link">Contacto</Nav.Link>
+                    <Nav>
+                        <li className={'nav-item ' + headerStyles.font}>
+                            <Link className={'nav-link ' + headerStyles.font} to="/">Quienes somos</Link>
+                        </li>
+                        <li className={'nav-item dropdown ' + headerStyles.dropdown + ' ' + headerStyles.font}>
+                            <Link className={'nav-link ' + headerStyles.font} to="#" id="navbardrop" data-toggle="dropdown">
+                                Servicios
+                            <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></Link>
+                            <div className={'dropdown-menu ' + headerStyles.dropmenu}>
+                                <Link className={'dropdown-item ' + headerStyles.item} to="/">Servicio 1</Link>
+                                <Link className={'dropdown-item ' + headerStyles.item} to="/">Servicio 2</Link>
+                                <Link className={'dropdown-item ' + headerStyles.item} to="/">Servicio 3</Link>
+                                <Link className={'dropdown-item ' + headerStyles.item} to="/">Servicio 4</Link>
+                            </div>
+                        </li>
+                        <li className={'nav-item dropdown ' + headerStyles.dropdown + ' ' + headerStyles.font}>
+                            <Link className={'nav-link ' + headerStyles.font} to="#" id="navbardrop" data-toggle="dropdown">
+                                Capacitación
+                            <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></Link>
+                            <div className={'dropdown-menu ' + headerStyles.dropmenu}>
+                                <Link className={'dropdown-item ' + headerStyles.item} to="/cursos">Catalogo de cursos</Link>
+                                <Link className={'dropdown-item ' + headerStyles.item} to="/calendario_cursos">Calendario de cursos</Link>
+                                <NavDropdown.Divider />
+                                <Link className={'dropdown-item ' + headerStyles.item} to="https://escuelaalreves.com/views/mainpage.php" target="_blank">Cursos Online</Link>
+                            </div>
+                        </li>
+                        <li className={'nav-item dropdown ' + headerStyles.dropdown + ' ' + headerStyles.font}>
+                            <Link className={'nav-link ' + headerStyles.font} to="#" id="navbardrop" data-toggle="dropdown">
+                                Multimedia
+                            <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></Link>
+                            <div className={'dropdown-menu ' + headerStyles.dropmenu}>
+                                <Link className={'dropdown-item ' + headerStyles.item} to="/">Blog</Link>
+                                <Link className={'dropdown-item ' + headerStyles.item} to="/">Canal YouTube</Link>
+                            </div>
+                        </li>
+                        <li className={'nav-item ' + headerStyles.font}>
+                            <Link className={'nav-link ' + headerStyles.font} to="/">Contacto</Link>
+                        </li>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-            <h1>
-                <Link className="text-decoration-none" to="/">{data.site.siteMetadata.title}</Link>
-            </h1>
         </header>
     )
 }
