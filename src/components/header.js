@@ -51,9 +51,6 @@ const Header = () => {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-            <h1>
-                <Link className="text-decoration-none" to="/">{data.site.siteMetadata.title}</Link>
-            </h1>
         </header>
     )
 }
