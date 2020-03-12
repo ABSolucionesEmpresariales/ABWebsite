@@ -1,7 +1,8 @@
-.font a{
+.font{
   font-size: 20px;
   color: black!important;
   margin-right: 1rem;
+  cursor: pointer;
 }
 .font:hover{
   color: rgb(0, 0,90)!important;
@@ -53,8 +54,8 @@
     animation: example .5s;
   }
   @keyframes example {
-    0%  {top:60px;}
-    100%  {top:46px;}
+    0%  {top:70px;}
+    100%  {top:62px;}
     from{
       opacity: 0;
     }
@@ -62,4 +63,7 @@
         opacity: 1;
     }
   }
+}
+.submit{
+  padding: 1rem 10.5rem;
 }
