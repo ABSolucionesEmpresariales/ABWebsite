@@ -1,11 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import Head from '../components/head'
-<<<<<<< HEAD
 import Carousel from "../components/carousel"
-=======
-import Carousel from '../components/carousel'
->>>>>>> 53cb0706a3852bb5c8caf6626f73156424fb6528
 
 import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -18,23 +14,11 @@ const IndexPage = () => {
         <Layout>
             <Head title="Home"/>
             <Carousel/>
-<<<<<<< HEAD
             <div className="row">
                 <div className="border col-4 text-center py-5">
                     <FontAwesomeIcon className={homeStyles.serviceIcons} icon={faArrowUp} size="7x" />
                     <h2 className="mt-3">Couching</h2>
                     <h5>Aprende destrezas personales que te ayudaran a administrar mejor tu empresa.</h5>
-=======
-            <div className={'row '+homeStyles.section}>
-                <div id={homeStyles.leftServiceContainer} className="border col-4 text-center">
-                    <div id={homeStyles.leftServiceItem} className="border p-5">
-                        <FontAwesomeIcon className={homeStyles.serviceIcons} icon={faArrowUp} size="7x" />
-                        <h1 className="mt-4">Couching</h1>
-                        <p>Destrezas personales para manejar tu empresa.</p>
-                    </div>
-                    <p>Slider Frases. Teclado, difuminado o letra por letra.</p>
-                    <p>Esta ficha llegara desde la izquierda suavemente</p>
->>>>>>> 53cb0706a3852bb5c8caf6626f73156424fb6528
                 </div>
                 <div className="border col-4 text-center">
                     <div id={homeStyles.centerServiceItem} className="border p-5">
