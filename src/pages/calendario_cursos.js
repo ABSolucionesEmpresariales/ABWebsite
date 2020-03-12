@@ -17,10 +17,6 @@ const CalendarioContenido = () => {
                   url
                 }
               }
-              ubicacionCursos {
-                lat
-                lon
-              }
               certificadoPor
             }
           }

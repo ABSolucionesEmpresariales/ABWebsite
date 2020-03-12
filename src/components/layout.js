@@ -4,7 +4,7 @@ import Header from "../components/header"
 
 const Layout = (props) => {
     return (
-        <div className='container-fluid mx-0'>
+        <div className='container-fluid mx-0 px-0'>
             <div>
                 <Header/>
                 {props.children}
