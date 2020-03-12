@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import Head from '../components/head'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import { graphql } from 'gatsby'
 import {documentToReactComponents} from '@contentful/rich-text-react-renderer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import calendarioCursoscss from '../styles/calendario_cursos.module.scss'
