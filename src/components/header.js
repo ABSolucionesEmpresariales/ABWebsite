@@ -31,14 +31,14 @@ const Header = () => {
     `)
 
     return (
-        <header>
+        <header className="row">
             <link
                 rel="stylesheet"
                 href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
                 integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
                 crossorigin="anonymous"
             />
-            <Navbar expand="lg" className={headerStyles.border}>
+            <Navbar expand="lg" className={'col-12 '+headerStyles.border}>
                 <Navbar.Brand to="/home">
                     <Image src={data.fileName.childImageSharp.fluid.src} alt="ABsoluciones" fluid />
                 </Navbar.Brand>
