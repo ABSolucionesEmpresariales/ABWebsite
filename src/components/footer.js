@@ -4,7 +4,6 @@ import Image from 'react-bootstrap/Image';
 import { Link } from 'gatsby'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faTwitter, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 import footerStyles from '../styles/footer.module.scss'
@@ -32,7 +31,7 @@ const Footer = () => {
         <footer>
             <div className={'mt-5 row '+footerStyles.ayuda}>
                 <h1 className="font-weight-bold">¿Como podemos ayudarte?</h1>
-                <h3 className="mt-2 mt-0">Ponte en <Link className={footerStyles.ayudaLinks} to="/cursos">contacto</Link> con nosotros o encuentra <Link className={footerStyles.ayudaLinks} to="/cursos">nuestra oficina</Link> mas cercana</h3>
+                <h3 className="mt-2 mt-0">Ponte en <Link className={footerStyles.ayudaLinks} to="/cursos">contacto</Link> con nosotros o encuentra <Link className={footerStyles.ayudaLinks} to="/cursos">nuestra oficina</Link> mas cercana.</h3>
             </div>
             <div className="px-0 px-lg-5">
                 <div className="row justify-content-between py-5 d-block d-lg-flex">
