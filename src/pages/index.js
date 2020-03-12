@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import Head from '../components/head'
+import Carousel from '../components/carousel'
 
 import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -12,6 +13,7 @@ const IndexPage = () => {
     return (
         <Layout>
             <Head title="Home"/>
+            <Carousel/>
             <div className={'row '+homeStyles.section}>
                 <div id={homeStyles.leftServiceContainer} className="border col-4 text-center">
                     <div id={homeStyles.leftServiceItem} className="border p-5">
