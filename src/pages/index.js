@@ -13,14 +13,14 @@ const IndexPage = () => {
         <Layout>
             <Head title="Home"/>
             <div className={'row '+homeStyles.section}>
-                <div className="border col-4 text-center">
+                <div id={homeStyles.leftServiceContainer} className="border col-4 text-center">
                     <div id={homeStyles.leftServiceItem} className="border p-5">
                         <FontAwesomeIcon className={homeStyles.serviceIcons} icon={faArrowUp} size="7x" />
                         <h1 className="mt-4">Couching</h1>
                         <p>Destrezas personales para manejar tu empresa.</p>
                     </div>
                     <p>Slider Frases. Teclado, difuminado o letra por letra.</p>
-                    <p>Esta ficha llegara desde abajo</p>
+                    <p>Esta ficha llegara desde la izquierda suavemente</p>
                 </div>
                 <div className="border col-4 text-center">
                     <div id={homeStyles.centerServiceItem} className="border p-5">
@@ -29,7 +29,7 @@ const IndexPage = () => {
                         <p>Encontrar el verdadero problema es parte de la solucion</p>
                     </div>
                     <p>Slider Frases. Teclado, difuminado o letra por letra.</p>
-                    <p>Esta ficha caera de arriba</p>
+                    <p>Esta ficha cllegara desde abajo suavemente</p>
                 </div>
                 <div className="border col-4 text-center">
                     <div id={homeStyles.rightServiceItem} className="border p-5">
@@ -38,10 +38,10 @@ const IndexPage = () => {
                         <p>Habilidades extraordinarias para crear empleados extraordinarios.</p>
                     </div>
                     <p>Slider Frases. Teclado, difuminado o letra por letra.</p>
-                    <p>Esta ficha llegara desde abajo</p>
+                    <p>Esta ficha llegara desde la derecha suavemente</p>
                 </div>
             </div>
-            <div className={'bg-danger row '+homeStyles.section}>
+            <div id={homeStyles.sectionTwo} className={'row '+homeStyles.section}>
                 <div className="border col-6 text-center">
                     <Image className="border" src="https://www.designthinkersgroup.us/wp-content/uploads/2018/10/Stakeholder-mapping-image-1184x670.jpg" alt="design_thinking" fluid />
                     <p>Nuestro equipo investiga las mejores metodologias para ser mas efectivos.</p>
