@@ -165,7 +165,7 @@
 		font-size: 64px;
 		line-height: 1;
 		transition: all .3s ease;
-		transform: translateY(-20px);
+		transform: translateX(300px);
 		opacity: 0;
 	}
 
@@ -175,14 +175,14 @@
 		line-height: 1.5;
 		margin: 20px auto 30px;
 		max-width: 640px;
-		transition: all .3s ease;
-		transform: translateY(20px);
+		transition: all .5s ease;
+		transform: translateX(-300px);
 		opacity: 0;
 	}
 
 	& button {
 		transition: all .3s ease;
-		transform: translateY(20px);
+		transform: translateX(300px);
 		opacity: 0;
 	}
 
@@ -210,7 +210,7 @@
 				color: #FFFFFF;
 				font-size: 14px;
 				display: block;
-				transform: translateY(10px);
+				transform: translateX(10px);
 				opacity: 0;
 			}
 		}
@@ -222,7 +222,7 @@
 			border-radius: 100%;
 			vertical-align: middle;
 			transition: all .5s ease;
-			transform: translateX(-20px);
+			transform: translateX(20px);
 			opacity: 0;
 		}
 	}
