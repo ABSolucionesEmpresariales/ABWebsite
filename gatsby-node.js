@@ -9,7 +9,8 @@ const path = require('path')
 module.exports.createPages = async ({graphql,actions}) => {
     const {createPage} = actions
     const calendarioTemplate = path.resolve('./src/templates/calendario_cursos.js')
-    const blogTemplate = path.resolve('./src/templates/calendario_cursos.js')
+    const blogTemplate = path.resolve('./src/templates/blog.js')
+    const serviciosTemplate = path.resolve('./src/templates/servicios.js')
     const res = await graphql(`
     query{
         allContentfulCalendario{
@@ -20,6 +21,13 @@ module.exports.createPages = async ({graphql,actions}) => {
           }
         }
         allContentfulBlog {
+          edges {
+            node {
+              slug
+            }
+          }
+        }
+        allContentfulServicio {
           edges {
             node {
               slug
@@ -47,5 +55,15 @@ module.exports.createPages = async ({graphql,actions}) => {
           }
       })
   })
+
+  res.data.allContentfulServicio.edges.forEach((edge) => {
+    createPage({
+        component: serviciosTemplate,
+        path:  `/servicios/${edge.node.slug}`,
+        context: {
+            slug: edge.node.slug
+        }
+    })
+})
 
 }

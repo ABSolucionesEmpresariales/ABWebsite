@@ -1,0 +1,30 @@
+.imagen-banner-calendario-page{
+    background-image: url(../media/img/banner/Calendario.jpg);
+    height: 50vh;
+  }
+
+  .imagen-banner-cursos{
+    background-image: url(../media/img/banner/oferta.jpg);
+    height: 50vh;
+  }
+
+  .imagen-banner-cotizacion{
+    background-image: url(../media/img/banner/fondo-cotiza.jpg);
+    height: 60vh;
+    background-position: center center;
+    background-size: cover;
+  }
+
+.efecto-banner{
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; 
+    
+}
+
+.title{
+    margin: 0 auto;
+    margin-top: 6rem;
+    font-size: 3rem;
+    font-weight: bold;
+}

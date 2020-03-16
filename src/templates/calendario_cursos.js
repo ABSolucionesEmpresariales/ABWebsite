@@ -8,7 +8,7 @@ import { faCertificate, faMapMarkerAlt, faCalendarCheck, faClock, faUser, faDoll
 
 export const query = graphql`
     query($slug: String!){
-        contentfulCalendario(slug: {eq:$slug}){
+        contentfulCalendario(slug:{eq:$slug}){
             nombreCurso
             certificadoPor
             fechaInicio(formatString:"D/MMMM/YYYY",locale:"es")
