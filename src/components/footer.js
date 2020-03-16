@@ -87,7 +87,7 @@ const Footer = () => {
                     <div className="text-center text-lg-left col-12 col-lg-3">
                         <p><span className={footerStyles.textStyle}>AB Soluciones Empresariales</span>- Inovando tu empresa y tu forma de pensar.</p>
                     </div>
-                    <div className="text-center text-lg-left  col-12 col-lg-3">
+                    <div className="text-center text-lg-right  col-12 col-lg-4">
                         © 2018-2020 AB Soluciones Empresariales
                     </div>
                 </div>
