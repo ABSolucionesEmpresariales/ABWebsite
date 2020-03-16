@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+.description{
+    margin : 5rem 15px;
+
+    & h1{
+        font-size: 32px; 
+        letter-spacing: .5rem;
+        font-weight: bold;
+        font-family: 'Oswald', sans-serif;
+        border-right: 4px solid #0051ff;
+    }
+
+    & p{
+        font-size: 18px ;
+        line-height: 1.5;
+        text-align: justify;
+        margin: 2rem auto;
+        
+    }
+}
+
+/* .video{
+    margin: 5rem auto;
+    margin-top: 11rem;
+} */

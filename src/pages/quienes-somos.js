@@ -1,7 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Parallax from '../components/paralax'
-import QuienesCss from '../styles/quienesSomos.module.scss'
+import Video from '../components/video'
+import paralaxCss from '../styles/paralax.module.scss'
+import quienesCss from '../styles/quienes_somos.module.scss'
+
 
 
 const QuienesSomos = () => {
@@ -10,18 +13,18 @@ const QuienesSomos = () => {
         <Layout>
             <Parallax title='QUIENES SOMOS'
                 subtitle='Capacitamos pequeñas y grandes empresas'
-                classNames={QuienesCss} />
+                classNames={paralaxCss} />
 
             <div className="row">
-                <div className="col-sm-4">
+                <div className={quienesCss.description + ' col-sm-4'}>
                     <h1>ARTIFICIAL BRAIN</h1>
-                    <p>
+                    <p className={quienesCss.paragraph}>
                         Aliqua reprehenderit mollit aute nostrud irure dolore velit amet. Cillum nulla est Lorem
                         irure aliquip velit exercitation et culpa deserunt eu irure cupidatat esse.
                         Esse aliquip aute aute tempor qui consectetur dolore duis nulla nostrud. Ea sit occaecat
                         occaecat qui nulla ipsum eiusmod laborum est exercitation pariatur excepteur reprehenderit.
                     </p>
-                    <p>
+                    <p className={quienesCss.paragraph}>
                         Aliqua reprehenderit mollit aute nostrud irure dolore velit amet. Cillum nulla est Lorem
                         irure aliquip velit exercitation et culpa deserunt eu irure cupidatat esse.
                         Esse aliquip aute aute tempor qui consectetur dolore duis nulla nostrud. Ea sit occaecat
@@ -29,10 +32,12 @@ const QuienesSomos = () => {
                     </p>
                 </div>
 
-                <div className="col-sm-6">
-                    <div>
-                        
-                    </div>
+                <div className={quienesCss.video + ' col-sm-8'}>
+                    <Video videoSrcURL="https://www.youtube.com/embed/YKVGVUOL2Rc"
+                        videoTitle="Prueba component"
+                        width="520"
+                        height="300"
+                    />
                 </div>
             </div>
         </Layout>
