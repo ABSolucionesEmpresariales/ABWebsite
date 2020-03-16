@@ -1,0 +1,47 @@
+.parallax {
+  min-height: 150px;
+  height: 400px;
+  background: url("../media/img/quienes_somos.jpg");
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & .center {
+    position: absolute;
+    width: 100vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  & h1 {
+    font-size: 3rem;
+    font-family: nexa_bold, sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  & p {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  @media screen and (max-device-width: 460px) {
+    &.parallax{
+      height: 150px;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+
+}
+
+
