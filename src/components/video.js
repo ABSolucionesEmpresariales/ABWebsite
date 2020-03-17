@@ -8,7 +8,6 @@ const Video = ({videoSrcURL, videoTitle, width, height, effect, ...props }) => (
         animateOut="fadeOut"
         delay="1">
         <iframe
-        classNames={}
             src={videoSrcURL}
             title={videoTitle}
             width={width}

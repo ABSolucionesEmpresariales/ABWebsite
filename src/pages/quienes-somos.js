@@ -13,7 +13,8 @@ const QuienesSomos = () => {
         <Layout>
             <Parallax title='QUIENES SOMOS'
                 subtitle='Capacitamos pequeñas y grandes empresas'
-                classNames={paralaxCss} />
+                classNames={paralaxCss}
+                />
 
             <div className="row">
                 <div className={quienesCss.description + ' col-md-4'}>
