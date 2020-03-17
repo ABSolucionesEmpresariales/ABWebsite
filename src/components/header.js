@@ -80,11 +80,11 @@ const Header = () => {
                                 <div>
                                     <Link className={headerStyles.item} to="/cursos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faGraduationCap} />Catalogo de cursos</Link>
                                     <Link className={headerStyles.item} to="/calendario_cursos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faCalendar} />Calendario de cursos</Link>
-                                    <Link className={headerStyles.item} to="/calendario_cursos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faHeadset} />Servicio al cliente</Link>
-                                    <Link className={headerStyles.item} to="/calendario_cursos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faClock} />Administración del tiempo y manejo de estrés</Link>
+                                    <Link className={headerStyles.item} to="/categorias/servicio_al_cliente"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faHeadset} />Servicio al cliente</Link>
+                                    <Link className={headerStyles.item} to="/categorias/Administración_del_tiempo_y_manejo_de_estrés"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faClock} />Administración del tiempo y manejo de estrés</Link>
                                 </div>
                                 <div>
-                                    <Link className={headerStyles.item} to="/calendario_cursos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faUsers} />Recursos Humanos (RR.HH.)</Link>
+                                    <Link className={headerStyles.item} to="/categorias/Recursos_humanos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faUsers} />Recursos Humanos (RR.HH.)</Link>
                                     <a className={headerStyles.item} href="https://escuelaalreves.com/views/mainpage.php" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faLaptop} />Cursos Online</a>
                                 </div>
                             </div>
