@@ -70,7 +70,6 @@ const CalendarioContenido = () => {
                               <FontAwesomeIcon className="d-inline" icon={faCertificate} />
                               <p className="d-inline ml-2">Certificado por: <span className="bold">{edge.node.certificadoPor}</span></p>
                             </div>
-                            
                             <Link to={"/calendario_cursos/"+edge.node.slug}>
                               <button className="btn btn-outline-dark btn-md btn-md-block">Ver curso</button>
                             </Link>
