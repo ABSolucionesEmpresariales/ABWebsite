@@ -12,7 +12,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
-
 const Header = () => {
     const [show, setShow] = React.useState(false);
     const handleClose = () => setShow(false);
@@ -145,7 +144,6 @@ const Header = () => {
                     </div>
                 </Modal.Body>
             </Modal>
-            
         </header>
     )
 }
