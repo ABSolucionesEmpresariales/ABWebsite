@@ -2,7 +2,7 @@ import React from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 
-const Video = ({videoSrcURL, videoTitle, width, height, effect, ...props }) => (
+const Video = ({videoSrcURL, videoTitle, width, height }) => (
 
     <ScrollAnimation animateIn="fadeInUp"
         animateOut="fadeOut"
@@ -14,7 +14,6 @@ const Video = ({videoSrcURL, videoTitle, width, height, effect, ...props }) => (
             height={height}
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            frameBorder="0"
             webkitallowfullscreen="true"
             mozallowfullscreen="true"
             allowFullScreen

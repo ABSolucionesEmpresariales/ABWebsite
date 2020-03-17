@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../components/layout";
 import Head from "../components/head";
 import { useStaticQuery, graphql } from 'gatsby';
-import cursoStyles from '../styles/cursos.module.scss'
 import banner from '../styles/banner.module.scss'
 
 const Cursos = () => {
@@ -50,7 +49,7 @@ const Cursos = () => {
                             return (
                                 <div className="card col-lg-3 my-3 ml-lg-5">
                                     <div className="card-body text-center">
-                                        <img className="img-fluid" src={url}></img>
+                                        <img className="img-fluid" src={url} alt="curso"></img>
                                         <h5 className="mt-2">{edge.node.nombre}</h5>
                                         <div className="row d-block d-lg-flex justify-content-center">
                                             <a className="btn btn-success mx-1" href='https://www.escuelaalreves.com/#all-cursos'>Mostrar</a>
