@@ -7,6 +7,9 @@ import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCogs, faChalkboardTeacher, faArrowUp } from '@fortawesome/free-solid-svg-icons'
 
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 import homeStyles from '../styles/home.module.scss'
 
 const IndexPage = () => {
@@ -53,6 +56,10 @@ const IndexPage = () => {
                     <p className="border">Nuestro secreto radica en encontrar el verdadero problema. Un metodo probado y comprobado por nosotros mismo que te garantiza encontrar el problema en tu empresa para poder darle la solucion adecuada.</p>
                 </div>
             </div>
+
+            <ScrollAnimation animateIn="fadeIn">
+                Some Text
+            </ScrollAnimation>
         </Layout>
     )
 }

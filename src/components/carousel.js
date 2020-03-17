@@ -32,7 +32,7 @@ const Carousel = () => {
 
 
 	return (
-		<div>
+		<div className="row">
 			<Slider classNames={customCss}>
 				{data.allContentfulCarousel.edges.map((item, index) => (
 					<div
