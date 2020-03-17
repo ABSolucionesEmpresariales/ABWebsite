@@ -36,6 +36,12 @@ const Header = () => {
 
     return (
         <header className="row">
+            <link
+                rel="stylesheet"
+                href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+                crossOrigin="anonymous"
+            />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
             <Navbar expand="lg" className={'col-12 '+headerStyles.border}>
                 <Navbar.Brand to="/home">
@@ -45,7 +51,7 @@ const Header = () => {
                 <Navbar.Collapse id="basic-navbar-nav" className="flex justify-content-end">
                     <Nav>
                         <li className={'nav-item ' + headerStyles.font}>
-                            <Link className={'nav-link ' + headerStyles.font} to="/">Quienes somos</Link>
+                            <Link className={'nav-link ' + headerStyles.font} to="/quienes-somos">Quienes somos</Link>
                         </li>
                         <li className={'nav-item dropdown ' + headerStyles.dropdown + ' ' + headerStyles.font}>
                             <Link className={'nav-link ' + headerStyles.font} to="#" id="navbardrop" data-toggle="dropdown">
