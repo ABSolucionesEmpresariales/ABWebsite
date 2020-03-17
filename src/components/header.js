@@ -11,11 +11,17 @@ import {
     faProjectDiagram, faCogs, faClipboard, faBook, faHeadset, faChartLine, faFileInvoiceDollar, faFileExcel, faFileCsv, faClock
 } from '@fortawesome/free-solid-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+import Newsletter from '../components/modal'
+
 
 const Header = () => {
     const [show, setShow] = React.useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const mod = setTimeout(function() {
+        return <Newsletter/>
+    }, 1000);
 
     const data = useStaticQuery(graphql`
         query {
@@ -58,22 +64,22 @@ const Header = () => {
                             <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></Link>
                             <div className={'dropdown-menu ' + headerStyles.dropmenu_servicios}>
                                 <div>
-                                    <Link className={headerStyles.item} to="../servicios/estructura_organizacional"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faSitemap} />Estructura organizacional</Link>
-                                    <Link className={headerStyles.item} to="../servicios/perfiles_de_puesto"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faIdBadge} />Creación de perfiles de puesto</Link>
-                                    <Link className={headerStyles.item} to="../servicios/descripcion_de_puesto"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faAddressCard} />Descripciones de puesto</Link>
-                                    <Link className={headerStyles.item} to="../servicios/organigramas"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faProjectDiagram} />Organigramas</Link>
-                                    <Link className={headerStyles.item} to="../servicios/procesos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faCogs} />Procesos</Link>
+                                    <Link className={headerStyles.item} to="/servicios/estructura_organizacional"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faSitemap} />Estructura organizacional</Link>
+                                    <Link className={headerStyles.item} to="/servicios/perfiles_de_puesto"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faIdBadge} />Creación de perfiles de puesto</Link>
+                                    <Link className={headerStyles.item} to="/servicios/descripcion_de_puesto"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faAddressCard} />Descripciones de puesto</Link>
+                                    <Link className={headerStyles.item} to="/servicios/organigramas"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faProjectDiagram} />Organigramas</Link>
+                                    <Link className={headerStyles.item} to="/servicios/procesos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faCogs} />Procesos</Link>
                                 </div>
                                 <div>
-                                    <Link className={headerStyles.item} to="../servicios/politicas_y_procedimientos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faClipboard} />Politicas y procedimientos</Link>
-                                    <Link className={headerStyles.item} to="../servicios/manuales_administrativos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faBook} />Manuales administrativos</Link>
-                                    <Link className={headerStyles.item} to="../servicios/procesos_con_excel"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileExcel} />Mejora de procesos con excel</Link>
-                                    <Link className={headerStyles.item} to="../servicios/excel_y_vba"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileCsv} />Software en excel y VBA</Link>
-                                    <Link className={headerStyles.item} to="../servicios/modelo_de_negocios"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileInvoiceDollar} />Creacion de modelo de negocios</Link>
+                                    <Link className={headerStyles.item} to="/servicios/politicas_y_procedimientos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faClipboard} />Politicas y procedimientos</Link>
+                                    <Link className={headerStyles.item} to="/servicios/manuales_administrativos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faBook} />Manuales administrativos</Link>
+                                    <Link className={headerStyles.item} to="/servicios/procesos_con_excel"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileExcel} />Mejora de procesos con excel</Link>
+                                    <Link className={headerStyles.item} to="/servicios/excel_y_vba"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileCsv} />Software en excel y VBA</Link>
+                                    <Link className={headerStyles.item} to="/servicios/modelo_de_negocios"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileInvoiceDollar} />Creacion de modelo de negocios</Link>
                                 </div>
                                 <div>
-                                    <Link className={headerStyles.item} to="../servicios/plan_de_estrategias"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faChartLine} />Plan de estrategias</Link>
-                                    <Link className={headerStyles.item} to="../servicios/plan_servicio_al_cliente"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faHeadset} />Plan servicio al cliente</Link>
+                                    <Link className={headerStyles.item} to="/servicios/plan_de_estrategias"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faChartLine} />Plan de estrategias</Link>
+                                    <Link className={headerStyles.item} to="/servicios/plan_servicio_al_cliente"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faHeadset} />Plan servicio al cliente</Link>
                                 </div>
                             </div>
                         </li>
@@ -90,7 +96,7 @@ const Header = () => {
                                 </div>
                                 <div>
                                     <Link className={headerStyles.item} to="/calendario_cursos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faUsers} />Recursos Humanos (RR.HH.)</Link>
-                                    <Link className={headerStyles.item} to="https://escuelaalreves.com/views/mainpage.php" target="_blank"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faLaptop} />Cursos Online</Link>
+                                    <a className={headerStyles.item} href="https://escuelaalreves.com/views/mainpage.php" target="_blank"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faLaptop} />Cursos Online</a>
                                 </div>
                             </div>
                         </li>
@@ -149,9 +155,10 @@ const Header = () => {
                     </div>
                 </Modal.Body>
             </Modal>
+            
         </header>
     )
-
 }
+
 
 export default Header
