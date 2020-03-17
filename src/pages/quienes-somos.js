@@ -16,7 +16,7 @@ const QuienesSomos = () => {
                 classNames={paralaxCss} />
 
             <div className="row">
-                <div className={quienesCss.description + ' col-sm-4'}>
+                <div className={quienesCss.description + ' col-md-4'}>
                     <h1>ARTIFICIAL BRAIN</h1>
                     <p className={quienesCss.paragraph}>
                         Aliqua reprehenderit mollit aute nostrud irure dolore velit amet. Cillum nulla est Lorem
@@ -32,8 +32,10 @@ const QuienesSomos = () => {
                     </p>
                 </div>
 
-                <div className={quienesCss.video + ' col-sm-8'}>
-                    <Video videoSrcURL="https://www.youtube.com/embed/YKVGVUOL2Rc"
+                <div className={quienesCss.video + ' col-md-8'}>
+                    <Video
+                        className={quienesCss.shadow}
+                        videoSrcURL="https://www.youtube.com/embed/YKVGVUOL2Rc"
                         videoTitle="Prueba component"
                         width="520"
                         height="300"
