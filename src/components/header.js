@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery, } from 'gatsby'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, NavDropdown, Modal } from 'react-bootstrap';
+import { Navbar, Nav, Modal } from 'react-bootstrap';
 import footerStyles from '../styles/footer.module.scss'
 import headerStyles from '../styles/header.module.scss'
 import Image from 'react-bootstrap/Image';
@@ -11,17 +11,11 @@ import {
     faProjectDiagram, faCogs, faClipboard, faBook, faHeadset, faChartLine, faFileInvoiceDollar, faFileExcel, faFileCsv, faClock
 } from '@fortawesome/free-solid-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
-import Newsletter from '../components/modal'
-
 
 const Header = () => {
     const [show, setShow] = React.useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
-    const mod = setTimeout(function() {
-        return <Newsletter/>
-    }, 1000);
 
     const data = useStaticQuery(graphql`
         query {
@@ -156,7 +150,6 @@ const Header = () => {
                     </div>
                 </Modal.Body>
             </Modal>
-            
         </header>
     )
 }
