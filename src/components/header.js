@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery, } from 'gatsby'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, NavDropdown, Modal } from 'react-bootstrap';
+import { Navbar, Nav, Modal } from 'react-bootstrap';
 import footerStyles from '../styles/footer.module.scss'
 import headerStyles from '../styles/header.module.scss'
 import Image from 'react-bootstrap/Image';
@@ -11,17 +11,12 @@ import {
     faProjectDiagram, faCogs, faClipboard, faBook, faHeadset, faChartLine, faFileInvoiceDollar, faFileExcel, faFileCsv, faClock
 } from '@fortawesome/free-solid-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
-import Newsletter from '../components/modal'
 
 
 const Header = () => {
     const [show, setShow] = React.useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
-    const mod = setTimeout(function() {
-        return <Newsletter/>
-    }, 1000);
 
     const data = useStaticQuery(graphql`
         query {
@@ -42,12 +37,6 @@ const Header = () => {
 
     return (
         <header className="row">
-            <link
-                rel="stylesheet"
-                href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-                crossorigin="anonymous"
-            />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
             <Navbar expand="lg" className={'col-12 '+headerStyles.border}>
                 <Navbar.Brand to="/home">
@@ -97,7 +86,7 @@ const Header = () => {
                                 </div>
                                 <div>
                                     <Link className={headerStyles.item} to="/calendario_cursos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faUsers} />Recursos Humanos (RR.HH.)</Link>
-                                    <a className={headerStyles.item} href="https://escuelaalreves.com/views/mainpage.php" target="_blank"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faLaptop} />Cursos Online</a>
+                                    <a className={headerStyles.item} href="https://escuelaalreves.com/views/mainpage.php" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faLaptop} />Cursos Online</a>
                                 </div>
                             </div>
                         </li>
@@ -111,7 +100,7 @@ const Header = () => {
                             </div>
                         </li>
                         <li className={'nav-item ' + headerStyles.font}>
-                            <p onClick={handleShow} className={'nav-link ' + headerStyles.font}>Contacto</p>
+                            <Link to="" role="link" onClick={handleShow} onKeyDown={handleShow} className={'nav-link ' + headerStyles.font}>Contacto</Link>
                         </li>
                     </Nav>
                 </Navbar.Collapse>
@@ -123,7 +112,7 @@ const Header = () => {
                 </Modal.Header>
                 <Modal.Body>
                     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css" />
-                    <style type="text/css" dangerouslySetInnerHTML={{ __html: "\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n\t/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.\n\t   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\n" }} />
+                    <style type="text/css" dangerouslySetInnerHTML={{ __html: "\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n\t\n" }} />
                     <div id="mc_embed_signup">
                         <form action="https://outlook.us19.list-manage.com/subscribe/post?u=ba7ef46081ef599e35a2ccd93&id=c11f4979f2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
                             <div id="mc_embed_signup_scroll">

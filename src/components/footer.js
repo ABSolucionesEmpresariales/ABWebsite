@@ -35,7 +35,7 @@ const Footer = () => {
         <footer>
             <div className={'mt-5 row ' + footerStyles.ayuda}>
                 <h1 className="font-weight-bold">¿Como podemos ayudarte?</h1>
-                <h3 className="mt-2 mt-0">Ponte en <a href="#" onClick={handleShow} className={footerStyles.ayudaLinks}>contacto</a> con nosotros o encuentra <Link className={footerStyles.ayudaLinks} to="/cursos">nuestra oficina</Link> mas cercana</h3>
+                <h3 className="mt-2 mt-0">Ponte en <Link onClick={handleShow} className={footerStyles.ayudaLinks}>contacto</Link> con nosotros o encuentra <Link className={footerStyles.ayudaLinks} to="/cursos">nuestra oficina</Link> mas cercana</h3>
             </div>
             <div className="px-0 px-lg-5">
                 <div className="row justify-content-between py-5 d-block d-lg-flex">
@@ -45,7 +45,7 @@ const Footer = () => {
                     <div id="mc_embed_signup" className="col-12 col-lg-4 text-center text-lg-left">
                         <form action="https://outlook.us19.list-manage.com/subscribe/post?u=ba7ef46081ef599e35a2ccd93&id=c11f4979f2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
                             <div id="mc_embed_signup_scroll">
-                                <p className={footerStyles.textStyle}>Suscribete a nuestro Newslatter:</p>
+                                <p className={footerStyles.textStyle}>Suscribete a nuestro Newsletter:</p>
                                 <div className="d-block d-lg-flex">
                                     <input className={footerStyles.input} type="email" defaultValue="" name="EMAIL" id="mce-EMAIL" placeholder="Introduce tu e-mail" />
                                     <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true"><input type="text" name="b_ba7ef46081ef599e35a2ccd93_c11f4979f2" tabIndex={-1} defaultValue /></div>
