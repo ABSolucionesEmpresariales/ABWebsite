@@ -32,7 +32,7 @@ const Carousel = () => {
 
 
 	return (
-		<div className="row">
+		<div className='row'>
 			<Slider classNames={customCss}>
 				{data.allContentfulCarousel.edges.map((item, index) => (
 					<div
@@ -43,7 +43,7 @@ const Carousel = () => {
 						<div className={customCss.inner}>
 							<h1>{item.node.title}</h1>
 							<p>{item.node.description}</p>
-							{(item.node.buttonActive) ?
+							{(item.node.activeButton) ?
 								(<button className={customCss.buttonStyle}>
 									{item.node.button}
 								</button>) :
