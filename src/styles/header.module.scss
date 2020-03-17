@@ -1,3 +1,125 @@
+@media (min-width: 320px) {
+  .dropmenu{
+    display: none;
+  }
+  .dropdown:hover {
+    .dropmenu{
+      margin-top: -30px;
+      margin-left: 120px;
+      display: block;
+      position:absolute;
+      background-color: white;
+      z-index: 1000;
+      animation: example .5s;
+    }
+    .dropmenu_servicios{
+      margin-top: -30px;
+      margin-left: 120px;
+      display: block;
+      position:absolute;
+      background-color: white;
+      z-index: 1000;
+      animation: example .3s;
+    }
+    @keyframes example {
+      0%  {top:50px;}
+      100%  {top:46px;}
+      from{
+        opacity: 0;
+      }
+      to{
+          opacity: 1;
+      }
+    }
+  }
+  .item{
+    display: block;
+    width: 220px;
+    padding: .6rem 1.5rem;
+    clear: both;
+    font-size: 19px;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    background-color: transparent;
+    border: 0;
+  } 
+  .item:hover{
+    display: block;
+    width: 220px;
+    padding: .6rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.040);
+    color: rgb(0, 0, 90)!important;
+    text-decoration: none;
+    text-align: inherit;
+    border: 0;
+  }
+}  
+
+@media (min-width: 992px) {
+  .dropmenu{
+    display: none;
+  }
+  .dropdown:hover {
+    .dropmenu{
+      margin-top: 0px;
+      margin-left: 0px;
+      display: block;
+      position:absolute;
+      background-color: white;
+      z-index: 1000;
+      animation: example .5s;
+    }
+    .dropmenu_servicios{
+      margin-top: 0px;
+      margin-left: -400px!important;
+      flex-direction: row!important;
+      display: flex!important;
+      position:absolute;
+      background-color: white;
+      z-index: 1000;
+      animation: example .5s;
+    }
+    @keyframes example {
+      0%  {top:70px;}
+      100%  {top:62px;}
+      from{
+        opacity: 0;
+      }
+      to{
+          opacity: 1;
+      }
+    }
+  }
+  .item{
+    display: block;
+    width: 100%;
+    padding: .6rem 1.5rem;
+    clear: both;
+    font-size: 19px;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+  } 
+  .item:hover{
+    display: block;
+    width: 100%;
+    padding: .6rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.040);
+    color: rgb(0, 0, 90)!important;
+    text-decoration: none;
+    text-align: inherit;
+    white-space: nowrap;
+    border: 0;
+  }
+} 
 .font{
   font-size: 20px;
   color: black!important;
@@ -11,69 +133,10 @@
 .border {
   box-shadow: 1px 3px 3px lightgray;
 }
-.item{
-  display: block;
-  width: 100%;
-  padding: .6rem 1.5rem;
-  clear: both;
-  font-size: 19px;
-  font-weight: 400;
-  color: #212529;
-  text-align: inherit;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
-} 
-.item:hover{
-  display: block;
-  width: 100%;
-  padding: .6rem 1.5rem;
-  clear: both;
-  font-weight: 400;
-  background-color: rgba(0, 0, 0, 0.040);
-  color: rgb(0, 0, 90)!important;
-  text-decoration: none;
-  text-align: inherit;
-  white-space: nowrap;
-  border: 0;
-} 
 .item:active {
   color: rgb(255, 255, 255);
   text-decoration: none;
   background-color: #00000015;
-}
-.dropmenu{
-  display: none;
-}
-.dropdown:hover {
-  .dropmenu{
-    margin-top: 0px;
-    display: block;
-    position:absolute;
-    background-color: white;
-    z-index: 1000;
-    animation: example .5s;
-  }
-  .dropmenu_servicios{
-    margin-top: 0px;
-    margin-left: -400px;
-    flex-direction: row!important;
-    display: flex;
-    position:absolute;
-    background-color: white;
-    z-index: 1000;
-    animation: example .5s;
-  }
-  @keyframes example {
-    0%  {top:70px;}
-    100%  {top:62px;}
-    from{
-      opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-  }
 }
 .submit{
   padding: 1rem 10.5rem!important;
