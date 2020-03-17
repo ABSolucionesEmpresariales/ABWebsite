@@ -3,7 +3,9 @@ import Layout from "../components/layout"
 import Head from '../components/head'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import banner from '../styles/banner.module.scss'
 import { faCertificate, faMapMarkerAlt, faCalendarCheck, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import calendarioCursos from "../templates/calendario_cursos"
 
 
 
@@ -36,7 +38,10 @@ const CalendarioContenido = () => {
 
         <Layout>
             <Head title="calendario_cursos"/>
-            <h1 className="text-center">Calendario de Cursos</h1>
+            <div className={"row "+banner.efectoBanner+' '+banner.imagenBannerCalendarioPage}>
+              <p className={"text-white d-inline "+banner.title}>Calendario de Cursos</p>
+            </div>
+
             <div className="row mt-3 mb-3 p-2">
               <div className="col-lg-4 col-md-12">
                 
@@ -77,6 +82,7 @@ const CalendarioContenido = () => {
                 }
               </div>
           </div>
+
         </Layout>
     )
 }

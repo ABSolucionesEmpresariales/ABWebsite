@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import Head from "../components/head";
 import { useStaticQuery, graphql } from 'gatsby';
 import cursoStyles from '../styles/cursos.module.scss'
+import banner from '../styles/banner.module.scss'
 
 const Cursos = () => {
     const mysql = useStaticQuery(graphql`
@@ -23,6 +24,9 @@ const Cursos = () => {
     return (
         <Layout>
             <Head title="Cursos" />
+            <div className={"row "+banner.efectoBanner+' '+banner.imagenBannerCursos}>
+              <p className={"text-white d-inline "+banner.title}>Calendario de Cursos</p>
+            </div>
             <div className="row d-block d-lg-flex">
                 <div className="col-lg-3 px-0 my-3">
                     <div className="card text-center mx-lg-5">
