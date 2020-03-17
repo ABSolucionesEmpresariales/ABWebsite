@@ -15,7 +15,7 @@ class Parallax extends React.Component {
 
         return (
             <div className="row">
-                <div style={{ background: `url('${this.props.url}')` }}
+                <div style={this.props.styles}
                     className={this.props.classNames.parallax + ' col-sm-12'}>
                     <section className={this.props.classNames.center}>
                         <h1>{this.props.title}</h1>

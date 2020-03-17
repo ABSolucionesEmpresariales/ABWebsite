@@ -1,4 +1,4 @@
-/* import React from "react"
+import React from "react"
 import Layout from "../components/layout"
 import Head from '../components/head'
 import { Link, graphql, useStaticQuery } from 'gatsby'
@@ -87,4 +87,4 @@ const CalendarioContenido = () => {
     )
 }
 
-export default CalendarioContenido */
+export default CalendarioContenido
