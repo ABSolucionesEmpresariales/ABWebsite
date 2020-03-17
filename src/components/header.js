@@ -48,6 +48,7 @@ const Header = () => {
                 integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
                 crossorigin="anonymous"
             />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
             <Navbar expand="lg" className={'col-12 '+headerStyles.border}>
                 <Navbar.Brand to="/home">
                     <Link to="/"><Image src={data.fileName.childImageSharp.fluid.src} alt="ABsoluciones" fluid /></Link>

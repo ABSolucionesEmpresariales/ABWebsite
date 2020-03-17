@@ -7,7 +7,6 @@ import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCogs, faChalkboardTeacher, faArrowUp } from '@fortawesome/free-solid-svg-icons'
 
-import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import homeStyles from '../styles/home.module.scss'
