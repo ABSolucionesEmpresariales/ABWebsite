@@ -74,15 +74,6 @@ module.exports.createPages = async ({graphql,actions}) => {
     })
   })
 
-  res.data.allContentfulParalax.edges.forEach((edge) => {
-    createPage({
-      component: quienesTemplate,
-      path: `/${edge.node.slug}/`,
-      context: {
-        slug: edge.node.slug
-      }
-    })
-  })
 
 res.data.allContentfulCategorias.edges.forEach((edge) => {
   createPage({

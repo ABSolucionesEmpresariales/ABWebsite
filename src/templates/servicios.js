@@ -5,12 +5,12 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import banner from '../styles/banner.module.scss'
 import { MARKS } from '@contentful/rich-text-types'
 import Parallax from '../components/paralax'
-import paralaxCss from '../styles/paralax.module.scss'
 
 export const query = graphql`
     query($slug: String!){
         contentfulServicio(slug: {eq:$slug}){
             titulo
+            subTitulo
             imagenBanner {
               file {
                 url
@@ -37,9 +37,9 @@ const servicios = (props) => {
   }
   return (
     <Layout>
-            <Parallax title={props.data.contentfulServicio.titulo}
-                subtitle="Te capacitamos a pequeñas y grandes empresas chingon"
-                classNames={paralaxCss}
+            <Parallax 
+                title={props.data.contentfulServicio.titulo}
+                subtitle={props.data.contentfulServicio.subTitulo}
                 background={props.data.contentfulServicio.imagenBanner.file.url}
             />
 
