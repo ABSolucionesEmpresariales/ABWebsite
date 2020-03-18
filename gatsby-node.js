@@ -35,13 +35,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
             }
           }
         }
-        allContentfulParalax{
-          edges{
-            node{
-              slug
-            }
-          }
-        }
       }
     `)
   res.data.allContentfulCalendario.edges.forEach((edge) => {
@@ -68,16 +61,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
     createPage({
       component: serviciosTemplate,
       path: `/servicios/${edge.node.slug}`,
-      context: {
-        slug: edge.node.slug
-      }
-    })
-  })
-
-  res.data.allContentfulParalax.edges.forEach((edge) => {
-    createPage({
-      component: quienesTemplate,
-      path: `/${edge.node.slug}/`,
       context: {
         slug: edge.node.slug
       }

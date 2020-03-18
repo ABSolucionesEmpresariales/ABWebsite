@@ -1,0 +1,46 @@
+.my-card {
+  border: none !important;
+  background: transparent !important;
+ 
+  & .box {
+    background-color: #389fff;
+    border-radius: 50%;
+    border: 6px solid #627fff;
+    width: 70px;
+    height: 70px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+
+    & .icon {
+      padding: 10px auto;
+    }
+  }
+  & h4 {
+    text-align: left;
+  }
+  & p {
+    text-align: justify;
+  }
+}
+
+@media screen and(max-device-width: 1184px) {
+  .my-card {
+
+    & .box {
+      width: 50px;
+      height: 50px;
+
+      & .icon {
+        padding: 20px auto;
+        font-size: 2rem;
+      }
+    }
+    & h4 {
+      text-align: left;
+    }
+    & p {
+      text-align: justify;
+    }
+  }
+}

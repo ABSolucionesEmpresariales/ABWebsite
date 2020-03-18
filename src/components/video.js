@@ -6,7 +6,7 @@ const Video = ({videoSrcURL, videoTitle, width, height, effect, ...props }) => (
 
     <ScrollAnimation animateIn="fadeInUp"
         animateOut="fadeOut"
-        delay={1}>
+        offset={100}>
         <iframe
             src={videoSrcURL}
             title={videoTitle}
@@ -14,7 +14,6 @@ const Video = ({videoSrcURL, videoTitle, width, height, effect, ...props }) => (
             height={height}
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            frameBorder="0"
             webkitallowfullscreen="true"
             mozallowfullscreen="true"
             allowFullScreen
