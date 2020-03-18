@@ -2,19 +2,19 @@ import React from 'react'
 import Layout from '../components/layout'
 import Parallax from '../components/paralax'
 import Video from '../components/video'
-import paralaxCss from '../styles/paralax.module.scss'
+import Card from '../components/card'
 import quienesCss from '../styles/quienes_somos.module.scss'
-
-
+import BannerBack from '../media/img/quienes_somos.jpg'
+import { faCogs, faBrain, faChartPie, faChartLine } from '@fortawesome/free-solid-svg-icons'
 
 const QuienesSomos = () => {
 
     return (
         <Layout>
-            <Parallax title='QUIENES SOMOS'
-                subtitle='Capacitamos pequeñas y grandes empresas'
-                classNames={paralaxCss}
-                />
+            <Parallax title="Quienes Somos"
+                subtitle="Te capacitamos a pequeñas y grandes empresas chingon"
+                background={BannerBack}
+            />
 
             <div className="row">
                 <div className={quienesCss.description + ' col-md-4'}>
@@ -43,6 +43,49 @@ const QuienesSomos = () => {
                     />
                 </div>
             </div>
+
+            <section className={quienesCss.cardSection + ' row'}>
+                <div className="row">
+
+                    <div className="col-sm-6">
+                        <Card title="Titulo motivador"
+                            description="Tempor sunt eu est nisi sunt ad aliquip nostrud adipisicing enim aliqua labore quis. Laborum ut dolor ad velit. Dolore pariatur dolore exercitation mollit do occaecat esse consequat adipisicing minim do ad incididunt amet. Do est adipisicing in incididunt tempor irure irure ad voluptate deserunt nisi nulla. Aliqua velit veniam dolore amet excepteur in consectetur sit consectetur fugiat duis."
+                            icon={faCogs}
+                            entrada="bounceInLeft"
+                        />
+                    </div>
+
+                    <div className="col-sm-6">
+                        <Card title="Titulo Mamalon"
+                            description="Commodo in eiusmod irure ex voluptate enim ad eu enim officia. Magna veniam do duis velit dolore et dolor occaecat enim. Est consectetur magna dolore exercitation in deserunt ex enim commodo nostrud eu quis consectetur. Laborum mollit occaecat dolore labore voluptate consectetur excepteur magna in in sint reprehenderit irure quis. Enim quis duis excepteur amet veniam ut."
+                            icon={faBrain}
+                            entrada="bounceInRight"
+                        />
+                    </div>
+
+                </div>
+
+                <div className="row">
+
+                    <div className="col-sm-6">
+                        <Card title="Agarrense porque nos vamos recio"
+                            description="Esse culpa aute do consectetur nostrud consequat occaecat veniam exercitation et aliqua consequat qui. Qui laboris adipisicing voluptate fugiat consectetur in Lorem eiusmod in ad minim. Irure velit reprehenderit reprehenderit anim. Incididunt adipisicing voluptate voluptate culpa consequat anim est qui est. In quis veniam mollit non consectetur aute esse nostrud sit ut. Elit consequat dolor officia commodo minim tempor nulla eiusmod ullamco."
+                            icon={faChartPie}
+                            entrada="bounceInLeft"
+                        />
+                    </div>
+
+                    <div className="col-sm-6">
+                        <Card title="Frase Revienta Bolas"
+                            description="Esse culpa aute do consectetur nostrud consequat occaecat veniam exercitation et aliqua consequat qui. Qui laboris adipisicing voluptate fugiat consectetur in Lorem eiusmod in ad minim. Irure velit reprehenderit reprehenderit anim. Incididunt adipisicing voluptate voluptate culpa consequat anim est qui est. In quis veniam mollit non consectetur aute esse nostrud sit ut. Elit consequat dolor officia commodo minim tempor nulla eiusmod ullamco."
+                            icon={faChartLine}
+                            entrada="bounceInRight"
+                        />
+                    </div>
+
+                </div>
+            </section>
+
         </Layout>
 
     )
