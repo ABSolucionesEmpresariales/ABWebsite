@@ -4,6 +4,8 @@ import { graphql } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import banner from '../styles/banner.module.scss'
 import { MARKS } from '@contentful/rich-text-types'
+import Parallax from '../components/paralax'
+import paralaxCss from '../styles/paralax.module.scss'
 
 export const query = graphql`
     query($slug: String!){
@@ -35,10 +37,13 @@ const servicios = (props) => {
   }
   return (
     <Layout>
-      <div className={"row " + banner.efectoBanner + ' '}
-        style={{ backgroundImage: "url(" + props.data.contentfulServicio.imagenBanner.file.url + ")", height: "50vh" }}>
-        <p className={"text-white d-inline text-center " + banner.title}>{props.data.contentfulServicio.titulo}</p>
-      </div>
+            <Parallax title={props.data.contentfulServicio.titulo}
+                subtitle="Te capacitamos a pequeñas y grandes empresas chingon"
+                classNames={paralaxCss}
+                background={props.data.contentfulServicio.imagenBanner.file.url}
+            />
+
+
       <div className={"container"}>
         <div className={"row m-lg-3 m-1"}>
           <p className={"col-lg-6 col-12"}>{documentToReactComponents(props.data.contentfulServicio.cuerpo1.json)}</p>
