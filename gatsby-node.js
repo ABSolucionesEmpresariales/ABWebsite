@@ -44,35 +44,45 @@ module.exports.createPages = async ({graphql,actions}) => {
         }
       }
     `)
-    res.data.allContentfulCalendario.edges.forEach((edge) => {
-        createPage({
-            component: calendarioTemplate,
-            path:  `/calendario_cursos/${edge.node.slug}`,
-            context: {
-                slug: edge.node.slug
-            }
-        })
+  res.data.allContentfulCalendario.edges.forEach((edge) => {
+    createPage({
+      component: calendarioTemplate,
+      path: `/calendario_cursos/${edge.node.slug}`,
+      context: {
+        slug: edge.node.slug
+      }
     })
+  })
 
-    res.data.allContentfulBlog.edges.forEach((edge) => {
-      createPage({
-          component: blogTemplate,
-          path:  `/blog/${edge.node.slug}`,
-          context: {
-              slug: edge.node.slug
-          }
-      })
+  res.data.allContentfulBlog.edges.forEach((edge) => {
+    createPage({
+      component: blogTemplate,
+      path: `/blog/${edge.node.slug}`,
+      context: {
+        slug: edge.node.slug
+      }
+    })
   })
 
   res.data.allContentfulServicio.edges.forEach((edge) => {
     createPage({
-        component: serviciosTemplate,
-        path:  `/servicios/${edge.node.slug}`,
-        context: {
-            slug: edge.node.slug
-        }
+      component: serviciosTemplate,
+      path: `/servicios/${edge.node.slug}`,
+      context: {
+        slug: edge.node.slug
+      }
     })
-})
+  })
+
+  res.data.allContentfulParalax.edges.forEach((edge) => {
+    createPage({
+      component: quienesTemplate,
+      path: `/${edge.node.slug}/`,
+      context: {
+        slug: edge.node.slug
+      }
+    })
+  })
 
 res.data.allContentfulCategorias.edges.forEach((edge) => {
   createPage({
