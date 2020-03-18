@@ -14,8 +14,9 @@
 .item{
   display: block;
   width: 100%;
-  padding: .25rem 1.5rem;
+  padding: .6rem 1.5rem;
   clear: both;
+  font-size: 19px;
   font-weight: 400;
   color: #212529;
   text-align: inherit;
@@ -26,7 +27,7 @@
 .item:hover{
   display: block;
   width: 100%;
-  padding: .25rem 1.5rem;
+  padding: .6rem 1.5rem;
   clear: both;
   font-weight: 400;
   background-color: rgba(0, 0, 0, 0.040);
@@ -53,9 +54,19 @@
     z-index: 1000;
     animation: example .5s;
   }
+  .dropmenu_servicios{
+    margin-top: 0px;
+    margin-left: -400px;
+    flex-direction: row!important;
+    display: flex;
+    position:absolute;
+    background-color: white;
+    z-index: 1000;
+    animation: example .5s;
+  }
   @keyframes example {
     0%  {top:70px;}
-    100%  {top:62px;}
+    100%  {top:46px;}
     from{
       opacity: 0;
     }
@@ -65,5 +76,13 @@
   }
 }
 .submit{
-  padding: 1rem 10.5rem;
+  margin-left: auto!important;
+  margin-right: auto!important;
+  padding: 1rem 8rem!important;
+}
+.border_right {
+  border-right: 2px solid rgba(0, 0, 90, 0.397);
+}
+.border_left{
+  border-left: 2px solid rgba(0, 0, 90, 0.397);
 }

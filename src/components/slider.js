@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby'
 
 const PREVIOUS = 'previous';
 const NEXT = 'next';
@@ -306,18 +307,18 @@ class Slider extends React.PureComponent {
 					onMouseOut: this.handleMouseOut,
 				}}
 			>
-				<a
+				<Link to=""
 					onClick={this.previous}
 					className={`${classNames.previousButton}${isDisabled || !this.canGoPrevious() ? ` ${classNames.buttonDisabled}` : ''}`}
 				>
 					{previousButton}
-				</a>
-				<a
+				</Link>
+				<Link to=""
 					onClick={this.next}
 					className={`${classNames.nextButton}${isDisabled || !this.canGoNext() ? ` ${classNames.buttonDisabled}` : ''}`}
 				>
 					{nextButton}
-				</a>
+				</Link>
 				<div className={classNames.track}>
 					{React.Children.map(children, (item, index) => (
 						React.cloneElement(item, {
