@@ -1,4 +1,5 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class Card extends React.Component {
     constructor(props) {
@@ -14,16 +15,17 @@ class Card extends React.Component {
     render() {
 
         return (
-            <div className="border col-4 text-center py-5">
+
                 <div class="card text-center">
                     <div class="card-body">
-                        <FontAwesomeIcon className={homeStyles.serviceIcons} icon={faArrowUp} size="7x" />
+                        <FontAwesomeIcon size="7x" />
                         <h5 class="card-title">{this.props.title}</h5>
                         <p class="card-text">{this.props.description}</p>
                     </div>
                 </div>
-            </div>
 
         )
     }
 }
+
+export default Card

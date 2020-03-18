@@ -7,15 +7,13 @@ class Parallax extends React.Component {
         this.state = {
 
         }
-
-
     }
 
     render() {
 
         return (
             <div className="row">
-                <div style={this.props.styles}
+                <div style={{backgroundImage: `url('${this.props.background}')`}}
                     className={this.props.classNames.parallax + ' col-sm-12'}>
                     <section className={this.props.classNames.center}>
                         <h1>{this.props.title}</h1>

@@ -57,7 +57,7 @@ const Header = () => {
                 <Navbar.Collapse id="basic-navbar-nav" className="flex justify-content-end">
                     <Nav>
                         <li className={'nav-item ' + headerStyles.font}>
-                            <Link className={'nav-link ' + headerStyles.font} to="/quienes-somos">Quienes somos</Link>
+                            <Link className={'nav-link ' + headerStyles.font} to="/quienes-somos/">Quienes somos</Link>
                         </li>
                         <li className={'nav-item dropdown ' + headerStyles.dropdown + ' ' + headerStyles.font}>
                             <Link className={'nav-link ' + headerStyles.font} to="#" id="navbardrop" data-toggle="dropdown">
