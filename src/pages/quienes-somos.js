@@ -8,18 +8,15 @@ import quienesCss from '../styles/quienes_somos.module.scss'
 
 
 const QuienesSomos = () => {
-
-    const paralaxStyle = {
-        backgroundImage: "url('../media/img/quienes_somos.jpg')"
-      };
       
 
     return (
         <Layout>
-            <Parallax title='QUIENES SOMOS'
+            <Parallax 
+                title='QUIENES SOMOS'
                 subtitle='Capacitamos pequeñas y grandes empresas'
                 classNames={paralaxCss}
-                styles={paralaxStyle}
+                url='../media/img/logo.png'
                 />
 
             <div className="row">
