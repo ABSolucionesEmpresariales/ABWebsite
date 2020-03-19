@@ -6,6 +6,9 @@ import banner from '../styles/banner.module.scss'
 import { MARKS } from '@contentful/rich-text-types'
 import Parallax from '../components/paralax'
 
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
+
 export const query = graphql`
     query($slug: String!){
         contentfulServicio(slug: {eq:$slug}){
@@ -46,8 +49,23 @@ const servicios = (props) => {
 
       <div className={"container"}>
         <div className={"row m-lg-3 m-1"}>
-          <p className={"col-lg-6 col-12"}>{documentToReactComponents(props.data.contentfulServicio.cuerpo1.json)}</p>
-          <p className={"col-lg-6 col-12"}>{documentToReactComponents(props.data.contentfulServicio.cuerpo2.json, options)}</p>
+        <ScrollAnimation 
+          animateIn="bounceInLeft"
+          animateOut="bounceOutLeft"
+          animatePreScroll={false}
+          duration={2}
+          className={"col-lg-6 col-12"}>
+              <p >{documentToReactComponents(props.data.contentfulServicio.cuerpo1.json)}</p>
+        </ScrollAnimation>
+
+        <ScrollAnimation 
+          animateIn="fadeInUp"
+          animateOut="fadeOut"
+          delay={1}
+          className={"col-lg-6 col-12"}>
+            <p >{documentToReactComponents(props.data.contentfulServicio.cuerpo2.json, options)}</p>
+        </ScrollAnimation>
+
         </div>
       </div>
 
