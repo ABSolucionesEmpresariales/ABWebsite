@@ -7,7 +7,6 @@ import { Modal } from 'react-bootstrap';
 const Newsletter = () => {
     const [show, setShow] = React.useState(true);
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
 
     return (
         <header className="row">

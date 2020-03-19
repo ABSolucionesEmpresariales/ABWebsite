@@ -3,7 +3,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import videoStyle from '../styles/video.module.scss'
 import "animate.css/animate.min.css";
 
-const Video = ({videoSrcURL, videoTitle, width, height, effect, ...props }) => (
+const Video = ({videoSrcURL, videoTitle, width, height }) => (
 
     <ScrollAnimation animateIn="fadeInUp"
         animateOut="fadeOut"

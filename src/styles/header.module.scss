@@ -66,7 +66,7 @@
   }
   @keyframes example {
     0%  {top:70px;}
-    100%  {top:62px;}
+    100%  {top:46px;}
     from{
       opacity: 0;
     }
@@ -76,7 +76,9 @@
   }
 }
 .submit{
-  padding: 1rem 10.5rem!important;
+  margin-left: auto!important;
+  margin-right: auto!important;
+  padding: 1rem 8rem!important;
 }
 .border_right {
   border-right: 2px solid rgba(0, 0, 90, 0.397);

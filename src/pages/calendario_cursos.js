@@ -5,7 +5,7 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import banner from '../styles/banner.module.scss'
 import { faCertificate, faMapMarkerAlt, faCalendarCheck, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
-import calendarioCursos from "../templates/calendario_cursos"
+/*import calendarioCursos from "../templates/calendario_cursos"*/
 
 
 
