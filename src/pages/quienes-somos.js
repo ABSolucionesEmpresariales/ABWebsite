@@ -49,6 +49,7 @@ const QuienesSomos = () => {
                         <Card title="Titulo motivador"
                             description="Tempor sunt eu est nisi sunt ad aliquip nostrud adipisicing enim aliqua labore quis. Laborum ut dolor ad velit. Dolore pariatur dolore exercitation mollit do occaecat esse consequat adipisicing minim do ad incididunt amet. Do est adipisicing in incididunt tempor irure irure ad voluptate deserunt nisi nulla. Aliqua velit veniam dolore amet excepteur in consectetur sit consectetur fugiat duis."
                             icon={faCogs}
+                            iconSize="3x"
                             entrada="bounceInLeft"
                         />
                     </div>
@@ -57,6 +58,7 @@ const QuienesSomos = () => {
                         <Card title="Titulo Mamalon"
                             description="Commodo in eiusmod irure ex voluptate enim ad eu enim officia. Magna veniam do duis velit dolore et dolor occaecat enim. Est consectetur magna dolore exercitation in deserunt ex enim commodo nostrud eu quis consectetur. Laborum mollit occaecat dolore labore voluptate consectetur excepteur magna in in sint reprehenderit irure quis. Enim quis duis excepteur amet veniam ut."
                             icon={faBrain}
+                            iconSize="3x"
                             entrada="bounceInRight"
                         />
                     </div>
@@ -69,6 +71,7 @@ const QuienesSomos = () => {
                         <Card title="Agarrense porque nos vamos recio"
                             description="Esse culpa aute do consectetur nostrud consequat occaecat veniam exercitation et aliqua consequat qui. Qui laboris adipisicing voluptate fugiat consectetur in Lorem eiusmod in ad minim. Irure velit reprehenderit reprehenderit anim. Incididunt adipisicing voluptate voluptate culpa consequat anim est qui est. In quis veniam mollit non consectetur aute esse nostrud sit ut. Elit consequat dolor officia commodo minim tempor nulla eiusmod ullamco."
                             icon={faChartPie}
+                            iconSize="3x"
                             entrada="bounceInLeft"
                         />
                     </div>
@@ -77,6 +80,7 @@ const QuienesSomos = () => {
                         <Card title="Frase Revienta Bolas"
                             description="Esse culpa aute do consectetur nostrud consequat occaecat veniam exercitation et aliqua consequat qui. Qui laboris adipisicing voluptate fugiat consectetur in Lorem eiusmod in ad minim. Irure velit reprehenderit reprehenderit anim. Incididunt adipisicing voluptate voluptate culpa consequat anim est qui est. In quis veniam mollit non consectetur aute esse nostrud sit ut. Elit consequat dolor officia commodo minim tempor nulla eiusmod ullamco."
                             icon={faChartLine}
+                            iconSize="3x"
                             entrada="bounceInRight"
                         />
                     </div>

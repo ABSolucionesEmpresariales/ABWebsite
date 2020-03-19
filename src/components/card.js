@@ -19,14 +19,15 @@ class Card extends React.Component {
             <ScrollAnimation animateIn={this.props.entrada}
                 animateOut={this.props.salida}
                 offset={25}
+                duration={2}
             >
-                <div class={'card ' + cardStyle.myCard}>
-                    <div class="card-body">
+                <div className={'card ' + cardStyle.myCard}>
+                    <div className="card-body">
                         <div className="row">
 
-                            <div className={cardStyle.center + ' col-sm-12 col-lg-2 d-flex justify-content-center'}>
+                            <div className={'col-sm-12 col-lg-12 d-flex justify-content-center'}>
                                 <div className={cardStyle.box}>
-                                    <FontAwesomeIcon size="3x"
+                                    <FontAwesomeIcon
                                         icon={this.props.icon}
                                         className={cardStyle.icon}
                                         color="#fff"
@@ -34,9 +35,9 @@ class Card extends React.Component {
                                 </div>
 
                             </div>
-                            <div className="col-sm-12 col-lg-10">
-                                <h4 class="card-title">{this.props.title}</h4>
-                                <p class="card-text">{this.props.description}</p>
+                            <div className="col-sm-12 col-lg-12">
+                                <h4 className="card-title">{this.props.title}</h4>
+                                <p className="card-text">{this.props.description}</p>
                             </div>
                         </div>
                     </div>
