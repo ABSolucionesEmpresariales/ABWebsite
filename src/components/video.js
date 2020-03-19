@@ -1,5 +1,6 @@
 import React from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
+import videoStyle from '../styles/video.module.scss'
 import "animate.css/animate.min.css";
 
 const Video = ({videoSrcURL, videoTitle, width, height, effect, ...props }) => (
@@ -10,9 +11,7 @@ const Video = ({videoSrcURL, videoTitle, width, height, effect, ...props }) => (
         <iframe
             src={videoSrcURL}
             title={videoTitle}
-            width={width}
-            height={height}
-            frameBorder="0"
+            className={videoStyle.video}
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             webkitallowfullscreen="true"
             mozallowfullscreen="true"

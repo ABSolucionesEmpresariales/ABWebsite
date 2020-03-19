@@ -24,11 +24,12 @@ class Card extends React.Component {
                     <div class="card-body">
                         <div className="row">
 
-                            <div className={cardStyle.center + ' col-sm-12 col-lg-2'}>
+                            <div className={cardStyle.center + ' col-sm-12 col-lg-2 d-flex justify-content-center'}>
                                 <div className={cardStyle.box}>
                                     <FontAwesomeIcon size="3x"
                                         icon={this.props.icon}
                                         className={cardStyle.icon}
+                                        color="#fff"
                                     />
                                 </div>
 

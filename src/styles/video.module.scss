@@ -1,0 +1,11 @@
+.video {
+    width: 520px;
+    height: 300px;
+}
+
+@media screen and (max-device-width: 556px) {
+    .video{
+        width: 100%;
+        
+    }
+}

@@ -17,7 +17,7 @@ const QuienesSomos = () => {
             />
 
             <div className="row">
-                <div className={quienesCss.description + ' col-md-4'}>
+                <div className={quienesCss.description + ' col-lg-4'}>
                     <h1>ARTIFICIAL BRAIN</h1>
                     <p className={quienesCss.paragraph}>
                         Aliqua reprehenderit mollit aute nostrud irure dolore velit amet. Cillum nulla est Lorem
@@ -38,8 +38,6 @@ const QuienesSomos = () => {
                         className={quienesCss.shadow}
                         videoSrcURL="https://www.youtube.com/embed/YKVGVUOL2Rc"
                         videoTitle="Prueba component"
-                        width="520"
-                        height="300"
                     />
                 </div>
             </div>
