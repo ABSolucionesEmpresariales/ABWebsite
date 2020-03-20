@@ -54,6 +54,7 @@ const servicios = (props) => {
           animateOut="bounceOutLeft"
           animatePreScroll={false}
           duration={2}
+          animateOnce={true}
           className={"col-lg-6 col-12"}>
               <p >{documentToReactComponents(props.data.contentfulServicio.cuerpo1.json)}</p>
         </ScrollAnimation>
@@ -62,6 +63,7 @@ const servicios = (props) => {
           animateIn="fadeInUp"
           animateOut="fadeOut"
           delay={1}
+          animateOnce={true}
           className={"col-lg-6 col-12"}>
             <p >{documentToReactComponents(props.data.contentfulServicio.cuerpo2.json, options)}</p>
         </ScrollAnimation>
