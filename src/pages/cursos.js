@@ -4,6 +4,7 @@ import Head from "../components/head";
 import { useStaticQuery, graphql } from 'gatsby';
 import banner from '../styles/banner.module.scss'
 
+
 const Cursos = () => {
     const mysql = useStaticQuery(graphql`
     query{
@@ -24,7 +25,7 @@ const Cursos = () => {
         <Layout>
             <Head title="Cursos" />
             <div className={"row "+banner.efectoBanner+' '+banner.imagenBannerCursos}>
-              <p className={"text-white d-inline "+banner.title}>Calendario de Cursos</p>
+              <p className={"text-white d-inline "+banner.title}>Catalogo de Cursos</p>
             </div>
             <div className="row d-block d-lg-flex">
                 <div className="col-lg-3 px-0 my-3">
@@ -47,6 +48,7 @@ const Cursos = () => {
                                 var url = direccion + carpeta + "/" + archivo;
                             }
                             return (
+                                
                                 <div className="card col-lg-3 my-3 ml-lg-5">
                                     <div className="card-body text-center">
                                         <img className="img-fluid" src={url} alt="curso"></img>

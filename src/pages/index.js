@@ -10,6 +10,8 @@ import { faCogs, faChalkboardTeacher, faArrowUp } from '@fortawesome/free-solid-
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import homeStyles from '../styles/home.module.scss'
+import Newsletter from '../components/modal'
+import Delay from 'react-delay';
 
 const IndexPage = () => {
     return (

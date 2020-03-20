@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery } from 'gatsby'
+import {graphql, useStaticQuery } from 'gatsby'
 import Slider from './slider'
 import customCss from '../styles/carousel.module.scss';
 
