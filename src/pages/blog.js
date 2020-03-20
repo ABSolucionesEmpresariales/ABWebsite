@@ -1,8 +1,8 @@
 import React from "react"
+import AcordeonSecciones from '../components/acrodeonsecciones'
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import Head from "../components/head"
-import { Accordion, Card } from 'react-bootstrap';
 
 
 const BlogPage = () => {
@@ -26,12 +26,9 @@ const BlogPage = () => {
             }
           }
         }
-         secciones:distinct(field:seccion)
       }
     }   
     `)
-
-    const secciones = data.allContentfulBlog.secciones;
 
     return (
         <Layout>
@@ -63,36 +60,7 @@ const BlogPage = () => {
                         })}
                     </div>
                 </div>
-                <div className="card col-lg-3">
-                    <div className="row d-none d-lg-flex">
-                        <div className="my-4 col-lg-12">
-                            <Accordion defaultActiveKey="0">
-                                {secciones.map((seccion, cont) => {
-                                    cont++;
-                                    return (
-                                        <Card>
-                                            <Accordion.Toggle as={Card.Header} eventKey={cont}>
-                                                {seccion}
-                                            </Accordion.Toggle>
-                                            <Accordion.Collapse eventKey={cont}>
-                                                <Card.Body>
-                                                    <ul>
-                                                        {data.allContentfulBlog.edges.map((edge) => {
-                                                            if (edge.node.seccion === seccion) {
-                                                                return <li style={{ listStyleType: "none" }}><Link className="text-decoration-none" to={'/blog/' + edge.node.slug}>{edge.node.titulo} | {edge.node.fecha}</Link></li>
-                                                            }
-                                                        })}
-                                                    </ul>
-                                                </Card.Body>
-                                            </Accordion.Collapse>
-                                        </Card>
-                                    )
-                                })}
-                            </Accordion>
-                        </div>
-                    </div>
-                </div>
-
+                <AcordeonSecciones />
             </div>
         </Layout>
     )
