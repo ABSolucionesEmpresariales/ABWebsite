@@ -7,7 +7,7 @@ const Video = ({videoSrcURL, videoTitle, width, height }) => (
     <ScrollAnimation 
         animateIn="fadeInUp"
         animateOut="fadeOut"
-        delay={1}>
+        offset={100}>
         <iframe
             src={videoSrcURL}
             title={videoTitle}

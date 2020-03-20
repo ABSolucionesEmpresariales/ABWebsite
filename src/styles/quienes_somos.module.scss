@@ -25,6 +25,11 @@
     margin: 0 auto;
 }
 
-.shadow{
-    box-shadow: 15px 15px 5px #0051ff;
+.cardSection {
+    background-color: #f2f7ff;
+    height: max-content;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }

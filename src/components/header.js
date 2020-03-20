@@ -36,12 +36,6 @@ const Header = () => {
 
     return (
         <header className="row">
-            <link
-                rel="stylesheet"
-                href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-                crossOrigin="anonymous"
-            />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
             <Navbar expand="lg" className={'col-12 '+headerStyles.border}>
                 <Navbar.Brand to="/home">
@@ -124,7 +118,7 @@ const Header = () => {
                                 <div className="indicates-required"><span className="asterisk">*</span> Campo requerido</div>
                                 <div className="mc-field-group">
                                     <label htmlFor="mce-FNAME">Nombre </label>
-                                    <input type="text" defaultValue="" name="FNAME" className id="mce-FNAME" />
+                                    <input type="text" defaultValue="" name="FNAME" id="mce-FNAME" />
                                 </div>
                                 <div className="mc-field-group">
                                     <label htmlFor="mce-EMAIL">Correo electronico  <span className="asterisk">*</span>
@@ -133,11 +127,11 @@ const Header = () => {
                                 </div>
                                 <div className="mc-field-group">
                                     <label htmlFor="mce-MMERGE3">Numero de telefono </label>
-                                    <input type="text" name="MMERGE3" className defaultValue="" id="mce-MMERGE3" />
+                                    <input type="text" name="MMERGE3" defaultValue="" id="mce-MMERGE3" />
                                 </div>
                                 <div className="mc-field-group">
                                     <label htmlFor="mce-MMERGE4">Comentario </label>
-                                    <textarea type="text" defaultValue="" name="MMERGE4" className id="mce-MMERGE4" style={{ width: "100%", height: "4rem" }} />
+                                    <textarea type="text" defaultValue="" name="MMERGE4" id="mce-MMERGE4" style={{ width: "100%", height: "4rem" }} />
                                 </div>
                                 <div id="mce-responses" className="clear">
                                     <div className="response" id="mce-error-response" style={{ display: 'none' }} />
