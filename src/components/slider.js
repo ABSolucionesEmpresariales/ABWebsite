@@ -307,13 +307,13 @@ class Slider extends React.PureComponent {
 					onMouseOut: this.handleMouseOut,
 				}}
 			>
-				<Link 
+				<Link to=""
 					onClick={this.previous}
 					className={`${classNames.previousButton}${isDisabled || !this.canGoPrevious() ? ` ${classNames.buttonDisabled}` : ''}`}
 				>
 					{previousButton}
 				</Link>
-				<Link
+				<Link to=""
 					onClick={this.next}
 					className={`${classNames.nextButton}${isDisabled || !this.canGoNext() ? ` ${classNames.buttonDisabled}` : ''}`}
 				>
