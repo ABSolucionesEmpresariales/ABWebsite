@@ -6,13 +6,13 @@
 
 // You can delete this file if you're not using it
 const path = require('path')
-module.exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
-  const calendarioTemplate = path.resolve('./src/templates/calendario_cursos.js')
-  const blogTemplate = path.resolve('./src/templates/blog.js')
-  const serviciosTemplate = path.resolve('./src/templates/servicios.js')
-  const quienesTemplate = path.resolve('./src/pages/quienes-somos.js')
-  const res = await graphql(`
+module.exports.createPages = async ({graphql,actions}) => {
+    const {createPage} = actions
+    const calendarioTemplate = path.resolve('./src/templates/calendario_cursos.js')
+    const blogTemplate = path.resolve('./src/templates/blog.js')
+    const serviciosTemplate = path.resolve('./src/templates/servicios.js')
+    const categoriasTemplate = path.resolve('./src/templates/categorias.js')
+    const res = await graphql(`
     query{
         allContentfulCalendario{
           edges{
@@ -73,6 +73,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
       }
     })
   })
+
 
 res.data.allContentfulCategorias.edges.forEach((edge) => {
   createPage({

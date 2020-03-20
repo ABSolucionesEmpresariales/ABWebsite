@@ -4,7 +4,8 @@ import "animate.css/animate.min.css";
 
 const Video = ({videoSrcURL, videoTitle, width, height }) => (
 
-    <ScrollAnimation animateIn="fadeInUp"
+    <ScrollAnimation 
+        animateIn="fadeInUp"
         animateOut="fadeOut"
         offset={100}>
         <iframe

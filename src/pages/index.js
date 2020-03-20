@@ -57,9 +57,10 @@ const IndexPage = () => {
                     <p className="border">Nuestro secreto radica en encontrar el verdadero problema. Un metodo probado y comprobado por nosotros mismo que te garantiza encontrar el problema en tu empresa para poder darle la solucion adecuada.</p>
                 </div>
             </div>
-            <Delay wait={30000}>
-                <Newsletter/>
-            </Delay>
+
+            <ScrollAnimation animateIn="fadeIn">
+                Some Text
+            </ScrollAnimation>
         </Layout>
     )
 }
