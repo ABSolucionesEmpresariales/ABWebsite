@@ -12,6 +12,7 @@ module.exports = {
         accessToken:'BU4y-ZuAeMZ4blaOhaFRjxSIzv0-mYYwujfNIhXGxfY'
       }
     },
+    `gatsby-plugin-favicon`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
     'gatsby-plugin-sass',
