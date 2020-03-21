@@ -11,7 +11,8 @@ const QuienesSomos = () => {
 
     return (
         <Layout>
-            <Parallax title="Quienes Somos"
+            <Parallax 
+                title="Quienes Somos"
                 subtitle="Te capacitamos a pequeñas y grandes empresas chingon"
                 background={BannerBack}
             />
