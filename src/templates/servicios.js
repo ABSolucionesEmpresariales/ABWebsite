@@ -73,10 +73,10 @@ const servicios = (props) => {
       </div>
 
       <Parallax 
-                title={"Cotiza "+props.data.contentfulServicio.titulo+""}
-                subtitle={"Para corizar tu servicio puedes comucarte al correo ceo@absoluciones.com"}
-                background={imagenCotizacion}
-            />
+        title={"Cotiza "+props.data.contentfulServicio.titulo+""}
+        subtitle={"Para corizar tu servicio puedes comucarte al correo ceo@absoluciones.com"}
+        background={imagenCotizacion}
+      />
     </Layout>
   )
 }
