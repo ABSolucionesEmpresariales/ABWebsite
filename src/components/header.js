@@ -36,7 +36,6 @@ const Header = () => {
 
     return (
         <header className="row">
-
             <Navbar expand="lg" className={'col-12 '+headerStyles.border}>
                 <Navbar.Brand to="/home">
                     <Link to="/"><Image src={data.fileName.childImageSharp.fluid.src} alt="ABsoluciones" fluid /></Link>
@@ -45,7 +44,7 @@ const Header = () => {
                 <Navbar.Collapse id="basic-navbar-nav" className="flex justify-content-end">
                     <Nav>
                         <li className={'nav-item ' + headerStyles.font}>
-                            <Link className={'nav-link ' + headerStyles.font} to="/">Quienes somos</Link>
+                            <Link className={'nav-link ' + headerStyles.font} to="/quienes-somos/">Quienes somos</Link>
                         </li>
                         <li className={'nav-item dropdown ' + headerStyles.dropdown + ' ' + headerStyles.font}>
                             <Link className={'nav-link ' + headerStyles.font} to="#" id="navbardrop" data-toggle="dropdown">
@@ -80,12 +79,12 @@ const Header = () => {
                                 <div>
                                     <Link className={headerStyles.item} to="/cursos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faGraduationCap} />Catalogo de cursos</Link>
                                     <Link className={headerStyles.item} to="/calendario_cursos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faCalendar} />Calendario de cursos</Link>
-                                    <Link className={headerStyles.item} to="/calendario_cursos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faHeadset} />Servicio al cliente</Link>
-                                    <Link className={headerStyles.item} to="/calendario_cursos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faClock} />Administración del tiempo y manejo de estrés</Link>
+                                    <Link className={headerStyles.item} to="/categorias/servicio_al_cliente"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faHeadset} />Servicio al cliente</Link>
+                                    <Link className={headerStyles.item} to="/categorias/Administración_del_tiempo_y_manejo_de_estrés"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faClock} />Administración del tiempo y manejo de estrés</Link>
                                 </div>
                                 <div>
-                                    <Link className={headerStyles.item} to="/calendario_cursos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faUsers} />Recursos Humanos (RR.HH.)</Link>
-                                    <a className={headerStyles.item} href="https://escuelaalreves.com/views/mainpage.php" target="_blank"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faLaptop} />Cursos Online</a>
+                                    <Link className={headerStyles.item} to="/categorias/Recursos_humanos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faUsers} />Recursos Humanos (RR.HH.)</Link>
+                                    <a className={headerStyles.item} href="https://escuelaalreves.com/views/mainpage.php" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faLaptop} />Cursos Online</a>
                                 </div>
                             </div>
                         </li>
@@ -94,12 +93,12 @@ const Header = () => {
                                 Multimedia
                             <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></Link>
                             <div className={'dropdown-menu ' + headerStyles.dropmenu}>
-                                <Link className={headerStyles.item} to="/"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faComment} />Blog</Link>
+                                <Link className={headerStyles.item} to="/blog"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faComment} />Blog</Link>
                                 <Link className={headerStyles.item} to="/"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faYoutube} />Canal YouTube</Link>
                             </div>
                         </li>
                         <li className={'nav-item ' + headerStyles.font}>
-                            <p onClick={handleShow} className={'nav-link ' + headerStyles.font}>Contacto</p>
+                            <a href="#" role="link" onClick={handleShow} onKeyDown={handleShow} className={'nav-link ' + headerStyles.font}>Contacto</a>
                         </li>
                     </Nav>
                 </Navbar.Collapse>
@@ -111,14 +110,14 @@ const Header = () => {
                 </Modal.Header>
                 <Modal.Body>
                     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css" />
-                    <style type="text/css" dangerouslySetInnerHTML={{ __html: "\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n\t/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.\n\t   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\n" }} />
+                    <style type="text/css" dangerouslySetInnerHTML={{ __html: "\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n\t\n" }} />
                     <div id="mc_embed_signup">
-                        <form action="https://outlook.us19.list-manage.com/subscribe/post?u=ba7ef46081ef599e35a2ccd93&id=c11f4979f2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+                    <form action="https://consultoresrh.us19.list-manage.com/subscribe/post?u=9a34b280f0498e881bbdf0a8a&id=70d4489e90" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
                             <div id="mc_embed_signup_scroll">
                                 <div className="indicates-required"><span className="asterisk">*</span> Campo requerido</div>
                                 <div className="mc-field-group">
                                     <label htmlFor="mce-FNAME">Nombre </label>
-                                    <input type="text" defaultValue="" name="FNAME" className id="mce-FNAME" />
+                                    <input type="text" defaultValue="" name="FNAME" id="mce-FNAME" />
                                 </div>
                                 <div className="mc-field-group">
                                     <label htmlFor="mce-EMAIL">Correo electronico  <span className="asterisk">*</span>
@@ -127,11 +126,11 @@ const Header = () => {
                                 </div>
                                 <div className="mc-field-group">
                                     <label htmlFor="mce-MMERGE3">Numero de telefono </label>
-                                    <input type="text" name="MMERGE3" className defaultValue="" id="mce-MMERGE3" />
+                                    <input type="text" name="MMERGE3" defaultValue="" id="mce-MMERGE3" />
                                 </div>
                                 <div className="mc-field-group">
                                     <label htmlFor="mce-MMERGE4">Comentario </label>
-                                    <textarea type="text" defaultValue="" name="MMERGE4" className id="mce-MMERGE4" style={{ width: "100%", height: "4rem" }} />
+                                    <textarea type="text" defaultValue="" name="MMERGE4" id="mce-MMERGE4" style={{ width: "100%", height: "4rem" }} />
                                 </div>
                                 <div id="mce-responses" className="clear">
                                     <div className="response" id="mce-error-response" style={{ display: 'none' }} />

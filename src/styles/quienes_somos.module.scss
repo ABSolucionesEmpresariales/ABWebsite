@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+.description, .video{
+    margin : 5rem auto;
+    text-align: center;
+
+    & h1{
+        font-size: 32px; 
+        letter-spacing: .5rem;
+        font-weight: bold;
+        font-family: 'Oswald', sans-serif;
+        border-right: 4px solid #0051ff;
+    }
+
+    & p{
+        font-size: 18px ;
+        line-height: 1.5;
+        text-align: justify;
+        margin: 2rem auto;
+        
+    }
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.cardSection {
+    background-color: #ececec;
+    height: max-content;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

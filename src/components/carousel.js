@@ -1,34 +1,73 @@
 import React from 'react'
+import {graphql, useStaticQuery } from 'gatsby'
 import Slider from './slider'
-import content from '../content/slider-content';
 import customCss from '../styles/carousel.module.scss';
 
 const Carousel = () => {
-    return (
-        <div>
+	const data = useStaticQuery(graphql`
+    query carouselQuery {
+        allContentfulCarousel {
+    		edges {
+      			node {
+					title
+					description
+					button
+					user
+					activeButton
+					activeUser
+        			image {
+          				file {
+            				url
+          				}
+        			}
+        			userProfile {
+          				file {
+						   url
+						}
+          			}
+        		}
+      		}
+   		}
+	}`)
+
+
+	return (
+		<div className='row'>
 			<Slider classNames={customCss}>
-				{content.map((item, index) => (
+				{data.allContentfulCarousel.edges.map((item, index) => (
 					<div
 						key={index}
 						className={customCss.sliderContent}
-						style={{ background: `url('${item.image}') no-repeat center center` }}
+						style={{ background: `url('${item.node.image.file.url}') no-repeat center center` }}
 					>
 						<div className={customCss.inner}>
-							<h1>{item.title}</h1>
-							<p>{item.description}</p>
-							<button className={customCss.buttonStyle}>{item.button}</button>
+							<h1>{item.node.title}</h1>
+							<p>{item.node.description}</p>
+							{(item.node.activeButton) ?
+								(<button className={customCss.buttonStyle}>
+									{item.node.button}
+								</button>) :
+								(<div></div>)}
+
 						</div>
-						<section>
-							<img src={item.userProfile} alt={item.user} />
-							<span>
-								Posted by <strong>{item.user}</strong>
-							</span>
-						</section>
+						{(item.node.activeUser) ? (
+							<section>
+
+								<img src={item.node.activeUser ? item.node.userProfile.file.url : './media/img/logo.png'} alt={item.node.user} />
+								<span>
+									Posted by <strong>{item.node.user}</strong>
+								</span>
+							</section>
+						) :
+							<section></section>
+						}
+
 					</div>
+
 				))}
 			</Slider>
 		</div>
-    )
+	)
 }
 
 export default Carousel

@@ -1,15 +1,42 @@
-.section{
-    padding: 9rem 0rem;
+.section {
+  padding: 50px 0rem;
+
+overflow: auto;
 }
-.service-icons{
-    
+
+.back {
+  min-height: 150px;
+  height: 50vh;
+  background-image: url("https://www.designthinkersgroup.us/wp-content/uploads/2018/10/Stakeholder-mapping-image-1184x670.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
-#left-service-item{
-    background-color: steelblue;
+
+.right-text {
+  background: linear-gradient(rgba(0, 0, 0, 0.65) rgba(0, 0, 0, 0.8));
+  color: #ececec;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+  padding: 50px;
+  text-align: center;
+ 
 }
-#center-service-item{
-    background-color: mediumslateblue;
+
+#left-service-container {
+  background-color: tan;
 }
-#right-service-item{
-    background-color: royalblue;
+#left-service-item {
+  background-color: steelblue;
+}
+#center-service-item {
+  background-color: mediumslateblue;
+}
+#right-service-item {
+  background-color: royalblue;
+}
+
+#section-two {
+  background-image: linear-gradient(to bottom right, #b40000, #d9534f);
 }
