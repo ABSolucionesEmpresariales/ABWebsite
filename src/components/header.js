@@ -100,7 +100,7 @@ const Header = () => {
                                 Multimedia
                             <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></Link>
                             <div className={'dropdown-menu ' + headerStyles.dropmenu}>
-                                <Link className={headerStyles.item} to="/"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faComment} />Blog</Link>
+                                <Link className={headerStyles.item} to="/blog"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faComment} />Blog</Link>
                                 <Link className={headerStyles.item} to="/"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faYoutube} />Canal YouTube</Link>
                             </div>
                         </li>
