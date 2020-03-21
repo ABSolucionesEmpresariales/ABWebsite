@@ -13,7 +13,7 @@ import {
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 const Header = () => {
-    const [show, setShow] = React.useState(true);
+    const [show, setShow] = React.useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
