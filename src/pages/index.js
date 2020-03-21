@@ -3,15 +3,8 @@ import Layout from "../components/layout"
 import Head from '../components/head'
 import Carousel from '../components/carousel'
 import Card from '../components/card'
-
-import Image from 'react-bootstrap/Image';
 import { faCogs, faChalkboardTeacher, faArrowUp } from '@fortawesome/free-solid-svg-icons'
-
-import ScrollAnimation from 'react-animate-on-scroll';
-
 import homeStyles from '../styles/home.module.scss'
-import Newsletter from '../components/modal'
-import Delay from 'react-delay';
 
 const IndexPage = () => {
     return (
