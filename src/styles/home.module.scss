@@ -1,7 +1,5 @@
 .section {
-  padding: 50px 0rem;
-
-overflow: auto;
+ 
 }
 
 .back {
@@ -12,7 +10,7 @@ overflow: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
+  height: max-content;
 }
 
 .right-text {
