@@ -212,77 +212,16 @@ class Slider extends React.PureComponent {
 
 	animating = false;
 
-	handleTouchMove = (e) => {
-		e.preventDefault();
-		this.animating = this.animating ||
-			requestAnimationFrame(() => {
-				if (!this.isSwiping) {
-					this.animating = false;
-					return;
-				}
-				const touch = e.touches[0];
-				const newLeft = touch[this.swipeEventProperty] - this.pageStartPosition;
-				this.currentElementPosition = this.currentElementStartPosition + newLeft;
-				this.currentElement.style[this.swipeProperty] = `${this.currentElementPosition}px`;
-				if (this.previousElement) {
-					this.previousElementPosition = this.previousElementStartPosition + newLeft;
-					this.previousElement.style[this.swipeProperty] = `${this.previousElementPosition}px`;
-				}
-				if (this.nextElement) {
-					this.nextElementPosition = this.nextElementStartPosition + newLeft;
-					this.nextElement.style[this.swipeProperty] = `${this.nextElementPosition}px`;
-				}
-				this.animating = false;
-			});
-	};
-
-	handleTouchEnd = () => {
-		this.animating = false;
-		this.isSwiping = false;
-		this.currentElement.style.removeProperty(this.swipeProperty);
-		this.currentElement.style.removeProperty('transition');
-		if (this.previousElement) {
-			this.previousElement.style.removeProperty('visibility');
-			this.previousElement.style.removeProperty('transition');
-			this.previousElement.style.removeProperty(this.swipeProperty);
-		}
-		if (this.nextElement) {
-			this.nextElement.style.removeProperty('visibility');
-			this.nextElement.style.removeProperty('transition');
-			this.nextElement.style.removeProperty(this.swipeProperty);
-		}
-		const touchDelta = this.currentElementStartPosition - this.currentElementPosition;
-		const minSwipeOffset = this.props.minSwipeOffset || 15;
-		if (Math.abs(touchDelta) > minSwipeOffset) {
-			if (touchDelta < 0) {
-				this.previous();
-			} else {
-				this.next();
-			}
-		} else {
-			this.setupAutoplay();
-		}
-	};
 
 	getClassNames = () => ({ ...DEFAULT_CLASSNAMES, ...this.props.classNames });
 
-	initTouchEvents = (sliderRef) => {
-		if (this.isDisabled() || !sliderRef) return;
-		this.sliderRef = sliderRef;
-		this.sliderRef.addEventListener('touchstart', this.handleTouchStart);
-		this.sliderRef.addEventListener('touchmove', this.handleTouchMove, {
-			passive: false,
-		});
-		this.sliderRef.addEventListener('touchend', this.handleTouchEnd);
-	}
-
 	handleMouseOver = () => {
-		this.isMouseOver = true;
+		this.isMouseOver = false;
 		this.stopAutoplay();
 	}
 
 	handleMouseOut = () => {
-		this.isMouseOver = false;
+		this.isMouseOver = true;
 		this.setupAutoplay();
 	}
 
@@ -293,7 +232,6 @@ class Slider extends React.PureComponent {
 			className = 'slider',
 			previousButton = <Arrow direction={this.direction === HORIZONTAL ? 'left' : 'down'} />,
 			nextButton = <Arrow direction={this.direction === HORIZONTAL ? 'right' : 'up'} />,
-			touchDisabled,
 			autoplay,
 		} = this.props;
 		const classNames = this.getClassNames();
@@ -301,19 +239,18 @@ class Slider extends React.PureComponent {
 		return (
 			<div
 				className={classNames.slider || className}
-				{...!touchDisabled && { ref: this.initTouchEvents }}
 				{...autoplay && {
 					onMouseOver: this.handleMouseOver,
 					onMouseOut: this.handleMouseOut,
 				}}
 			>
-				<Link to=""
+				<Link to="/"
 					onClick={this.previous}
 					className={`${classNames.previousButton}${isDisabled || !this.canGoPrevious() ? ` ${classNames.buttonDisabled}` : ''}`}
 				>
 					{previousButton}
 				</Link>
-				<Link to=""
+				<Link to="/"
 					onClick={this.next}
 					className={`${classNames.nextButton}${isDisabled || !this.canGoNext() ? ` ${classNames.buttonDisabled}` : ''}`}
 				>
