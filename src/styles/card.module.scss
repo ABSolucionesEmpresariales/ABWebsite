@@ -1,0 +1,55 @@
+.my-card {
+  border: none !important;
+  background: transparent !important;
+  text-align: center;
+
+  & .box {
+    width: 100%;
+
+    & .icon {
+      padding: 5px auto;
+      border: 6px solid #272727;
+      border-radius: 50%;
+      background: #070707;
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+  
+  & h4 {
+    text-align: center;
+  }
+  & p {
+    text-align: center;
+  }
+}
+
+@media screen and(max-device-width: 1184px) {
+  .my-card {
+  text-align: center;
+    & .box {
+      margin-bottom: 10px;
+
+      & .icon {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+    & h4 {
+      text-align: center;
+    }
+    & p {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and(max-device-width: 575px) {
+
+  .icon{
+    color: #272727;
+    background: #fff !important;
+    border: none !important;
+  }
+
+}

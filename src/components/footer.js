@@ -35,7 +35,7 @@ const Footer = () => {
         <footer>
             <div className={'mt-5 row ' + footerStyles.ayuda}>
                 <h1 className="font-weight-bold">¿Como podemos ayudarte?</h1>
-                <h3 className="mt-2 mt-0">Ponte en <Link to="" onClick={handleShow} className={footerStyles.ayudaLinks}>contacto</Link> con nosotros o encuentra <Link className={footerStyles.ayudaLinks} to="/cursos">nuestra oficina</Link> mas cercana</h3>
+                <h3 className="mt-2 mt-0">Ponte en <a href="" onClick={handleShow} className={footerStyles.ayudaLinks}>contacto</a> con nosotros o encuentra <Link className={footerStyles.ayudaLinks} to="/cursos">nuestra oficina</Link> mas cercana</h3>
             </div>
             <div className="px-0 px-lg-5">
                 <div className="row justify-content-between py-5 d-block d-lg-flex">
@@ -43,7 +43,7 @@ const Footer = () => {
                         <Image src={data.fileName.childImageSharp.fluid.src} alt="logo" fluid />
                     </div>
                     <div id="mc_embed_signup" className="col-12 col-lg-4 text-center text-lg-left">
-                        <form action="https://outlook.us19.list-manage.com/subscribe/post?u=ba7ef46081ef599e35a2ccd93&id=c11f4979f2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+                    <form action="https://consultoresrh.us19.list-manage.com/subscribe/post?u=9a34b280f0498e881bbdf0a8a&id=70d4489e90" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
                             <div id="mc_embed_signup_scroll">
                                 <p className={footerStyles.textStyle}>Suscribete a nuestro Newsletter:</p>
                                 <div className="d-block d-lg-flex">
@@ -100,7 +100,7 @@ const Footer = () => {
                     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css" />
                     <style type="text/css" dangerouslySetInnerHTML={{ __html: "\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n\t\n" }} />
                     <div id="mc_embed_signup">
-                        <form action="https://outlook.us19.list-manage.com/subscribe/post?u=ba7ef46081ef599e35a2ccd93&id=c11f4979f2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+                    <form action="https://consultoresrh.us19.list-manage.com/subscribe/post?u=9a34b280f0498e881bbdf0a8a&amp;id=70d4489e90" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                             <div id="mc_embed_signup_scroll">
                                 <div className="indicates-required"><span className="asterisk">*</span> Campo requerido</div>
                                 <div className="mc-field-group">
