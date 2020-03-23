@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import {documentToReactComponents} from '@contentful/rich-text-react-renderer'
 import {MARKS} from '@contentful/rich-text-types'
 import Parallax from '../components/paralax'
+import Head from '../components/head'
 
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
@@ -39,6 +40,7 @@ const categorias = (props) => {
     }
     return (
         <Layout>
+            <Head title={props.data.contentfulCategorias.titulo}/>
             <Parallax 
                 title={props.data.contentfulCategorias.titulo}
                 subtitle={props.data.contentfulCategorias.subTitulo}

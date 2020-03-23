@@ -47,9 +47,9 @@ const Header = () => {
                             <Link className={'nav-link ' + headerStyles.font} to="/quienes-somos/">Quienes somos</Link>
                         </li>
                         <li className={'nav-item dropdown ' + headerStyles.dropdown + ' ' + headerStyles.font}>
-                            <Link className={'nav-link ' + headerStyles.font} to="#" id="navbardrop" data-toggle="dropdown">
+                            <p className={'nav-link ' + headerStyles.font} id="navbardrop" data-toggle="dropdown">
                                 Servicios
-                            <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></Link>
+                            <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></p>
                             <div className={'dropdown-menu ' + headerStyles.dropmenu_servicios}>
                                 <div>
                                     <Link className={headerStyles.item} to="/servicios/estructura_organizacional"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faSitemap} />Estructura organizacional</Link>
@@ -72,9 +72,9 @@ const Header = () => {
                             </div>
                         </li>
                         <li className={'nav-item dropdown ' + headerStyles.dropdown + ' ' + headerStyles.font}>
-                            <Link className={'nav-link ' + headerStyles.font} to="#" id="navbardrop" data-toggle="dropdown">
+                            <p className={'nav-link ' + headerStyles.font} id="navbardrop" data-toggle="dropdown">
                                 Capacitación
-                            <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></Link>
+                            <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></p>
                             <div className={'dropdown-menu ' + headerStyles.dropmenu_servicios}>
                                 <div>
                                     <Link className={headerStyles.item} to="/cursos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faGraduationCap} />Catalogo de cursos</Link>
@@ -89,16 +89,16 @@ const Header = () => {
                             </div>
                         </li>
                         <li className={'nav-item dropdown ' + headerStyles.dropdown + ' ' + headerStyles.font}>
-                            <Link className={'nav-link ' + headerStyles.font} to="#" id="navbardrop" data-toggle="dropdown">
+                            <p className={'nav-link ' + headerStyles.font} id="navbardrop" data-toggle="dropdown">
                                 Multimedia
-                            <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></Link>
+                            <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></p>
                             <div className={'dropdown-menu ' + headerStyles.dropmenu}>
                                 <Link className={headerStyles.item} to="/blog"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faComment} />Blog</Link>
                                 <Link className={headerStyles.item} to="/"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faYoutube} />Canal YouTube</Link>
                             </div>
                         </li>
                         <li className={'nav-item ' + headerStyles.font}>
-                            <a href="#" role="link" onClick={handleShow} onKeyDown={handleShow} className={'nav-link ' + headerStyles.font}>Contacto</a>
+                            <a href onClick={handleShow} onKeyDown={handleShow} className={'nav-link ' + headerStyles.font}>Contacto</a>
                         </li>
                     </Nav>
                 </Navbar.Collapse>

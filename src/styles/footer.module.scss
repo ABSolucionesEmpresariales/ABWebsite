@@ -12,12 +12,12 @@
     color: white;
     font-weight: bold;
     word-wrap: normal;
-    text-decoration: underline;
-
+    text-decoration: underline!important;
+    cursor: pointer;
     transition: 0.3s;
 }
 .ayuda-links:hover{
-    color: rgb(59, 59, 151);
+    color: rgb(59, 59, 151)!important;
 }
 .input{
     border: 1px solid black;

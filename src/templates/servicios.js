@@ -5,6 +5,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import banner from '../styles/banner.module.scss'
 import { MARKS } from '@contentful/rich-text-types'
 import Parallax from '../components/paralax'
+import Head from '../components/head'
 
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
@@ -40,6 +41,7 @@ const servicios = (props) => {
   }
   return (
     <Layout>
+        <Head title={props.data.contentfulServicio.titulo}/>
             <Parallax 
                 title={props.data.contentfulServicio.titulo}
                 subtitle={props.data.contentfulServicio.subTitulo}
