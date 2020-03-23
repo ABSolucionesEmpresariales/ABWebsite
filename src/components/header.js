@@ -12,7 +12,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
-
 const Header = () => {
     const [show, setShow] = React.useState(false);
     const handleClose = () => setShow(false);
@@ -37,7 +36,6 @@ const Header = () => {
 
     return (
         <header className="row">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
             <Navbar expand="lg" className={'col-12 '+headerStyles.border}>
                 <Navbar.Brand to="/home">
                     <Link to="/"><Image src={data.fileName.childImageSharp.fluid.src} alt="ABsoluciones" fluid /></Link>
@@ -145,7 +143,6 @@ const Header = () => {
                     </div>
                 </Modal.Body>
             </Modal>
-            
         </header>
     )
 }
