@@ -33,11 +33,11 @@ const AcordeonSecciones = () => {
                                     <Accordion.Collapse eventKey={cont}>
                                         <Card.Body>
                                             <ul>
-                                                {data.allContentfulBlog.edges.map((edge) => {
-                                                    if (edge.node.seccion === seccion) {
+
+                                                {
+                                                    (data.allContentfulBlog.edges.filter(edge => edge.node.seccion === seccion)).map((edge) => {
                                                         return <li style={{ listStyleType: "none" }}><Link className="text-decoration-none" to={'/blog/' + edge.node.slug}>{edge.node.titulo} | {edge.node.fecha}</Link></li>
-                                                    }
-                                                })}
+                                                    })}
                                             </ul>
                                         </Card.Body>
                                     </Accordion.Collapse>
