@@ -46,7 +46,7 @@ const CalendarioContenido = () => {
     return (
 
         <Layout>
-            <Head title="calendario_cursos"/>
+            <Head title="calendario cursos"/>
             <div className={"row "+banner.efectoBanner+' '+banner.imagenBannerCalendarioPage}>
               <p className={"text-white d-inline "+banner.title}>Calendario de Cursos</p>
             </div>

@@ -33,9 +33,9 @@ const Footer = () => {
 
     return (
         <footer>
-            <div className={'mt-5 row ' + footerStyles.ayuda}>
-                <h1 className="font-weight-bold">¿Como podemos ayudarte?</h1>
-                <h3 className="mt-2 mt-0">Ponte en <a href="" onClick={handleShow} className={footerStyles.ayudaLinks}>contacto</a> con nosotros o encuentra <Link className={footerStyles.ayudaLinks} to="/cursos">nuestra oficina</Link> mas cercana</h3>
+            <div className={'mt-1 row ' + footerStyles.ayuda}>
+                <h1 className="font-weight-bold col-12 ">¿Como podemos ayudarte?</h1>
+                <h3 className="mt-2 mt-0 col-12 ">Ponte en <a href onClick={handleShow} className={footerStyles.ayudaLinks}>contacto</a> con nosotros o encuentra <Link className={footerStyles.ayudaLinks} to="/cursos">nuestra oficina</Link> mas cercana</h3>
             </div>
             <div className="px-0 px-lg-5">
                 <div className="row justify-content-between py-5 d-block d-lg-flex">

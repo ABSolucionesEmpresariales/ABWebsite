@@ -2,9 +2,10 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import banner from '../styles/banner.module.scss'
+/* import banner from '../styles/banner.module.scss' */
 import { MARKS } from '@contentful/rich-text-types'
 import Parallax from '../components/paralax'
+import Head from '../components/head'
 import imagenCotizacion from '../media/img/banner/fondo-cotiza.jpg'
 
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -41,6 +42,7 @@ const servicios = (props) => {
   }
   return (
     <Layout>
+        <Head title={props.data.contentfulServicio.titulo}/>
             <Parallax 
                 title={props.data.contentfulServicio.titulo}
                 subtitle={props.data.contentfulServicio.subTitulo}
