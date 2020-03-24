@@ -61,12 +61,12 @@ const Footer = () => {
                 </div>
                 <div className="row justify-content-between d-block d-lg-flex px-5 px-lg-0">
                     <ul className={'col-12 col-lg-10 row d-block d-lg-flex ' + footerStyles.ul}>
-                        <li className={footerStyles.li}><Link className={footerStyles.links} to="/cursos">Contactanos</Link></li>
+                        <li className={footerStyles.li}><a className={footerStyles.links} href onClick={handleShow}>Contactanos</a></li>
                         <li className={footerStyles.li}><Link className={footerStyles.links} to="/cursos">FAQ</Link></li>
-                        <li className={footerStyles.li}><Link className={footerStyles.links} to="/cursos">Politica de Privacidad</Link> </li>
+                        <li className={footerStyles.li}><Link className={footerStyles.links} to="/aviso_privacidad">Aviso de Privacidad</Link> </li>
                         <li className={footerStyles.li}><Link className={footerStyles.links} to="/cursos">Politica de Cookies</Link></li>
                         <li className={footerStyles.li}><Link className={footerStyles.links} to="/cursos">Terminos y Condiciones</Link></li>
-                        <li className={footerStyles.li}><Link className={footerStyles.links} to="/cursos">Conocenos</Link></li>
+                        <li className={footerStyles.li}><Link className={footerStyles.links} to="/quienes-somos">Conocenos</Link></li>
                     </ul>
                     <div className="col-12 col-lg-2 row mt-5 mt-lg-0">
                         <div className="col-3">

@@ -7,10 +7,11 @@ import Head from "../components/head"
 const AvisoPrivacidad = () => {
     return (
         <Layout>
+        <Head title="Aviso de privacidad"/>
             <div className="row d-block">
                 <div className="card col-lg-12">
                     <div className="card-body text-justify">
-                        <img className="img-fluid" src={BannerBack} />
+                        <img className="img-fluid" src={BannerBack} alt="aviso_privacidad"/>
                         <p className="my-3"> Gracias por unirte a nosotros, en UNILINE escuela al revés queremos
                         agradecerte por ser parte de este gran movimiento, queremos hacerte
                         saber que tú eres muy importante para nosotros, es por eso que en
@@ -127,7 +128,7 @@ const AvisoPrivacidad = () => {
                         <p> Usted podrá limitar el uso o divulgación de su información personal en
                         nuestra posesión, para el ejercicio de dichos derechos Usted deberá enviar
                         un correo electrónico a la siguiente dirección:
-                <a href="#">datospersonales@escuerlaalreves.com</a> con el asunto “SOLICITUD DE
+                <a href>datospersonales@escuerlaalreves.com</a> con el asunto “SOLICITUD DE
                 LIMITACIÓN O DIVULGACIÓN DE DATOS PERSONALES”.
                 Adicionalmente deberá contener la siguiente información.</p>
                         <p>1. Nombre del Titular.</p>
@@ -159,7 +160,7 @@ const AvisoPrivacidad = () => {
                             personales que estén en posesión de UNILINE escuela al revés lo podrá
                             realizar enviando la solicitud para ejercer sus derechos ARCO, a nuestro
                             Departamento de Datos Personales en nuestro correo electrónico:
-                <a href="#">datospersonales@escuerlaalreves.com</a>
+                <a href>datospersonales@escuerlaalreves.com</a>
                         </p>
                         <p> Usted podrá obtener el formato para ejercer sus derechos ARCO dando
                         clic aquí o bien a través de un escrito enviándolo a nuestro domicilio de
@@ -340,7 +341,7 @@ const AvisoPrivacidad = () => {
                         cualquier solicitud de Derechos ARCO y relacionada a los datos
                 personales del Titular.</p>
                         <p> Dirección: Autlán de Navarro, Jalisco. México Teléfono: (+523171035768)</p>
-                        <a href="#">Correo: datospersonales@escuerlaalreves.com</a>
+                        <a href>Correo: datospersonales@escuerlaalreves.com</a>
                         <small> Copyright © UNILINE escuela al revés 2020</small>
                     </div>
                 </div>
