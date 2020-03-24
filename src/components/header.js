@@ -63,7 +63,7 @@ const Header = () => {
                                     <Link className={headerStyles.item} to="/servicios/manuales_administrativos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faBook} />Manuales administrativos</Link>
                                     <Link className={headerStyles.item} to="/servicios/mejora_procesos_excel"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileExcel} />Mejora de procesos con excel</Link>
                                     <Link className={headerStyles.item} to="/servicios/excel_vba"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileCsv} />Software en excel y VBA</Link>
-                                    <Link className={headerStyles.item} to="/servicios/creacion_modelo_negocios"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileInvoiceDollar} />Creacion de modelo de negocios</Link>
+                                    <Link className={headerStyles.item} to="/servicios/Eprendiendo_con_el_modelo_canvas"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileInvoiceDollar} />Creacion de modelo de negocios</Link>
                                 </div>
                                 <div>
                                     <Link className={headerStyles.item} to="/servicios/plan_estrategias"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faChartLine} />Plan de estrategias</Link>
