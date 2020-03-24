@@ -4,7 +4,7 @@ import Parallax from '../components/paralax'
 import Video from '../components/video'
 import Card from '../components/card'
 import quienesCss from '../styles/quienes_somos.module.scss'
-import BannerBack from '../media/img/quienes_somos.jpg'
+import BannerBack from '../media/img/quienes_somos.webp'
 import { faCogs, faBrain, faChartPie, faChartLine } from '@fortawesome/free-solid-svg-icons'
 
 const QuienesSomos = () => {

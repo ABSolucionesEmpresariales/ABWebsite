@@ -50,20 +50,6 @@ const IndexPage = () => {
 
             </div>
 
-
-
-
-            {/* <div className="border col-6 text-center">
-                    <Image className="border" src="https://www.designthinkersgroup.us/wp-content/uploads/2018/10/Stakeholder-mapping-image-1184x670.jpg" alt="design_thinking" fluid />
-                    <p>Nuestro equipo investiga las mejores metodologias para ser mas efectivos.</p>
-                </div>
-
-                <div className="border col-6 text-center">
-                    <h1 className="border mt-3">Expertos en encontrar problemas</h1>
-                    <p className="border">Nuestro secreto radica en encontrar el verdadero problema. Un metodo probado y comprobado por nosotros mismo que te garantiza encontrar el problema en tu empresa para poder darle la solucion adecuada.</p>
-                </div> */
-            }
-
         </Layout >
     )
 }
