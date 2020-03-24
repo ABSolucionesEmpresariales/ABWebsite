@@ -51,18 +51,10 @@ const IndexPage = () => {
                     <p className={'align-middle'}>Nuestro secreto radica en encontrar el verdadero problema. Un metodo probado y comprobado por nosotros mismo que te garantiza encontrar el problema en tu empresa para poder darle la solucion adecuada.</p>
 
                 </div>
-<<<<<<< HEAD
                 
             </div>
 
-            <Delay wait={25000}>
-                <Newsletter />
-            </Delay>
-=======
-
-            </div>
-
->>>>>>> 6455412677d495a3069266f54578f11e8518f610
+           
         </Layout >
     )
 }
