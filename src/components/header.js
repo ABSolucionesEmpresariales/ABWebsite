@@ -36,13 +36,6 @@ const Header = () => {
 
     return (
         <header className="row">
-            <link
-                rel="stylesheet"
-                href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-                crossOrigin="anonymous"
-            />
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
             <Navbar expand="lg" className={'col-12 '+headerStyles.border}>
                 <Navbar.Brand to="/home">
                     <Link to="/"><Image src={data.fileName.childImageSharp.fluid.src} alt="ABsoluciones" fluid /></Link>
@@ -54,34 +47,34 @@ const Header = () => {
                             <Link className={'nav-link ' + headerStyles.font} to="/quienes-somos/">Quienes somos</Link>
                         </li>
                         <li className={'nav-item dropdown ' + headerStyles.dropdown + ' ' + headerStyles.font}>
-                            <Link className={'nav-link ' + headerStyles.font} to="#" id="navbardrop" data-toggle="dropdown">
+                            <p className={'nav-link ' + headerStyles.font} id="navbardrop" data-toggle="dropdown">
                                 Servicios
-                            <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></Link>
+                            <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></p>
                             <div className={'dropdown-menu ' + headerStyles.dropmenu_servicios}>
                                 <div>
                                     <Link className={headerStyles.item} to="/servicios/estructura_organizacional"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faSitemap} />Estructura organizacional</Link>
-                                    <Link className={headerStyles.item} to="/servicios/perfiles_de_puesto"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faIdBadge} />Creación de perfiles de puesto</Link>
-                                    <Link className={headerStyles.item} to="/servicios/descripcion_de_puesto"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faAddressCard} />Descripciones de puesto</Link>
+                                    <Link className={headerStyles.item} to="/servicios/creacion_perfiles_puestos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faIdBadge} />Creación de perfiles de puesto</Link>
+                                    <Link className={headerStyles.item} to="/servicios/descripciones_puestos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faAddressCard} />Descripciones de puesto</Link>
                                     <Link className={headerStyles.item} to="/servicios/organigramas"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faProjectDiagram} />Organigramas</Link>
                                     <Link className={headerStyles.item} to="/servicios/procesos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faCogs} />Procesos</Link>
                                 </div>
                                 <div>
-                                    <Link className={headerStyles.item} to="/servicios/politicas_y_procedimientos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faClipboard} />Politicas y procedimientos</Link>
+                                    <Link className={headerStyles.item} to="/servicios/politicas_procedimientos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faClipboard} />Politicas y procedimientos</Link>
                                     <Link className={headerStyles.item} to="/servicios/manuales_administrativos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faBook} />Manuales administrativos</Link>
-                                    <Link className={headerStyles.item} to="/servicios/procesos_con_excel"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileExcel} />Mejora de procesos con excel</Link>
-                                    <Link className={headerStyles.item} to="/servicios/excel_y_vba"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileCsv} />Software en excel y VBA</Link>
-                                    <Link className={headerStyles.item} to="/servicios/modelo_de_negocios"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileInvoiceDollar} />Creacion de modelo de negocios</Link>
+                                    <Link className={headerStyles.item} to="/servicios/mejora_procesos_excel"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileExcel} />Mejora de procesos con excel</Link>
+                                    <Link className={headerStyles.item} to="/servicios/excel_vba"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileCsv} />Software en excel y VBA</Link>
+                                    <Link className={headerStyles.item} to="/servicios/Eprendiendo_con_el_modelo_canvas"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileInvoiceDollar} />Creacion de modelo de negocios</Link>
                                 </div>
                                 <div>
-                                    <Link className={headerStyles.item} to="/servicios/plan_de_estrategias"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faChartLine} />Plan de estrategias</Link>
-                                    <Link className={headerStyles.item} to="/servicios/plan_servicio_al_cliente"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faHeadset} />Plan servicio al cliente</Link>
+                                    <Link className={headerStyles.item} to="/servicios/plan_estrategias"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faChartLine} />Plan de estrategias</Link>
+                                    <Link className={headerStyles.item} to="/servicios/plan_servicio_cliente"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faHeadset} />Plan servicio al cliente</Link>
                                 </div>
                             </div>
                         </li>
                         <li className={'nav-item dropdown ' + headerStyles.dropdown + ' ' + headerStyles.font}>
-                            <Link className={'nav-link ' + headerStyles.font} to="#" id="navbardrop" data-toggle="dropdown">
+                            <p className={'nav-link ' + headerStyles.font} id="navbardrop" data-toggle="dropdown">
                                 Capacitación
-                            <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></Link>
+                            <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></p>
                             <div className={'dropdown-menu ' + headerStyles.dropmenu_servicios}>
                                 <div>
                                     <Link className={headerStyles.item} to="/cursos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faGraduationCap} />Catalogo de cursos</Link>
@@ -96,16 +89,16 @@ const Header = () => {
                             </div>
                         </li>
                         <li className={'nav-item dropdown ' + headerStyles.dropdown + ' ' + headerStyles.font}>
-                            <Link className={'nav-link ' + headerStyles.font} to="#" id="navbardrop" data-toggle="dropdown">
+                            <p className={'nav-link ' + headerStyles.font} id="navbardrop" data-toggle="dropdown">
                                 Multimedia
-                            <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></Link>
+                            <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></p>
                             <div className={'dropdown-menu ' + headerStyles.dropmenu}>
                                 <Link className={headerStyles.item} to="/blog"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faComment} />Blog</Link>
                                 <Link className={headerStyles.item} to="/"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faYoutube} />Canal YouTube</Link>
                             </div>
                         </li>
                         <li className={'nav-item ' + headerStyles.font}>
-                            <Link to="" role="link" onClick={handleShow} onKeyDown={handleShow} className={'nav-link ' + headerStyles.font}>Contacto</Link>
+                            <a href onClick={handleShow} onKeyDown={handleShow} className={'nav-link ' + headerStyles.font}>Contacto</a>
                         </li>
                     </Nav>
                 </Navbar.Collapse>
@@ -119,7 +112,7 @@ const Header = () => {
                     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css" />
                     <style type="text/css" dangerouslySetInnerHTML={{ __html: "\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n\t\n" }} />
                     <div id="mc_embed_signup">
-                        <form action="https://outlook.us19.list-manage.com/subscribe/post?u=ba7ef46081ef599e35a2ccd93&id=c11f4979f2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+                    <form action="https://consultoresrh.us19.list-manage.com/subscribe/post?u=9a34b280f0498e881bbdf0a8a&id=70d4489e90" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
                             <div id="mc_embed_signup_scroll">
                                 <div className="indicates-required"><span className="asterisk">*</span> Campo requerido</div>
                                 <div className="mc-field-group">

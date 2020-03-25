@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { MARKS } from "@contentful/rich-text-types"
 import Layout from "../components/layout"
-import AcordeonSecciones from '../components/acrodeonsecciones'
+import AcordeonSecciones from '../components/acordeonsecciones'
 
 export const query = graphql`
   query($slug: String!) {

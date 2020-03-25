@@ -2,9 +2,11 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import banner from '../styles/banner.module.scss'
+/* import banner from '../styles/banner.module.scss' */
 import { MARKS } from '@contentful/rich-text-types'
 import Parallax from '../components/paralax'
+import Head from '../components/head'
+import imagenCotizacion from '../media/img/banner/fondo-cotiza.jpg'
 
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
@@ -40,6 +42,7 @@ const servicios = (props) => {
   }
   return (
     <Layout>
+        <Head title={props.data.contentfulServicio.titulo}/>
             <Parallax 
                 title={props.data.contentfulServicio.titulo}
                 subtitle={props.data.contentfulServicio.subTitulo}
@@ -71,10 +74,11 @@ const servicios = (props) => {
         </div>
       </div>
 
-      <div className={"row " + banner.imagenBannerCotizacion}>
-        <p className={"text-white text-center col-lg-12 " + banner.title}>Cotiza tu servicio de <span>{props.data.contentfulServicio.titulo}</span> </p>
-        <p className={"text-white text-center col-lg-12 mt-0"}>Para corizar tu servicio puedes comucarte al correo ceo@absoluciones.com</p>
-      </div>
+      <Parallax 
+        title={"Cotiza "+props.data.contentfulServicio.titulo+""}
+        subtitle={"Para corizar tu servicio puedes comucarte al correo ceo@absoluciones.com"}
+        background={imagenCotizacion}
+      />
     </Layout>
   )
 }

@@ -1,5 +1,5 @@
 import React from "react"
-import AcordeonSecciones from '../components/acrodeonsecciones'
+import AcordeonSecciones from '../components/acordeonsecciones'
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import Head from "../components/head"

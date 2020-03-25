@@ -6,11 +6,13 @@ import Card from '../components/card'
 import quienesCss from '../styles/quienes_somos.module.scss'
 import BannerBack from '../media/img/quienes_somos.webp'
 import { faCogs, faBrain, faChartPie, faChartLine } from '@fortawesome/free-solid-svg-icons'
+import Head from '../components/head'
 
 const QuienesSomos = () => {
 
     return (
         <Layout>
+            <Head title="Quienes somos"/>
             <Parallax title="Quienes Somos"
                 subtitle="Te capacitamos a pequeñas y grandes empresas chingon"
                 background={BannerBack}
