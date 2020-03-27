@@ -52,22 +52,16 @@ const Header = () => {
                             <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></p>
                             <div className={'dropdown-menu ' + headerStyles.dropmenu_servicios}>
                                 <div>
-                                    <Link className={headerStyles.item} to="/servicios/estructura_organizacional"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faSitemap} />Estructura organizacional</Link>
-                                    <Link className={headerStyles.item} to="/servicios/creacion_perfiles_puestos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faIdBadge} />Creación de perfiles de puesto</Link>
-                                    <Link className={headerStyles.item} to="/servicios/descripciones_puestos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faAddressCard} />Descripciones de puesto</Link>
-                                    <Link className={headerStyles.item} to="/servicios/organigramas"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faProjectDiagram} />Organigramas</Link>
-                                    <Link className={headerStyles.item} to="/servicios/procesos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faCogs} />Procesos</Link>
+                                    <Link className={headerStyles.item} to="/servicios/Estructura_organizacional"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faSitemap} />Estructura organizacional</Link>
+                                    <Link className={headerStyles.item} to="/servicios/Administra_tu_negocio_con_excel"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faIdBadge} />Gestiona tu empresa con EXCEL</Link>
+                                    <Link className={headerStyles.item} to="/servicios/Manuales_administrativos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faBook} />Manuales Administrativos</Link>
+                                    <Link className={headerStyles.item} to="/servicios/Modelo_canvas_para_emprender"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faProjectDiagram} />Modelo CANVAS</Link>
                                 </div>
                                 <div>
-                                    <Link className={headerStyles.item} to="/servicios/politicas_procedimientos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faClipboard} />Politicas y procedimientos</Link>
-                                    <Link className={headerStyles.item} to="/servicios/manuales_administrativos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faBook} />Manuales administrativos</Link>
-                                    <Link className={headerStyles.item} to="/servicios/mejora_procesos_excel"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileExcel} />Mejora de procesos con excel</Link>
-                                    <Link className={headerStyles.item} to="/servicios/excel_vba"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileCsv} />Software en excel y VBA</Link>
-                                    <Link className={headerStyles.item} to="/servicios/Eprendiendo_con_el_modelo_canvas"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileInvoiceDollar} />Creacion de modelo de negocios</Link>
-                                </div>
-                                <div>
-                                    <Link className={headerStyles.item} to="/servicios/plan_estrategias"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faChartLine} />Plan de estrategias</Link>
-                                    <Link className={headerStyles.item} to="/servicios/plan_servicio_cliente"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faHeadset} />Plan servicio al cliente</Link>
+                                    <Link className={headerStyles.item} to="/servicios/Crea_un_plan_estratégico"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faClipboard} />Creación de un Plan Estratégico </Link>
+                                    <Link className={headerStyles.item} to="/servicios/Implementación_de_una_cultura_de_servicio_al_cliente"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faBook} />Servicio al cliente</Link>
+                                    <Link className={headerStyles.item} to="/servicios/Evaluación_y_mejora_de_procesos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileExcel} />Procesos</Link>
+                                    <Link className={headerStyles.item} to="/servicios/Perfiles_y_descripcion_de_puestos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faCogs} />Diseño de Perfiles y descripciones de puesto</Link>
                                 </div>
                             </div>
                         </li>

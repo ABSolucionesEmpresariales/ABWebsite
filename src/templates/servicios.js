@@ -35,6 +35,14 @@ export const query = graphql`
 const servicios = (props) => {
 
   const options = {
+    renderNode: {
+      "embedded-asset-block": (node) => {
+          const alt = node.data.target.fields.title['en-US']
+          const url = node.data.target.fields.file['en-US'].url
+
+          return <img class={" col-lg-12 col-12"} alt={alt} src={url} />
+      }
+  },
     renderMark: {
       [MARKS.CODE]: embedded =>
         <div dangerouslySetInnerHTML={{ __html: embedded }} />
@@ -59,7 +67,7 @@ const servicios = (props) => {
           duration={2}
           animateOnce={true}
           className={"col-lg-6 col-12"}>
-              <p >{documentToReactComponents(props.data.contentfulServicio.cuerpo1.json)}</p>
+              <p >{documentToReactComponents(props.data.contentfulServicio.cuerpo1.json,options)}</p>
         </ScrollAnimation>
 
         <ScrollAnimation 
