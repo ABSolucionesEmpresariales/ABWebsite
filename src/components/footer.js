@@ -33,7 +33,7 @@ const Footer = () => {
 
     return (
         <footer>
-            <div className={'mt-1 row ' + footerStyles.ayuda}>
+            <div className={'row ' + footerStyles.ayuda}>
                 <h1 className="font-weight-bold col-12 ">¿Como podemos ayudarte?</h1>
                 <h3 className="mt-2 mt-0 col-12 ">Ponte en <a href onClick={handleShow} className={footerStyles.ayudaLinks}>contacto</a> con nosotros o encuentra <Link className={footerStyles.ayudaLinks} to="/cursos">nuestra oficina</Link> mas cercana</h3>
             </div>
