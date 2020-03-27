@@ -1,5 +1,6 @@
 .section {
- 
+  padding: 50px 0rem;
+  overflow: hidden;
 }
 
 .back {
@@ -10,7 +11,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: max-content;
+  overflow: hidden;
 }
 
 .right-text {
@@ -19,6 +20,9 @@
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
   padding: 50px;
   text-align: center;
+  overflow: visible;
+
+  // @media screen and (max-device-width: )
  
 }
 
@@ -38,3 +42,4 @@
 #section-two {
   background-image: linear-gradient(to bottom right, #b40000, #d9534f);
 }
+

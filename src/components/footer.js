@@ -33,7 +33,7 @@ const Footer = () => {
 
     return (
         <footer>
-            <div className={'mt-1 row ' + footerStyles.ayuda}>
+            <div className={'row ' + footerStyles.ayuda}>
                 <h1 className="font-weight-bold col-12 ">¿Como podemos ayudarte?</h1>
                 <h3 className="mt-2 mt-0 col-12 ">Ponte en <a href onClick={handleShow} className={footerStyles.ayudaLinks}>contacto</a> con nosotros o encuentra <Link className={footerStyles.ayudaLinks} to="/cursos">nuestra oficina</Link> mas cercana</h3>
             </div>
@@ -61,12 +61,12 @@ const Footer = () => {
                 </div>
                 <div className="row justify-content-between d-block d-lg-flex px-5 px-lg-0">
                     <ul className={'col-12 col-lg-10 row d-block d-lg-flex ' + footerStyles.ul}>
-                        <li className={footerStyles.li}><Link className={footerStyles.links} to="/cursos">Contactanos</Link></li>
+                        <li className={footerStyles.li}><a className={footerStyles.links} href onClick={handleShow}>Contactanos</a></li>
                         <li className={footerStyles.li}><Link className={footerStyles.links} to="/cursos">FAQ</Link></li>
-                        <li className={footerStyles.li}><Link className={footerStyles.links} to="/cursos">Politica de Privacidad</Link> </li>
+                        <li className={footerStyles.li}><Link className={footerStyles.links} to="/aviso_privacidad">Aviso de Privacidad</Link> </li>
                         <li className={footerStyles.li}><Link className={footerStyles.links} to="/cursos">Politica de Cookies</Link></li>
                         <li className={footerStyles.li}><Link className={footerStyles.links} to="/cursos">Terminos y Condiciones</Link></li>
-                        <li className={footerStyles.li}><Link className={footerStyles.links} to="/cursos">Conocenos</Link></li>
+                        <li className={footerStyles.li}><Link className={footerStyles.links} to="/quienes-somos">Conocenos</Link></li>
                     </ul>
                     <div className="col-12 col-lg-2 row mt-5 mt-lg-0">
                         <div className="col-3">

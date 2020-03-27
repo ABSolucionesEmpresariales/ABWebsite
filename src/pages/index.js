@@ -45,9 +45,13 @@ const IndexPage = () => {
 
             <div className={homeStyles.back + ' row'}>
 
-                <div className={homeStyles.rightText + ' col-sm-4 offset-sm-8'}>
+                <div className={
+                    homeStyles.rightText +
+                    ' col-xs-12 col-md-6 offset-md-6 col-xl-4 offset-xl-8 ' +
+                    'col-lg-5 offset-lg-7'
+                }>
 
-                    <h2 className={'align-middle'}>Expertos en encontrar problemas</h2>
+                    <h3 className={'align-middle'}>Expertos en encontrar problemas</h3>
                     <p className={'align-middle'}>Nuestro secreto radica en encontrar el verdadero problema. Un metodo probado y comprobado por nosotros mismo que te garantiza encontrar el problema en tu empresa para poder darle la solucion adecuada.</p>
 
                 </div>
