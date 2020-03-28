@@ -7,8 +7,8 @@ import headerStyles from '../styles/header.module.scss'
 import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-    faAngleDown, faComment, faGraduationCap, faCalendar, faLaptop, faSitemap, faIdBadge, faUsers,
-    faProjectDiagram, faCogs, faClipboard, faBook, faHeadset, faFileExcel, faClock
+    faAngleDown, faComment, faGraduationCap, faCalendar, faLaptop, faSitemap, faIdBadge,
+    faProjectDiagram, faCogs, faClipboard, faBook, faFileExcel
 } from '@fortawesome/free-solid-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
@@ -69,7 +69,7 @@ const Header = () => {
                             <p className={'nav-link ' + headerStyles.font} id="navbardrop" data-toggle="dropdown">
                                 Capacitación
                             <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></p>
-                            <div className={'dropdown-menu ' + headerStyles.dropmenu_servicios}>
+                            <div className={'dropdown-menu ' + headerStyles.dropmenu}>
                                 <div>
                                     <Link className={headerStyles.item} to="/cursos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faGraduationCap} />Catalogo de cursos</Link>
                                     <Link className={headerStyles.item} to="/calendario_cursos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faCalendar} />Calendario de cursos</Link>
