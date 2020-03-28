@@ -52,10 +52,10 @@ const Header = () => {
                             <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></p>
                             <div className={'dropdown-menu ' + headerStyles.dropmenu_servicios}>
                                 <div>
-                                    <Link className={headerStyles.item} to="/servicios/estructura_organizacional"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faSitemap} />Estructura organizacional</Link>
-                                    <Link className={headerStyles.item} to="/servicios/administra_tu_negocio_con_excel"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faIdBadge} />Gestiona tu empresa con EXCEL</Link>
-                                    <Link className={headerStyles.item} to="/servicios/manuales_administrativos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faBook} />Manuales Administrativos</Link>
-                                    <Link className={headerStyles.item} to="/servicios/modelo_canvas_para_emprender"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faProjectDiagram} />Modelo CANVAS</Link>
+                                    <Link className={headerStyles.item} to="/servicios/estructura_organizacional"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faSitemap} />Consultoría en Recursos Humanos</Link>
+                                    <Link className={headerStyles.item} to="/servicios/administra_tu_negocio_con_excel"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faFileExcel} />Creación de Softwares en Excel y VBA</Link>
+                                    <Link className={headerStyles.item} to="/servicios/manuales_administrativos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faBook} />Creación de Manuales Administrativos</Link>
+                                    <Link className={headerStyles.item} to="/servicios/modelo_canvas_para_emprender"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faProjectDiagram} />Creación de Modelos de Negocio</Link>
                                 </div>
                                 <div>
                                     <Link className={headerStyles.item} to="/servicios/crea_un_plan_estratégico"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faClipboard} />Plan Estratégico Empresarial</Link>
