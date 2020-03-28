@@ -70,7 +70,7 @@ const Header = () => {
                             <p className={'nav-link ' + headerStyles.font} id="navbardrop" data-toggle="dropdown">
                                 Capacitación
                             <FontAwesomeIcon style={{ marginLeft: "5px" }} icon={faAngleDown} /></p>
-                            <div className={'dropdown-menu ' + headerStyles.dropmenu_servicios}>
+                            <div className={'dropdown-menu ' + headerStyles.dropmenu}>
                                 <div>
                                     <Link className={headerStyles.item} to="/cursos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faGraduationCap} />Catalogo de cursos</Link>
                                     <Link className={headerStyles.item} to="/calendario_cursos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faCalendar} />Calendario de cursos</Link>

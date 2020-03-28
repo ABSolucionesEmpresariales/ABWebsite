@@ -6,7 +6,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { MARKS } from '@contentful/rich-text-types'
 import Parallax from '../components/paralax'
 import Head from '../components/head'
-import imagenCotizacion from '../media/img/banner/fondo-cotiza.jpg'
+import imagenCotizacion from '../media/img/banner/propuesta banner cotizaciones.png'
 
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
@@ -82,6 +82,7 @@ const servicios = (props) => {
         </div>
       </div>
 
+      
       <Parallax 
         title={"Cotiza "+props.data.contentfulServicio.titulo+""}
         subtitle={"Para corizar tu servicio puedes comucarte al correo ceo@absoluciones.com"}

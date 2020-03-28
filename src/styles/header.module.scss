@@ -3,10 +3,11 @@
     display: none;
   }
   .fondo {
-    background-color: #111111;
+    background-color: #ffffff;
+    height: 3rem;
   }
   .imagen {
-    max-width: 85%!important;
+    max-width: 75%!important;
   }
   .dropdown:hover {
     .dropmenu{
@@ -128,12 +129,12 @@
 } 
 .font{
   font-size: 20px;
-  color: #fe9e00!important;
+  color: #111111!important;
   margin-right: 1rem;
   cursor: pointer;
 }
 .font:hover{
-  color: #fafafa!important;
+  color: #fe9e00!important;
   transition: .3s;
 }
 .border {
