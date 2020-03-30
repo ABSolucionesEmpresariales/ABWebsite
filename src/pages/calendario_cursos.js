@@ -1,14 +1,15 @@
 import React from "react"
 import Layout from "../components/layout"
 import Head from '../components/head'
+import Parallax from '../components/paralax'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Modal } from 'react-bootstrap';
-import footerStyles from '../styles/footer.module.scss'
-import headerStyles from '../styles/header.module.scss'
-import banner from '../styles/banner.module.scss'
+import footerStyles from '../components/footer.module.scss'
+import headerStyles from '../components/header.module.scss'
 import { faCertificate, faMapMarkerAlt, faCalendarCheck, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import { BannerBack } from '../media/img/banner/oferta.jpg'
 /*import calendarioCursos from "../templates/calendario_cursos"*/
 
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -47,9 +48,10 @@ const CalendarioContenido = () => {
 
         <Layout>
             <Head title="calendario cursos"/>
-            <div className={"row "+banner.efectoBanner+' '+banner.imagenBannerCalendarioPage}>
-              <p className={"text-white d-inline "+banner.title}>Calendario de Cursos</p>
-            </div>
+            <Parallax title="Calendario de Cursos"
+                subtitle="Wacha nuestros cursos hommie, no te arrepentiras"
+                background={BannerBack}
+            />
 
             <div className="row mt-3 mb-3 p-2">
               <div className="col-lg-4 col-md-12">

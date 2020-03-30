@@ -1,7 +1,7 @@
 import React from 'react'
 import {graphql, useStaticQuery } from 'gatsby'
 import Slider from './slider'
-import customCss from '../styles/carousel.module.scss';
+import customCss from './carousel.module.scss';
 
 const Carousel = () => {
 	const data = useStaticQuery(graphql`

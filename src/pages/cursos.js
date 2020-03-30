@@ -1,12 +1,13 @@
 import React from "react";
 import Layout from "../components/layout";
 import Head from "../components/head";
+import Parallax from '../components/paralax'
 import { useStaticQuery, graphql } from 'gatsby';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Modal } from 'react-bootstrap';
-import footerStyles from '../styles/footer.module.scss'
-import headerStyles from '../styles/header.module.scss'
-import banner from '../styles/banner.module.scss'
+import footerStyles from '../components/footer.module.scss'
+import headerStyles from '../components/header.module.scss'
+import { BannerBack } from '../media/img/banner/oferta.jpg'
 
 
 const Cursos = () => {
@@ -32,9 +33,10 @@ const Cursos = () => {
     return (
         <Layout>
             <Head title="Cursos" />
-            <div className={"row "+banner.efectoBanner+' '+banner.imagenBannerCursos}>
-              <p className={"text-white d-inline "+banner.title}>Catalogo de Cursos</p>
-            </div>
+            <Parallax title="Catalogo de cursos"
+                subtitle="Wacha nuestros cursos hommie"
+                background={BannerBack}
+            />
             <div className="row d-block d-lg-flex">
                 <div className="col-lg-3 px-0 my-3">
                     <div className="card text-center mx-lg-5">

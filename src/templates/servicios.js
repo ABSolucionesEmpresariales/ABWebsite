@@ -7,7 +7,6 @@ import { MARKS } from '@contentful/rich-text-types'
 import Parallax from '../components/paralax'
 import Head from '../components/head'
 import serviciosStyle from './servicios.module.scss'
-import imagenCotizacion from '../media/img/banner/propuesta_banner_cotizaciones.png'
 
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
@@ -80,7 +79,7 @@ const servicios = (props) => {
             <p >{documentToReactComponents(props.data.contentfulServicio.cuerpo2.json, options)}</p>
           </ScrollAnimation>
 
-        </div>
+        </div>./styles
       </div>
 
 {/* Elvetica */}

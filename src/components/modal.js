@@ -1,7 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import footerStyles from '../styles/footer.module.scss'
-import headerStyles from '../styles/header.module.scss'
+import footerStyles from './footer.module.scss'
+import headerStyles from './header.module.scss'
 import { Modal } from 'react-bootstrap';
 
 const Newsletter = () => {
