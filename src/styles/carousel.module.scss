@@ -167,7 +167,7 @@
 		transition: all .3s ease;
 		transform: translateX(300px);
 		opacity: 0;
-		text-shadow: 0 0 0 .2em #8f7!important;
+		text-shadow: 0.1em 0.1em 0.1em #000!important;
 
 	}
 
@@ -180,6 +180,8 @@
 		transition: all .5s ease;
 		transform: translateX(-300px);
 		opacity: 0;
+		text-shadow: 0.1em 0.1em 0.1em #000!important;
+
 	}
 
 	& button {
