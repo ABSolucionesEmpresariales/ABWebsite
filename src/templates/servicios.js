@@ -6,7 +6,8 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { MARKS } from '@contentful/rich-text-types'
 import Parallax from '../components/paralax'
 import Head from '../components/head'
-import imagenCotizacion from '../media/img/banner/propuesta banner cotizaciones.png'
+import serviciosStyle from './servicios.module.scss'
+import imagenCotizacion from '../media/img/banner/propuesta_banner_cotizaciones.png'
 
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
@@ -37,12 +38,12 @@ const servicios = (props) => {
   const options = {
     renderNode: {
       "embedded-asset-block": (node) => {
-          const alt = node.data.target.fields.title['en-US']
-          const url = node.data.target.fields.file['en-US'].url
+        const alt = node.data.target.fields.title['en-US']
+        const url = node.data.target.fields.file['en-US'].url
 
-          return <img class={" col-lg-12 col-12"} alt={alt} src={url} />
+        return <img class={" col-lg-12 col-12"} alt={alt} src={url} />
       }
-  },
+    },
     renderMark: {
       [MARKS.CODE]: embedded =>
         <div dangerouslySetInnerHTML={{ __html: embedded }} />
@@ -50,44 +51,48 @@ const servicios = (props) => {
   }
   return (
     <Layout>
-        <Head title={props.data.contentfulServicio.titulo}/>
-            <Parallax 
-                title={props.data.contentfulServicio.titulo}
-                subtitle={props.data.contentfulServicio.subTitulo}
-                background={props.data.contentfulServicio.imagenBanner.file.url}
-            />
+      <Head title={props.data.contentfulServicio.titulo} />
+      <Parallax
+        title={props.data.contentfulServicio.titulo}
+        subtitle={props.data.contentfulServicio.subTitulo}
+        background={props.data.contentfulServicio.imagenBanner.file.url}
+      />
 
 
       <div className={"container"}>
         <div className={"row m-lg-3 m-1"}>
-        <ScrollAnimation 
-          animateIn="bounceInLeft"
-          animateOut="bounceOutLeft"
-          animatePreScroll={false}
-          duration={2}
-          animateOnce={true}
-          className={"col-lg-6 col-12"}>
-              <p >{documentToReactComponents(props.data.contentfulServicio.cuerpo1.json,options)}</p>
-        </ScrollAnimation>
+          <ScrollAnimation
+            animateIn="bounceInLeft"
+            animateOut="bounceOutLeft"
+            animatePreScroll={false}
+            duration={2}
+            animateOnce={true}
+            className={"col-lg-6 col-12"}>
+            <p >{documentToReactComponents(props.data.contentfulServicio.cuerpo1.json, options)}</p>
+          </ScrollAnimation>
 
-        <ScrollAnimation 
-          animateIn="fadeInUp"
-          animateOut="fadeOut"
-          delay={1}
-          animateOnce={true}
-          className={"col-lg-6 col-12"}>
+          <ScrollAnimation
+            animateIn="fadeInUp"
+            animateOut="fadeOut"
+            delay={1}
+            animateOnce={true}
+            className={"col-lg-6 col-12"}>
             <p >{documentToReactComponents(props.data.contentfulServicio.cuerpo2.json, options)}</p>
-        </ScrollAnimation>
+          </ScrollAnimation>
 
         </div>
       </div>
 
-      
-      <Parallax 
-        title={"Cotiza "+props.data.contentfulServicio.titulo+""}
-        subtitle={"Para corizar tu servicio puedes comucarte al correo ceo@absoluciones.com"}
-        background={imagenCotizacion}
-      />
+{/* Elvetica */}
+      <div className={'row'}>
+        <div className={serviciosStyle.bannerCotizacion}>
+        <h1 className={serviciosStyle.title +' text-center'}> PARA OBTENER UNA COTIZACIÓN</h1>
+        <h2 className={serviciosStyle.subtitle + ' text-center'}>¡Juntos hacemos más!</h2>
+
+        <h1 className={serviciosStyle.tel + ' text-center'}>(317) 103 57 68</h1>
+        <h1 className={serviciosStyle.mail + ' text-center'}>ceo@artificialbrain.mx</h1>
+        </div>
+      </div>
     </Layout>
   )
 }
