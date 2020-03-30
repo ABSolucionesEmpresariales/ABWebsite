@@ -80,7 +80,7 @@ const servicios = (props) => {
             <p >{documentToReactComponents(props.data.contentfulServicio.cuerpo2.json, options)}</p>
           </ScrollAnimation>
 
-        </div>
+        </div>./styles
       </div>
 
 {/* Elvetica */}

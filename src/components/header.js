@@ -2,8 +2,8 @@ import React from 'react'
 import { Link, graphql, useStaticQuery, } from 'gatsby'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, Modal } from 'react-bootstrap';
-import footerStyles from '../styles/footer.module.scss'
-import headerStyles from '../styles/header.module.scss'
+import footerStyles from './footer.module.scss'
+import headerStyles from './header.module.scss'
 import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -123,7 +123,7 @@ const Header = () => {
                                     <textarea type="text" defaultValue="" name="MMERGE4" id="mce-MMERGE4" style={{ width: "100%", height: "4rem" }} />
                                 </div>
                                 <div id="mce-responses" className="clear">
-                                    <div className="response" id="mce-error-response" style={{ display: 'none' }} />
+                                ../styles          <div className="response" id="mce-error-response" style={{ display: 'none' }} />
                                     <div className="response" id="mce-success-response" style={{ display: 'none' }} />
                                 </div>    {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}
                                 <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true"><input type="text" name="b_ba7ef46081ef599e35a2ccd93_c11f4979f2" tabIndex={-1} defaultValue="" /></div>

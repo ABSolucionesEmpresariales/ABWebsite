@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import { graphql } from 'gatsby'
 import {documentToReactComponents} from '@contentful/rich-text-react-renderer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import calendarioCursoscss from '../styles/calendario_cursos.module.scss'
+import calendarioCursoscss from './calendario_cursos.module.scss'
 import { faCertificate, faMapMarkerAlt, faCalendarCheck, faClock, faUser, faDollarSign } from '@fortawesome/free-solid-svg-icons'
 
 export const query = graphql`

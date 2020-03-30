@@ -1,5 +1,5 @@
 import React from 'react'
-import cardStyle from '../styles/card.module.scss'
+import cardStyle from './card.module.scss'
 import ScrollAnimation from 'react-animate-on-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 

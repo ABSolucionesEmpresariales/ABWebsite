@@ -1,6 +1,6 @@
 import React from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
-import videoStyle from '../styles/video.module.scss'
+import videoStyle from './video.module.scss'
 import "animate.css/animate.min.css";
 
 const Video = ({ videoSrcURL, videoTitle, width, height }) => (
