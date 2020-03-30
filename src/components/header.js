@@ -7,8 +7,8 @@ import headerStyles from '../styles/header.module.scss'
 import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-    faAngleDown, faComment, faGraduationCap, faCalendar, faLaptop, faSitemap, faIdBadge,
-    faProjectDiagram, faCogs, faClipboard, faBook, faFileExcel
+    faAngleDown, faComment, faGraduationCap, faCalendar, faLaptop, faSitemap, faIdBadge, faAddressCard, faUsers,
+    faProjectDiagram, faCogs, faClipboard, faBook, faHeadset, faChartLine, faFileInvoiceDollar, faFileExcel, faFileCsv, faClock
 } from '@fortawesome/free-solid-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
@@ -26,7 +26,7 @@ const Header = () => {
             }
             fileName: file(relativePath: { eq: "img/logo.png" }) {
                 childImageSharp {
-                    fluid(maxWidth: 60, maxHeight: 60) {
+                    fluid(maxWidth: 300, maxHeight: 55) {
                         src
                     }
                 }
@@ -36,9 +36,9 @@ const Header = () => {
 
     return (
         <header className="row">
-            <Navbar expand="lg" className={'col-12 ' + headerStyles.border}>
+            <Navbar expand="lg" className={'col-12 '+headerStyles.fondo}>
                 <Navbar.Brand to="/home">
-                    <Link to="/"><Image src={data.fileName.childImageSharp.fluid.src} alt="ABsoluciones" fluid /></Link>
+                    <Link to="/"><Image className={headerStyles.imagen} src={data.fileName.childImageSharp.fluid.src} alt="ABsoluciones" fluid /></Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="flex justify-content-end">
@@ -62,6 +62,7 @@ const Header = () => {
                                     <Link className={headerStyles.item} to="/servicios/implementación_de_una_cultura_de_servicio_al_cliente"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faBook} />Plan de Servicio al Cliente</Link>
                                     <Link className={headerStyles.item} to="/servicios/evaluación_y_mejora_de_procesos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faCogs} />Evaluación y Mejora de Procesos</Link>
                                     <Link className={headerStyles.item} to="/servicios/perfiles_y_descripcion_de_puestos"><FontAwesomeIcon style={{ marginRight: "10px" }} icon={faIdBadge} />Diseño de Perfil y Descripción de Puestos</Link>
+                                    
                                 </div>
                             </div>
                         </li>
@@ -101,7 +102,7 @@ const Header = () => {
                     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css" />
                     <style type="text/css" dangerouslySetInnerHTML={{ __html: "\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n\t\n" }} />
                     <div id="mc_embed_signup">
-                        <form action="https://consultoresrh.us19.list-manage.com/subscribe/post?u=9a34b280f0498e881bbdf0a8a&id=70d4489e90" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+                    <form action="https://consultoresrh.us19.list-manage.com/subscribe/post?u=9a34b280f0498e881bbdf0a8a&id=70d4489e90" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
                             <div id="mc_embed_signup_scroll">
                                 <div className="indicates-required"><span className="asterisk">*</span> Campo requerido</div>
                                 <div className="mc-field-group">

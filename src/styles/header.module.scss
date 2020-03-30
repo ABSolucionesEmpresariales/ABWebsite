@@ -2,6 +2,13 @@
   .dropmenu{
     display: none;
   }
+  .fondo {
+    background-color: #ffffff;
+    height: 3rem;
+  }
+  .imagen {
+    max-width: 75%!important;
+  }
   .dropdown:hover {
     .dropmenu{
       margin-top: -30px;
@@ -68,7 +75,7 @@
       margin-left: -20px;
       display: block;
       position:absolute;
-      background-color: white;
+      background-color: #fafafa;
       z-index: 1000;
       animation: example .3s;     
     }
@@ -78,7 +85,7 @@
       flex-direction: row!important;
       display: flex!important;
       position:absolute;
-      background-color: white;
+      background-color: #fafafa;
       z-index: 1000;
       animation: example .3s;    
     }
@@ -100,7 +107,7 @@
     clear: both;
     font-size: 19px;
     font-weight: 400;
-    color: #212529;
+    color: black;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
@@ -113,7 +120,7 @@
     clear: both;
     font-weight: 400;
     background-color: rgba(0, 0, 0, 0.040);
-    color: rgb(0, 0, 90)!important;
+    color: #ffa726!important;
     text-decoration: none;
     text-align: inherit;
     white-space: nowrap;
@@ -122,12 +129,12 @@
 } 
 .font{
   font-size: 20px;
-  color: black!important;
+  color: #111111!important;
   margin-right: 1rem;
   cursor: pointer;
 }
 .font:hover{
-  color: rgb(0, 0,90)!important;
+  color: #fe9e00!important;
   transition: .3s;
 }
 .border {
