@@ -6,8 +6,8 @@ import { Link } from 'gatsby'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import headerStyles from '../styles/header.module.scss'
-import footerStyles from '../styles/footer.module.scss'
+import headerStyles from './header.module.scss'
+import footerStyles from './footer.module.scss'
 
 const Footer = () => {
     const [show, setShow] = React.useState(false);

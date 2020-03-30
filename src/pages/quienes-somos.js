@@ -100,7 +100,7 @@ const QuienesSomos = () => {
                             innovadoras propuestas de valor."
                             icon={faBrain}
                             iconSize="3x"
-                            entrada="bounceInRight"
+                            entrada="bounceInDown"
                         />
                     </div>
 
@@ -112,7 +112,7 @@ const QuienesSomos = () => {
                             interna y externa."
                             icon={faBrain}
                             iconSize="3x"
-                            entrada="bounceInLeft"
+                            entrada="bounceInRight"
                         />
                     </div>
                 </div>
@@ -136,7 +136,7 @@ const QuienesSomos = () => {
                             entre estos tres factores estará presentes en cada producto o servicio ofrecido por AB."
                             icon={faChartLine}
                             iconSize="3x"
-                            entrada="bounceInRight"
+                            entrada="bounceInUp"
                         />
                     </div>
                     <div className="col-sm-4">
@@ -148,7 +148,7 @@ const QuienesSomos = () => {
                             dirigida a: Emprendedores, Empresas"
                             icon={faChartLine}
                             iconSize="3x"
-                            entrada="bounceInLeft"
+                            entrada="bounceInRight"
                         />
                     </div>
                 </div>

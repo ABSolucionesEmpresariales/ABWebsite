@@ -1,5 +1,3 @@
-
-
 @media (min-width: 320px) {
   .dropmenu{
     display: none;
@@ -73,7 +71,7 @@
   }
   .dropdown:hover {
     .dropmenu{
-      margin-top: 0px!important;
+      margin-top: -8px!important;
       margin-left: -20px;
       display: block;
       position:absolute;
@@ -82,7 +80,7 @@
       animation: example .3s;     
     }
     .dropmenu_servicios{
-      margin-top: 0px!important;
+      margin-top: -8px!important;
       margin-left: -300px!important;
       flex-direction: row!important;
       display: flex!important;
@@ -92,8 +90,8 @@
       animation: example .3s;    
     }
     @keyframes example {
-      0%  {top:70px;}
-      100%  {top:46px;}
+      0%  {top:80px;}
+      100%  {top:62px;}
       from{
         opacity: 0;
       }
@@ -143,7 +141,6 @@
   font-size: 20px;
   color: #111111!important;
   margin-right: 1rem;
-  margin-bottom: 0;
   cursor: pointer;
 }
 .font:hover{
