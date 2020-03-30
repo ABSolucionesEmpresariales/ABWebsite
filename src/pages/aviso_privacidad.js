@@ -12,7 +12,7 @@ const AvisoPrivacidad = () => {
                 <div className="card col-lg-12">
                     <div className="card-body text-justify">
                         <img className="img-fluid" src={BannerBack} alt="aviso_privacidad"/>
-                        <p className="my-3"> Gracias por unirte a nosotros, en UNILINE escuela al revés queremos
+                        <p className="my-3"> Gracias por unirte a nosotros, en Artificial Brain queremos
                         agradecerte por ser parte de este gran movimiento, queremos hacerte
                         saber que tú eres muy importante para nosotros, es por eso que en
                         cumplimiento con Ley Federal de Protección de Datos Personales en
@@ -34,9 +34,9 @@ const AvisoPrivacidad = () => {
 
                         <p> c) Responsable: Para los efectos del presente Aviso de Privacidad, el
                         responsable del tratamiento, uso y protección de sus Datos Personales
-                    será UNILINE escuela al revés.</p>
+                    será Artificial Brain.</p>
 
-                        <p> d) Plataforma: Plataforma o sitio web de UNILINE escuela al revés, en el
+                        <p> d) Plataforma: Plataforma o sitio web de Artificial Brain, en el
                         cual se genera de forma espontánea información para estudios de
                     mercado de diversos productos o servicios.</p>
                         <p>e) Titular: Persona física o moral a quien corresponden los Datos
@@ -45,8 +45,8 @@ const AvisoPrivacidad = () => {
                         <h5>II. DATOS PERSONALES QUE RECABAMOS</h5>
 
                         <p>
-                            Los siguientes datos personales serán recabados por UNILINE escuela al
-                            revés de la manera descrita en el presente Aviso de Privacidad:
+                            Los siguientes datos personales serán recabados por Artificial Brain
+                             de la manera descrita en el presente Aviso de Privacidad:
                             -Datos de identificación: se podrá recabar su nombre y apellido; domicilio
                             particular, laboral o fiscal; fecha de nacimiento; país y entidad de
                             nacimiento, edad; nacionalidad, estado civil, ocupación, profesión,
@@ -54,12 +54,12 @@ const AvisoPrivacidad = () => {
                             casa, celulares y/ o de trabajo, correos electrónicos, estudios realizados,
                             dependientes económicos, datos financieros, Clave Única de Registro de
                             Población (CURP); Clave del Registro Federal de Contribuyentes.
-                            -UNILINE escuela al revés no recaba ningún dato personal sensible a
+                            -Artificial Brain no recaba ningún dato personal sensible a
                     través de su sitio web ni de ningún medio.</p>
 
                         <h5>III. FINALIDADES PRINCIPALES Y/O USOS DE SUS DATOS PERSONALES</h5>
                         <p>
-                            Las finalidades principales por las que UNILINE escuela al revés recabará
+                            Las finalidades principales por las que Artificial Brain recabará
                             sus datos personales son las siguientes:
                 </p>
                         <p>
@@ -74,14 +74,14 @@ const AvisoPrivacidad = () => {
                             3. Fines mercadotécnicos.
                 </p>
                         <p> 4. Poder prestar los servicios disponibles en las distintas plataformas.
-                        UNILINE escuela al revés hará uso de su Datos Personales siempre en
+                        Artificial Brain hará uso de su Datos Personales siempre en
                         atención a lo estipulado en el presente Aviso de Privacidad o sus
                         actualizaciones, siempre estarán disponibles en la Plataforma y en
                         atención a los principios de licitud, consentimiento, información, calidad,
                     finalidad, lealtad, proporcionalidad y responsabilidad.</p>
 
                         <h5>IV. FINALIDADES ACCESORIAS DEL USO</h5>
-                        <p> Las finalidades por las que UNILINE escuela al revés recaba sus Datos
+                        <p> Las finalidades por las que Artificial Brain recaba sus Datos
                         Personales son para cumplir con obligaciones derivadas del uso de su
                         Plataforma, para fines estadísticos, para informar sobre cambios o nuevos
                         productos o servicios, evaluar la calidad del servicio, determinar la calidad
@@ -92,11 +92,11 @@ const AvisoPrivacidad = () => {
                 realizar estudios internos sobre hábitos de consumo.</p>
 
                         <h5>V. TRANSFERENCIA DE DATOS</h5>
-                        <p>Usted acepta y reconoce que UNILINE escuela al revés podrá realizar las
+                        <p>Usted acepta y reconoce que Artificial Brain podrá realizar las
                 transferencias de sus datos personas como se describe a continuación:</p>
 
-                        <p>a) Otras personas que trabajan con y para UNILINE escuela al revés.
-                        UNILINE escuela al revés usa determinados terceros de confianza (por
+                        <p>a) Otras personas que trabajan con y para Artificial Brain.
+                        Artificial Brain usa determinados terceros de confianza (por
                         ejemplo, proveedores de soporte para clientes y servicios de informática)
                         para prestar, mejorar, proteger y promocionar los Servicios.
                         Estos terceros solamente tendrán acceso a tu información para llevar a
@@ -113,13 +113,13 @@ const AvisoPrivacidad = () => {
             </p>
 
                         <p>
-                            c) prevenir fraudes o abuso contra UNILINE escuela al revés o contra
+                            c) prevenir fraudes o abuso contra Artificial Brain o contra
                             nuestros usuarios;
             </p>
 
                         <p>
                             d) proteger los derechos, la propiedad, la seguridad o los intereses de
-                            UNILINE escuela al revés.
+                            Artificial Brain.
             </p>
 
                         <h5>VI. LIMITACIÓN DEL USO O DIVULGACIÓN DE SUS DATOS
@@ -145,8 +145,7 @@ const AvisoPrivacidad = () => {
                 CANCELACIÓN U OPOSICIÓN (ARCO)</h5>
 
                         <p>
-                            Usted tiene el derecho, en todo momento, a solicitar a UNILINE escuela al
-                            revés la cancelación (eliminación) de sus datos personales cuando
+                            Usted tiene el derecho, en todo momento, a solicitar a Artificial Brain la cancelación (eliminación) de sus datos personales cuando
                             considere que los mismos no están siendo tratados conforme a los
                             principios, deberes y obligaciones previstas en la Legislación Vigente
                             Aplicable. Esta cancelación implica la supresión total o parcial de la
@@ -157,18 +156,18 @@ const AvisoPrivacidad = () => {
             </p>
                         <p>
                             Si usted quiere ejercer sus derechos ARCO respecto a sus datos
-                            personales que estén en posesión de UNILINE escuela al revés lo podrá
+                            personales que estén en posesión de Artificial Brain lo podrá
                             realizar enviando la solicitud para ejercer sus derechos ARCO, a nuestro
                             Departamento de Datos Personales en nuestro correo electrónico:
                 <a href>datospersonales@escuerlaalreves.com</a>
                         </p>
                         <p> Usted podrá obtener el formato para ejercer sus derechos ARCO dando
                         clic aquí o bien a través de un escrito enviándolo a nuestro domicilio de
-                        UNILINE escuela al revés señalado en el numeral XIII DATOS DE
+                        Artificial Brain señalado en el numeral XIII DATOS DE
                         CONTACTO.
             </p>
 
-                        <p> Para responder a su solicitud UNILINE escuela al revés tendrá un plazo de
+                        <p> Para responder a su solicitud Artificial Brain tendrá un plazo de
                         veinte (20) días hábiles contados a partir de la fecha en que recibió la
                         solicitud para responder. Si la solicitud es procedente, se hará efectiva
                         dentro de los quince (15) días hábiles siguientes a la fecha en que se le
@@ -177,12 +176,12 @@ const AvisoPrivacidad = () => {
                         lo ameriten. La entrega de información procederá previa acreditación de su
                         identidad o de su representante legal, según corresponda. Si usted
                         deseara revocar el consentimiento otorgado para el tratamiento de datos
-                        personales por parte del UNILINE escuela al revés lo deberá informar a
+                        personales por parte del Artificial Brain lo deberá informar a
                 ésta por escrito de la misma manera.</p>
 
                         <p>
                             Al momento en que usted haga la revocación del uso de sus datos
-                            personales existe la posibilidad de que UNILINE escuela al revés no pueda
+                            personales existe la posibilidad de que Artificial Brain no pueda
                             seguir prestándole sus servicios o productos.
             </p>
                         <p>
@@ -190,8 +189,8 @@ const AvisoPrivacidad = () => {
                             Procedimiento de Protección de Datos ante el Instituto Federal de Acceso
                 a la Información y Protección de Datos (<a href=" http://www.ifai.gob.mx">www.ifai.gob.mx</a>) dentro de
                 los 15
-                días siguientes a la fecha en que reciba la respuesta de UNILINE escuela
-                al revés o a partir de que concluya el plazo de 20 días contados a partir de
+                días siguientes a la fecha en que reciba la respuesta de Artificial Brain
+                o a partir de que concluya el plazo de 20 días contados a partir de
                 la fecha de recepción de su solicitud de ejercicio de derechos.
             </p>
 
@@ -209,7 +208,7 @@ const AvisoPrivacidad = () => {
                         <h5>IX. ACEPTACIÓN</h5>
                         <p> Al ponerse a disposición el presente Aviso de Privacidad y la no
                         manifestación de oposición alguna por el Titular, se entenderá que el
-                        Titular otorga a UNILINE escuela al revés su consentimiento para llevar a
+                        Titular otorga a Artificial Brain su consentimiento para llevar a
                         cabo el tratamiento de los Datos Personales que hubieran sido
                         proporcionados y/o los que con motivo de alguna de las finalidades
                 establecidas en el presente proporcione en lo futuro.</p>
@@ -227,14 +226,14 @@ const AvisoPrivacidad = () => {
                 electrónico.</p>
 
                         <h5> XI. GARANTÍA DE SEGURIDAD Y ALMACENAMIENTO DE DATOS</h5>
-                        <p> No obstante que UNILINE escuela al revés utiliza la tecnología más
+                        <p> No obstante que Artificial Brain utiliza la tecnología más
                         avanzada para salvaguardar los datos que proporciona el Titular, existe la
                         probabilidad de que pueda haber un defecto en la programación de las
                         aplicaciones que utilizamos, que permita el acceso forzado a la
                         información. Aún y cuando esta situación se llegará a dar, tus datos están
                         protegidos mediante procesos de cifrado avanzado que hacen imposible la
-                        recuperación útil de la información por un tercero ajeno a UNILINE escuela
-                        al revés. Nuestra garantía es hacer todo lo que razonablemente esté a
+                        recuperación útil de la información por un tercero ajeno a Artificial Brain.
+                        Nuestra garantía es hacer todo lo que razonablemente esté a
                 nuestro alcance para resguardar tus datos.</p>
                         <p>
                             Para prestar los Servicios, podremos almacenar, procesar y transmitir sus
@@ -245,19 +244,19 @@ const AvisoPrivacidad = () => {
             </p>
 
                         <p> Una vez cumplida la o las finalidades del tratamiento, y cuando no exista
-                        disposición legal o reglamentaria que establezca lo contrario, UNILINE
-                        escuela al revés procederá a la cancelación de los datos personales, en su
+                        disposición legal o reglamentaria que establezca lo contrario, Artificial Brain
+                        procederá a la cancelación de los datos personales, en su
                 posesión previo bloqueo de los mismos, para su posterior supresión.</p>
 
                         <h5>
                             XII. INFORMACIÓN DE OTROS SITIOS
             </h5>
                         <p> Debes tomar en cuenta que la información que alimentas en sitios ajenos a
-                        UNILINE escuela al revés puede coincidir con aquella que has alimentado
-                o alimentarás en los formularios de UNILINE escuela al revés.</p>
+                        Artificial Brain puede coincidir con aquella que has alimentado
+                o alimentarás en los formularios de Artificial Brain.</p>
                         <p>En consecuencia, debes estar consciente y ser responsable de tener el
-                        mismo cuidado que tienes con tu información en los sitios de UNILINE
-                        escuela al revés, en los demás sitios en los que navegues o alimentes
+                        mismo cuidado que tienes con tu información en los sitios de Artificial Brain, 
+                        en los demás sitios en los que navegues o alimentes
                 información de cualquier tipo.</p>
 
                         <h5>XIV. Datos de pago</h5>
@@ -268,13 +267,13 @@ const AvisoPrivacidad = () => {
                         proporcionar algunos datos de pago y facturación directamente a nuestros
                         socios de procesamiento de pago, como el nombre, la información de la
                         tarjeta de crédito y el código postal del usuario. Por motivos de seguridad,
-                        UNILINE escuela al revés no recopila ni almacena datos confidenciales del
+                        Artificial Brain no recopila ni almacena datos confidenciales del
                         titular de la tarjeta, como todos los números de la tarjeta de crédito o los
                 datos de autenticación de la tarjeta.</p>
 
                         <h5>XV. TARIFAS</h5>
 
-                        <p> UNILINE escuela al revés se reserva el derecho de cambiar sus tarifas o
+                        <p> Artificial Brain se reserva el derecho de cambiar sus tarifas o
                         cargos por los servicios ofrecidos en el Sitio Web (o de comenzar a cobrar
                         por cualquier servicio gratuito), tomando en cuenta que las tarifas pagadas
                         antes de dichos cambios no resultarán afectadas, sin embargo, podrán
@@ -291,7 +290,7 @@ const AvisoPrivacidad = () => {
                 derechos en general de cualquier persona.</p>
                         <p>c. Intentar acceder o realizar búsquedas en motores de búsquedas o
                         softwares (spiders, robots, crawlers, herramientas de minería de datos o
-                        similares) distintos de aquellos provistos por UNILINE Escuela al reves o
+                        similares) distintos de aquellos provistos por Artificial Brain o
                         aquellos motores de búsquedas genéricos provistos por terceros y de
                         acceso público la Internet.
                 Generar o enviar correos no deseados a cualquier persona o URL.</p>
@@ -317,14 +316,14 @@ const AvisoPrivacidad = () => {
                 empleador.</p>
                         <p> c. El contenido compartido no acarrea ni contagiará de virus o cualquier
                 software dañino (malware) o destructivo.</p>
-                        <p> UNILINE escuela al revés se reserva el aviso y en cualquier momento la
+                        <p> Artificial Brain se reserva el aviso y en cualquier momento la
                         prestación de los Servicios y el acceso a Contenidos en el Sitio Web a
                         aquellos Usuarios que infrinjan los presentes Términos y Condiciones de
                 Uso.</p>
                         <h5>XVII. CONDICIONES PARA ALUMNOS</h5>
                         <p> Los Alumnos aceptan todas las Condiciones como también las Políticas de
                         Privacidad y cualquier política de cancelación publicada en el Sitio Web.
-                        Todas las clases en UNILINE escuela al revés se mantendrán disponibles
+                        Todas las clases en Artificial Brain se mantendrán disponibles
                         para acceso ilimitado, a menos que se dé de bajo el contenido por motivos
                 de derechos de autor.</p>
 
@@ -333,7 +332,7 @@ const AvisoPrivacidad = () => {
                         llevar a otras clases, o bien para interrumpir cualquier clase o relación del
                 Profesor con sus alumnos.</p>
                         <h5> XVIII. DATOS DE CONTACTO</h5>
-                        <p> Tus datos son tratados y resguardados por UNILINE escuela al revés; si
+                        <p> Tus datos son tratados y resguardados por Artificial Brain; si
                         como Titular tienes alguna duda o preocupación en relación a la presente
                         política de privacidad o la forma en que manejamos los datos que nos
                         proporcionas o recolectamos, por favor envíanos un mensaje a nuestro
@@ -341,8 +340,8 @@ const AvisoPrivacidad = () => {
                         cualquier solicitud de Derechos ARCO y relacionada a los datos
                 personales del Titular.</p>
                         <p> Dirección: Autlán de Navarro, Jalisco. México Teléfono: (+523171035768)</p>
-                        <a href>Correo: datospersonales@escuerlaalreves.com</a>
-                        <small> Copyright © UNILINE escuela al revés 2020</small>
+                        <a href>Correo: ceo@consultoresrh.mx</a>
+                        <small> Copyright © Artificial Brain 2020</small>
                     </div>
                 </div>
             </div>

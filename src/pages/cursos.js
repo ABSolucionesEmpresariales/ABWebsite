@@ -62,7 +62,7 @@ const Cursos = () => {
                                         <img className="img-fluid" src={url} alt="curso"></img>
                                         <h5 className="mt-2">{edge.node.nombre}</h5>
                                         <div className="row d-block d-lg-flex justify-content-center">
-                                            <a className="btn btn-success mx-1" target="_blank" href='https://www.escuelaalreves.com/#all-cursos'>Mostrar</a>
+                                            <a className="btn btn-success mx-1" target="_blank" href='https://www.escuelaalreves.com/#all-cursos' rel="noopener noreferrer">Mostrar</a>
                                             <button className="btn btn-primary mx-1 " disabled>${edge.node.costo}MX</button>
                                         </div>
 

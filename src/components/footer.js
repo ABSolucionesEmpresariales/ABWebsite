@@ -5,7 +5,7 @@ import { Modal } from 'react-bootstrap';
 import { Link } from 'gatsby'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faTwitter, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import headerStyles from '../styles/header.module.scss'
 import footerStyles from '../styles/footer.module.scss'
 
@@ -58,22 +58,19 @@ const Footer = () => {
                 </div>
                 <div className="row justify-content-between d-block d-lg-flex px-5 px-lg-0">
                     <ul className={'col-12 col-lg-10 row d-block d-lg-flex ' + footerStyles.ul}>
-                        <li className={footerStyles.li}><a className={footerStyles.links} href onClick={handleShow}>Contactanos</a></li>
+                        <li className={footerStyles.li}><a className={footerStyles.links} href="true" onClick={handleShow}>Contactanos</a></li>
                         <li className={footerStyles.li}><Link className={footerStyles.links} to="/aviso_privacidad">Aviso de Privacidad</Link> </li>
                         <li className={footerStyles.li}><Link className={footerStyles.links} to="/quienes-somos">Conocenos</Link></li>
                     </ul>
                     <div className="col-12 col-lg-2 row mt-5 mt-lg-0">
-                        <div className="col-3">
-                            <FontAwesomeIcon className={footerStyles.socialIcons} icon={faFacebook} size="2x" />
+                        <div className="col-4">
+                            <a href="https://www.facebook.com/ConsultoresArtificialBrain/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className={footerStyles.socialIcons} icon={faFacebook} size="2x" /></a>
                         </div>
-                        <div className="col-3">
-                            <FontAwesomeIcon className={footerStyles.socialIcons} icon={faTwitter} size="2x" />
+                        <div className="col-4">
+                        <a href="https://www.youtube.com/channel/UCHCt35rXuC5-QG_mhwfHzow" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className={footerStyles.socialIcons} icon={faYoutube} size="2x" /></a>
                         </div>
-                        <div className="col-3">
-                            <FontAwesomeIcon className={footerStyles.socialIcons} icon={faYoutube} size="2x" />
-                        </div>
-                        <div className="col-3">
-                            <FontAwesomeIcon className={footerStyles.socialIcons} icon={faInstagram} size="2x" />
+                        <div className="col-4">
+                        <a href="https://www.instagram.com/consultores.artificialbrain/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className={footerStyles.socialIcons} icon={faInstagram} size="2x" /></a>
                         </div>
                     </div>
                 </div>
