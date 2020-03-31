@@ -3,7 +3,6 @@ import { Link, graphql, useStaticQuery, } from 'gatsby'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
 import Modal from './modal'
-import footerStyles from './footer.module.scss'
 import headerStyles from './header.module.scss'
 import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -34,7 +33,7 @@ const Header = () => {
 
     return (
         <header className="row">
-            <Navbar expand="lg" className={'col-12 ' + headerStyles.fondo}>
+            <Navbar expand="lg" fixed="top" className={'col-12 ' + headerStyles.fondo}>
                 <Navbar.Brand to="/home">
                     <Link to="/"><Image className={headerStyles.imagen} src={data.fileName.childImageSharp.fluid.src} alt="ABsoluciones" fluid /></Link>
                 </Navbar.Brand>

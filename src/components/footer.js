@@ -6,7 +6,6 @@ import { Link } from 'gatsby'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter, faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import headerStyles from './header.module.scss'
 import footerStyles from './footer.module.scss'
 
 const Footer = () => {
