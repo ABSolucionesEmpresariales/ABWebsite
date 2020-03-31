@@ -12,7 +12,7 @@ const Newsletter = ({ linkText, linkClass, component }) => {
         <div className="text-center">
             {(component === 'button') ?
                 (<button className={linkClass} onClick={handleShow}>Información</button>) :
-                (<a className={linkClass} onClick={handleShow}>
+                (<a href className={linkClass} onClick={handleShow}>
                     {linkText}
                 </a>)
             }
