@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Parallax from '../components/paralax'
 import Video from '../components/video'
 import Card from '../components/card'
+import ScrollAnimation from 'react-animate-on-scroll';
 import quienesCss from '../styles/quienes_somos.module.scss'
 import BannerBack from '../media/img/quienes_somos.webp'
 import { faCogs, faBrain, faChartPie, faChartLine } from '@fortawesome/free-solid-svg-icons'
@@ -38,11 +39,16 @@ const QuienesSomos = () => {
                 </div>
 
                 <div className={quienesCss.video + ' col-md-6'}>
+                <ScrollAnimation 
+                    animateIn="fadeInUp"
+                    animateOut="fadeOut"
+                    offset={200}>
                     <Video
                         className={quienesCss.shadow}
                         videoSrcURL="https://www.youtube.com/embed/YKVGVUOL2Rc"
                         videoTitle="Prueba component"
                     />
+                </ScrollAnimation>
                 </div>
             </div>
 

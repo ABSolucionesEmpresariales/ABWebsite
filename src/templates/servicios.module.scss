@@ -1,34 +1,66 @@
+p {
+  & h1 {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    border-right: 5px solid #fe9e00;
+  }
+
+  h1:first-letter {
+    color: #fe9e00;
+  }
+}
+  
+  
+
+
+iframe{
+  margin-top: 5rem ;
+  width: min-content;
+  text-align: center;
+  padding: 0 !important;
+  width: 520px;
+  height: 300px;
+  background-size: cover;
+  background-size: 300px 520px !important;
+  -webkit-box-shadow: 8px -7px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 8px -7px 8px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 8px -7px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
 .banner-cotizacion {
-    height: 100vh;
-    width: 100%;
-    background-color: #1e1e1e;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 
+  & h1 {
+    letter-spacing: -2px;
+    font-size: 48px;
+    font-weight: bolder;
+    color: #fafafa;
+  }
 
-    & h1 {
-        letter-spacing: -2px;
-        font-size: 48px;
-        font-weight: bolder;
-        color: #fafafa;
-    }
+  & .title:before {
+    content: "CONTACTANOS";
+    letter-spacing: -1px;
+    font-size: 46px;
+    font-weight: bolder;
+    color: #fe9e00;
+  }
 
-    & .title:before {
-        content: 'CONTACTANOS';
-        letter-spacing: -1px;
-        font-size: 46px;
-        font-weight: bolder;
-        color: #fe9e00;
-    }
+  & .subtitle {
+    color: #fafafa;
+    font-size: 32px;
+  }
 
-    & .subtitle {
-        color: #fafafa;
-        font-size: 32px;
-    }
-
-    & .tel {
-        padding-top: 50px;
-    }
+  & .tel {
+    padding-top: 50px;
+  }
 }

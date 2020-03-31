@@ -1,8 +1,13 @@
 ﻿.slider {
 	position: relative;
 	width: 100%;
-	height: 87vh;
+	min-height: 300px;
+	height: 100vh;
 	overflow: hidden;
+	// background-attachment: fixed;
+	// background-position: center;
+	// background-repeat: no-repeat;
+	// background-size: cover;
 
 	& a {
 		&.previousButton, &.nextButton {
@@ -47,6 +52,11 @@
 	overflow: hidden;
 	text-align: center;
 	background-size: cover !important;
+	 background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	
 	
 	&:before {
 		content: '';
