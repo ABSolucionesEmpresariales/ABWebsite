@@ -60,17 +60,14 @@ const Footer = () => {
                         <li className={footerStyles.li}><Link className={footerStyles.links} to="/quienes-somos">Conocenos</Link></li>
                     </ul>
                     <div className="col-12 col-lg-2 row mt-5 mt-lg-0">
-                        <div className="col-3">
-                            <FontAwesomeIcon className={footerStyles.socialIcons} icon={faFacebook} size="2x" />
+                        <div className="col-4">
+                            <a href="https://www.facebook.com/ConsultoresArtificialBrain/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className={footerStyles.socialIcons} icon={faFacebook} size="2x" /></a>
                         </div>
-                        <div className="col-3">
-                            <FontAwesomeIcon className={footerStyles.socialIcons} icon={faTwitter} size="2x" />
+                        <div className="col-4">
+                        <a href="https://www.youtube.com/channel/UCHCt35rXuC5-QG_mhwfHzow" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className={footerStyles.socialIcons} icon={faYoutube} size="2x" /></a>
                         </div>
-                        <div className="col-3">
-                            <FontAwesomeIcon className={footerStyles.socialIcons} icon={faYoutube} size="2x" />
-                        </div>
-                        <div className="col-3">
-                            <FontAwesomeIcon className={footerStyles.socialIcons} icon={faInstagram} size="2x" />
+                        <div className="col-4">
+                        <a href="https://www.instagram.com/consultores.artificialbrain/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className={footerStyles.socialIcons} icon={faInstagram} size="2x" /></a>
                         </div>
                     </div>
                 </div>

@@ -75,6 +75,7 @@
 
 	&.previous {
 		left: -100%;
+		
 	}
 
 	&.current {
@@ -168,6 +169,7 @@
 	}
 
 	& h1 {
+		text-shadow: 0.1em 0.1em 0.1em #000!important;
 		font-weight: 900;
 		margin: 0 auto;
 		max-width: 840px;
@@ -183,7 +185,8 @@
 
 	& p {
 		color: #FFFFFF;
-		font-size: 14px;
+		text-shadow: 0.1em 0.1em 0.1em #000!important;
+		font-size: 16px;
 		line-height: 1.5;
 		margin: 20px auto 30px;
 		max-width: 640px;

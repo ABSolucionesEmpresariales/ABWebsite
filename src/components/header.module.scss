@@ -31,8 +31,8 @@
       animation: example .3s;
     }
     @keyframes example {
-      0%  {top:50px;}
-      100%  {top:46px;}
+      0%  {top:46px;}
+      100%  {top:60px;}
       from{
         opacity: 0;
       }
@@ -71,9 +71,13 @@
   .dropmenu{
     display: none;
   }
+  .fondo {
+    background-color: #ffffff;
+    height: 3rem;
+  }
   .dropdown:hover {
     .dropmenu{
-      margin-top: -10px!important;
+      margin-top: -8px!important;
       margin-left: -20px;
       display: block;
       position:absolute;
@@ -82,7 +86,7 @@
       animation: example .3s;     
     }
     .dropmenu_servicios{
-      margin-top: -20px!important;
+      margin-top: -8px!important;
       margin-left: -300px!important;
       flex-direction: row!important;
       display: flex!important;
@@ -129,6 +133,16 @@
     border: 0;
   }
 } 
+.imagen {
+  max-width: 80%!important;
+}
+.nav {
+  margin-right: 0!important;
+  max-width: 13rem;
+}
+.burgerButton {
+  margin-top: -10px!important;
+}
 .font{
   font-size: 20px;
   color: #111111!important;

@@ -7,8 +7,8 @@ import headerStyles from './header.module.scss'
 import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-    faAngleDown, faComment, faGraduationCap, faCalendar, faLaptop, faSitemap, faIdBadge, faAddressCard, faUsers,
-    faProjectDiagram, faCogs, faClipboard, faBook, faHeadset, faChartLine, faFileInvoiceDollar, faFileExcel, faFileCsv, faClock
+    faAngleDown, faComment, faGraduationCap, faCalendar, faLaptop, faSitemap, faIdBadge,
+    faProjectDiagram, faCogs, faClipboard, faBook, faFileExcel
 } from '@fortawesome/free-solid-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
@@ -23,7 +23,7 @@ const Header = () => {
             }
             fileName: file(relativePath: { eq: "img/logo.png" }) {
                 childImageSharp {
-                    fluid(maxWidth: 300, maxHeight: 55) {
+                    fluid(maxWidth: 270, maxHeight: 55) {
                         src
                     }
                 }
@@ -37,7 +37,7 @@ const Header = () => {
                 <Navbar.Brand to="/home">
                     <Link to="/"><Image className={headerStyles.imagen} src={data.fileName.childImageSharp.fluid.src} alt="ABsoluciones" fluid /></Link>
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav" className={headerStyles.burgerButton} />
                 <Navbar.Collapse id="basic-navbar-nav" className="flex justify-content-end">
                     <Nav>
                         <li className={'nav-item ' + headerStyles.font}>
