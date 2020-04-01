@@ -20,7 +20,9 @@ class Card extends React.Component {
                 animateOut={this.props.salida}
                 offset={25}
                 duration={2}
+                delay={this.props.wait}
                 animateOnce={this.props.animateOnce}
+                initiallyVisible={this.props.visible}
             >
                 <div className={'card ' + cardStyle.myCard}>
                     <div className="card-body">

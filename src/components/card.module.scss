@@ -10,13 +10,13 @@
       padding: 5px auto;
 
       border-radius: 50%;
-      background:transparent;
-      color: #000000;
+      background: transparent;
+      color: #fe9e00;
       width: 4rem;
       height: 4rem;
     }
   }
-  
+
   & h4 {
     text-align: center;
     color: #111111;
@@ -30,7 +30,7 @@
 
 @media screen and(max-device-width: 1184px) {
   .my-card {
-  text-align: center;
+    text-align: center;
     & .box {
       margin-bottom: 10px;
 
@@ -48,12 +48,3 @@
   }
 }
 
-@media screen and(max-device-width: 575px) {
-
-  .icon{
-    color: #272727;
-    background: #fff !important;
-    border: none !important;
-  }
-
-}
