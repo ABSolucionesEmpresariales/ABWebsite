@@ -5,6 +5,8 @@ import Carousel from '../components/carousel'
 import Card from '../components/card'
 import { faCogs, faChalkboardTeacher, faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import homeStyles from '../styles/home.module.scss'
+import Newsletter from '../components/modal'
+import Delay from 'react-delay'
 
 const IndexPage = () => {
     return (
@@ -57,6 +59,9 @@ const IndexPage = () => {
                 </div>
                 
             </div>
+            <Delay wait={25000}>
+                <Newsletter/>
+            </Delay>
 
            
         </Layout >
