@@ -66,15 +66,13 @@ const servicios = (props) => {
           <ScrollAnimation
             animateIn="fadeInUp"
             animateOut="fadeOut"
-            offset={200}
+            offset={250}
             className={"col-lg-6 col-12"}>
             <p >{documentToReactComponents(props.data.contentfulServicio.cuerpo2.json, options)}</p>
           </ScrollAnimation>
 
         </div>
-      {/* </div> */}
-
-      {/* Elvetica */}
+      
       <div className={'row'}>
         <div className={serviciosStyle.bannerCotizacion}>
           <h1 className={serviciosStyle.title + ' text-center'}> PARA OBTENER UNA COTIZACIÓN</h1>

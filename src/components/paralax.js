@@ -14,7 +14,7 @@ class Parallax extends React.Component {
 
         return (
             <div className="row">
-                <div style={{backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('${this.props.background}')`}}
+                <div style={{backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${this.props.background})`}}
                     className={paralaxCss.parallax + ' col-sm-12'}>
                     <section className={paralaxCss.center}>
                         <h1>{this.props.title}</h1>

@@ -71,11 +71,11 @@ const QuienesSomos = () => {
                 </div>
 
                     <div className={' col-lg-4'}>
-                        <img src={ConocenosBack} className={'img-fluid'}/>
+                        <img alt="i1" src={ConocenosBack} className={quienesCss.imagenmv + ' img-fluid'}/>
                     </div>
 
                 <div className={'col-lg-4'}>
-                <img src="http://anfec.com/news/wp-content/uploads/Junta-ejecutiva2-1024x768.jpg" className={'img-fluid'}/>
+                <img alt="i2" src="http://anfec.com/news/wp-content/uploads/Junta-ejecutiva2-1024x768.jpg" className={quienesCss.imagenmv + ' img-fluid'}/>
                 </div>
 
             </div>
@@ -83,11 +83,11 @@ const QuienesSomos = () => {
             <div className={quienesCss.misionVision+ ' row h-50'}>
 
                 <div className={'col-lg-4'}>
-                <img src="https://flexi.shoes/blog/wp-content/uploads/sites/7/2015/05/06-blog2-junta-ejecutiva.png" className={'img-fluid'}/>
+                <img alt="i3" src="https://flexi.shoes/blog/wp-content/uploads/sites/7/2015/05/06-blog2-junta-ejecutiva.png" className={quienesCss.imagenmv + ' img-fluid'}/>
                 </div>
 
                 <div className={'col-lg-4'}>
-                    <img src={BannerBack} className={'img-fluid'}/>
+                    <img alt="i4" src={BannerBack} className={quienesCss.imagenmv + ' img-fluid'}/>
                 </div>
 
                 <div className={"col-lg-4"}>
@@ -105,7 +105,7 @@ const QuienesSomos = () => {
             </div>
             
             <section className={'row'}>
-            {/* <h4 className={"text-center"}>Principios de AB Soluciones Empresariales:</h4> */}
+                
                 <div className={'row'}>
                     
                     <div className={quienesCss.cardSection1 + ' col-sm-4'}>

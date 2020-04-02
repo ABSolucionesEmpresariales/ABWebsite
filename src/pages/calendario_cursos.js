@@ -7,13 +7,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Modal from '../components/modal';
 import { faCertificate, faMapMarkerAlt, faCalendarCheck, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
-import { BannerBack } from '../media/img/banner/oferta.jpg'
+import BannerBack from '../media/img/banner/oferta.jpg';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 
 const CalendarioContenido = () => {
 
+console.log(BannerBack);
 
   const data = useStaticQuery(graphql`
     query {
@@ -43,8 +44,8 @@ const CalendarioContenido = () => {
     <Layout>
       <Head title="calendario cursos" />
       <Parallax title="Calendario de Cursos"
-        subtitle="Wacha nuestros cursos hommie, no te arrepentiras"
-        background={BannerBack}
+        subtitle="Los cursos que tendremos próximamente"
+        background={ BannerBack }
       />
 
       <div className="row mt-3 mb-3 p-2">

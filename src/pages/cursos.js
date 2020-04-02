@@ -5,7 +5,7 @@ import Parallax from '../components/paralax'
 import { useStaticQuery, graphql } from 'gatsby';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Modal from '../components/modal';
-import { BannerBack } from '../media/img/banner/oferta.jpg'
+import BannerBack from '../media/img/banner/oferta.jpg'
 
 
 const Cursos = () => {
@@ -29,7 +29,7 @@ const Cursos = () => {
         <Layout>
             <Head title="Cursos" />
             <Parallax title="Catalogo de cursos"
-                subtitle="Wacha nuestros cursos hommie"
+                subtitle="Aqui encontraras gran variedad de cursos"
                 background={BannerBack}
             />
             <div className="row d-block d-lg-flex">
@@ -43,7 +43,7 @@ const Cursos = () => {
                 </div>
                 <div className="col-lg-9">
                     <div className="row d-block d-lg-flex">
-                        {mysql.allMysqlCursos.edges.map((edge) => {
+                        {mysql.allMysqlCursos.edges.map((edge, index) => {
                             {
                                 const direccion = 'https://www.escuelaalreves.com/';
                                 let ruta = edge.node.imagen;
