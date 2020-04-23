@@ -39,7 +39,7 @@ module.exports = {
         connectionDetails: {
           host: 'srv286.main-hosting.eu',
           user: 'u981877364_cool',
-          password: 'Eh]XWg0F',
+          password: 'r!4AlT0D',
           database: 'u981877364_uniline'
         },
         queries: [
