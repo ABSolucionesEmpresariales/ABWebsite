@@ -18,7 +18,7 @@ const Footer = () => {
                 }
             }
 
-            fileName: file(relativePath: { eq: "img/logo.jpg" }) {
+            fileName: file(relativePath: { eq: "img/logo1.png" }) {
                 childImageSharp {
                     fluid(maxWidth: 100, maxHeight: 100) {
                         src
