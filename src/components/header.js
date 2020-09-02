@@ -21,7 +21,7 @@ const Header = () => {
                     title
                 }
             }
-            fileName: file(relativePath: { eq: "img/logo.png" }) {
+            fileName: file(relativePath: { eq: "img/logo.jpg" }) {
                 childImageSharp {
                     fluid(maxWidth: 270, maxHeight: 55) {
                         src
