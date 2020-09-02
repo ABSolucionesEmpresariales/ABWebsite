@@ -14,8 +14,8 @@ const QuienesSomos = () => {
 
     return (
         <Layout>
-            <Head title="Quienes somos"/>
-            <Parallax title="Quienes Somos"
+            <Head title="Quiénes somos"/>
+            <Parallax title="Quiénes Somos"
                 subtitle="Capacitamos a pequeñas y grandes empresas"
                 background={BannerBack}
             />

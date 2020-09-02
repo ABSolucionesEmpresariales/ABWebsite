@@ -16,7 +16,7 @@ const IndexPage = () => {
             <div className={'row ' + homeStyles.section}>
                 <div className="col-lg-4">
                     <Card
-                        title="Couching"
+                        title="Coaching Empresarial"
                         description="Destrezas personales para manejar tu empresa."
                         icon={faArrowUp}
                         iconSize="7x"
@@ -27,7 +27,7 @@ const IndexPage = () => {
                 <div className="col-lg-4">
                     <Card
                         title="Consultoría"
-                        description="Encontrar el verdadero problema es parte de la solucion"
+                        description="Encontrar el verdadero problema es parte de la solución."
                         icon={faCogs}
                         iconSize="7x"
                         entrada="bounceInUp"
@@ -37,7 +37,7 @@ const IndexPage = () => {
                 <div className="col-lg-4">
                     <Card
                         title="Capacitaciones"
-                        description="Habilidades extraordinarias para crear empleados extraordinarios."
+                        description="Desarrollamos habilidades extraordinarias para tener al personal mejor calificado en su área."
                         icon={faChalkboardTeacher}
                         entrada="bounceInRight"
                         animateOnce={true} />

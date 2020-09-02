@@ -79,7 +79,7 @@ const servicios = (props) => {
           <h2 className={serviciosStyle.subtitle + ' text-center'}>¡Juntos hacemos más!</h2>
 
           <h1 className={serviciosStyle.tel + ' text-center'}>(317) 103 57 68</h1>
-          <h1 className={serviciosStyle.mail + ' text-center'}>ceo@artificialbrain.mx</h1>
+          <h1 className={serviciosStyle.mail + ' text-center'}>diego.leon@consultoresabs.com</h1>
         </div>
       </div>
     </Layout>

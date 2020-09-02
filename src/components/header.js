@@ -41,7 +41,7 @@ const Header = () => {
                 <Navbar.Collapse id="responsive-navbar-nav" className="flex justify-content-end">
                     <Nav className="ml-auto">
                             <Nav.Link href="/quienes-somos/">
-                                Quienes somos
+                                ¿Quiénes somos?
                             </Nav.Link>
 
                             <NavDropdown title="Servicios" id="collasible-nav-dropdown" >
@@ -94,7 +94,7 @@ const Header = () => {
 
                                 <NavDropdown.Item href="/cursos">
                                         <FontAwesomeIcon style={{ marginRight: "10px" }} icon={faGraduationCap} />
-                                        Catalogo de cursos
+                                        Catálogo de cursos
                                 </NavDropdown.Item>
 
                                 <NavDropdown.Item href="/calendario_cursos">
