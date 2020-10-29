@@ -44,16 +44,14 @@ const Head = ({title}) => {
             }(document, 'script', 'facebook-jssdk'));
         }, 0);
     }
-    
+
     return (
         <Helmet>
             <meta charSet="utf-8" />
             <title>{`${title} | ${data.site.siteMetadata.title}`}</title>
             <meta name="description" content="testing react helmet" />
             <meta name="keywords" content="react,seo,helmet" />
-            <script>
-                {imagen}
-            </script>
+
             {/* <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"></link> */}
         </Helmet>
         /* Tambien se puede hacer de la siguiente manera <Helmet title={`${title} | ${data.site.siteMetadata.title}`}/>*/
