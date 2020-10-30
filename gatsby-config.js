@@ -37,7 +37,7 @@ module.exports = {
       resolve: `gatsby-source-mysql`,
       options: {
         connectionDetails: {
-          host: 'sql129.main-hosting.eu',
+          host: '156.67.222.43',
           user: 'u447768267_root',
           password: 'l*6Ex!3h',
           database: 'u447768267_uniline'
