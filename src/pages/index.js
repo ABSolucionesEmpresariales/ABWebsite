@@ -5,6 +5,8 @@ import Carousel from '../components/carousel'
 import Card from '../components/card'
 import { faCogs, faChalkboardTeacher, faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import homeStyles from '../styles/home.module.scss'
+import Newsletter from '../components/modal'
+import Delay from 'react-delay'
 
 const IndexPage = () => {
     return (
@@ -14,7 +16,7 @@ const IndexPage = () => {
             <div className={'row ' + homeStyles.section}>
                 <div className="col-lg-4">
                     <Card
-                        title="Couching"
+                        title="Coaching Empresarial"
                         description="Destrezas personales para manejar tu empresa."
                         icon={faArrowUp}
                         iconSize="7x"
@@ -25,7 +27,7 @@ const IndexPage = () => {
                 <div className="col-lg-4">
                     <Card
                         title="Consultoría"
-                        description="Encontrar el verdadero problema es parte de la solucion"
+                        description="Encontrar el verdadero problema es parte de la solución."
                         icon={faCogs}
                         iconSize="7x"
                         entrada="bounceInUp"
@@ -35,7 +37,7 @@ const IndexPage = () => {
                 <div className="col-lg-4">
                     <Card
                         title="Capacitaciones"
-                        description="Habilidades extraordinarias para crear empleados extraordinarios."
+                        description="Desarrollamos habilidades extraordinarias para tener al personal mejor calificado en su área."
                         icon={faChalkboardTeacher}
                         entrada="bounceInRight"
                         animateOnce={true} />
@@ -55,9 +57,13 @@ const IndexPage = () => {
                     <p className={'align-middle'}>Nuestro secreto radica en encontrar el verdadero problema. Un metodo probado y comprobado por nosotros mismo que te garantiza encontrar el problema en tu empresa para poder darle la solucion adecuada.</p>
 
                 </div>
-
+                
             </div>
+            <Delay wait={25000}>
+                <Newsletter/>
+            </Delay>
 
+           
         </Layout >
     )
 }

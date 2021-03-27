@@ -1,14 +1,11 @@
 import React from 'react'
-import ScrollAnimation from 'react-animate-on-scroll';
-import videoStyle from '../styles/video.module.scss'
+
+import videoStyle from './video.module.scss'
 import "animate.css/animate.min.css";
 
 const Video = ({ videoSrcURL, videoTitle, width, height }) => (
 
-    <ScrollAnimation 
-        animateIn="fadeInUp"
-        animateOut="fadeOut"
-        offset={100}>
+    
         <iframe
             src={videoSrcURL}
             title={videoTitle}
@@ -19,7 +16,7 @@ const Video = ({ videoSrcURL, videoTitle, width, height }) => (
             mozallowfullscreen="true"
             allowFullScreen
         />
-    </ScrollAnimation>
+    
 
 )
 export default Video

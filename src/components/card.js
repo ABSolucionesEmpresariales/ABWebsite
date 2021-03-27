@@ -1,5 +1,5 @@
 import React from 'react'
-import cardStyle from '../styles/card.module.scss'
+import cardStyle from './card.module.scss'
 import ScrollAnimation from 'react-animate-on-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -20,7 +20,9 @@ class Card extends React.Component {
                 animateOut={this.props.salida}
                 offset={25}
                 duration={2}
+                delay={this.props.wait}
                 animateOnce={this.props.animateOnce}
+                initiallyVisible={this.props.visible}
             >
                 <div className={'card ' + cardStyle.myCard}>
                     <div className="card-body">

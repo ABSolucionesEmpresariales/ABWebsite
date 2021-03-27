@@ -1,0 +1,24 @@
+.imagen {
+  max-width: 65% !important;
+}
+
+.font,
+.item,
+a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #111111 !important;
+}
+.font:hover,
+.item:hover,
+a:hover {
+  text-decoration: none;
+  color: #fe9e00 !important;
+  transition: 0.3s;
+}
+
+@media screen and (max-device-width: 500px) {
+  .imagen {
+    max-width: 60%;
+  }
+}
