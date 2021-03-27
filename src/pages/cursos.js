@@ -43,7 +43,7 @@ const Cursos = () => {
                 </div>
                 <div className="col-lg-9">
                     <div className="row d-block d-lg-flex">
-                        {mysql.allMysqlCursos.edges.map((edge, index) => {
+                        {/* {mysql.allMysqlCursos.edges.map((edge, index) => {
                             {
                                 const direccion = 'https://uniline.online;
                                 let ruta = edge.node.imagen;

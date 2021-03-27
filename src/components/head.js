@@ -13,7 +13,7 @@ const Head = ({title}) => {
         }
     `)
 
-    const imagen = () => {
+    /* const imagen = () => {
         var div = document.createElement('div');
         div.className = 'fb-customerchat';
         div.setAttribute('page_id', '2010791648980440');
@@ -43,7 +43,7 @@ const Head = ({title}) => {
             fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
         }, 0);
-    }
+    } */
 
     return (
         <Helmet>
