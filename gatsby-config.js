@@ -34,6 +34,17 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     /* {
+      resolve: `gatsby-source-graphql`,
+      options: {
+        typeName: `GitHub`,
+        fieldName: `github`,
+        url: `https://api.github.com/graphql`,
+        headers: {
+          Authorization: `Bearer your-github-token`,
+        },
+      },
+    }, */
+    /* {
       resolve: `gatsby-source-mysql`,
       options: {
         connectionDetails: {
