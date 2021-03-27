@@ -14,7 +14,7 @@ const Cursos = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    const mysql = useStaticQuery(graphql`
+    /* const mysql = useStaticQuery(graphql`
     query{
         allMysqlCursos{
           edges{
@@ -27,7 +27,7 @@ const Cursos = () => {
           }
         }
       }
-  `);
+  `); */
 
     return (
         <Layout>
@@ -46,9 +46,9 @@ const Cursos = () => {
                 </div>
                 <div className="col-lg-9">
                     <div className="row d-block d-lg-flex">
-                        {mysql.allMysqlCursos.edges.map((edge) => {
+                        {/* {mysql.allMysqlCursos.edges.map((edge) => {
                             {
-                                const direccion = 'https://www.escuelaalreves.com/';
+                                const direccion = 'https://uniline.online;
                                 let ruta = edge.node.imagen;
                                 ruta = ruta.split('/');
                                 const carpeta = ruta[1];
@@ -62,7 +62,7 @@ const Cursos = () => {
                                         <img className="img-fluid" src={url} alt="curso"></img>
                                         <h5 className="mt-2">{edge.node.nombre}</h5>
                                         <div className="row d-block d-lg-flex justify-content-center">
-                                            <a className="btn btn-success mx-1" target="_blank" href='https://www.escuelaalreves.com/#all-cursos'>Mostrar</a>
+                                            <a className="btn btn-success mx-1" target="_blank" href='https://uniline.online'>Mostrar</a>
                                             <button className="btn btn-primary mx-1 " disabled>${edge.node.costo}MX</button>
                                         </div>
 
@@ -70,7 +70,7 @@ const Cursos = () => {
                                 </div>
                             )
                         }
-                        )}
+                        )} */}
                     </div>
                 </div>
             </div>

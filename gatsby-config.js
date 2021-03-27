@@ -33,7 +33,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    {
+    /* {
       resolve: `gatsby-source-mysql`,
       options: {
         connectionDetails: {
@@ -50,7 +50,7 @@ module.exports = {
           }
         ]
       }
-    }
+    } */
     // ... other plugins
   ]
 }
